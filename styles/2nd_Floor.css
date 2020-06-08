@@ -1,0 +1,651 @@
+#back{
+	background-image: url(./S__29351955.jpg) ;
+	/* transform: rotate(20deg); */
+	background-repeat: no-repeat;
+	/* background-size: 50%; */
+	height: 550px;
+	width: 700px;
+	position: relative;
+	background-size:80%;
+	
+}
+
+li{
+	list-style: none;
+}
+
+.data {
+	margin-top: 10px;
+}
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+4. Menu
+5. Home
+6. Blog
+7. Sidebar
+8. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+body
+{
+	/* font-family: 'Montserrat', sans-serif; */
+	font-size: 14px;
+	font-weight: normal;
+	background: #FFFFFF;
+	color: #2b2e35;
+}
+
+
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}
+p
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 2.1435;
+	font-weight: 500;
+	color: #a2b0bf;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
+
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+
+p a:hover::after
+{
+	opacity: 0.2;
+}
+::selection
+{
+	background: rgba(215,192,17,1);
+	color: #ffffff;
+}
+p::selection
+{
+
+}
+h1{font-size: 48px;}
+h2{font-size: 36px;}
+h3{font-size: 24px;}
+h4{font-size: 18px;}
+h5{font-size: 14px;}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	line-height: 1.2;
+	color: #2b2e35;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection
+{
+
+}
+img
+{
+	max-width: 100%;
+}
+button:active
+{
+	outline: none;
+}
+.form-control
+{
+	color: #db5246;
+}
+section
+{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+.clear
+{
+	clear: both;
+}
+.clearfix::before, .clearfix::after
+{
+	content: "";
+	display: table;
+}
+.clearfix::after
+{
+	clear: both;
+}
+.clearfix
+{
+	zoom: 1;
+}
+.float_left
+{
+	float: left;
+}
+
+
+.fill_height
+{
+	height: 100%;
+}
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
+}
+.prlx_parent
+{
+	overflow: hidden;
+}
+.prlx
+{
+	height: 130% !important;
+}
+.parallax-window
+{
+    min-height: 400px;
+    background: transparent;
+}
+.parallax_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.background_image
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.nopadding
+{
+	padding: 0px !important;
+}
+
+.slide
+{
+	height: 100%;
+}
+.section_subtitle
+{
+	font-size: 14px;
+	font-weight: 600;
+	color: #bdc4d4;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	line-height: 0.75;
+}
+
+
+.super_overlay.active
+{
+	opacity: 1;
+	visibility: visible;
+}
+.button
+{
+	width: 247px;
+	height: 61px;
+	background: rgba(215,192,17,1);
+	text-align: center;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.button:hover
+{
+	background: #1e1332;
+}
+.button a
+{
+	display: block;
+	height: 100%;
+	line-height: 61px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #ffffff;
+	z-index: 100;
+	-webkit-transition: all 600ms ease;
+	-moz-transition: all 600ms ease;
+	-ms-transition: all 600ms ease;
+	-o-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+
+
+.header_list ul li:not(:last-of-type)
+{
+	margin-right: 49px;
+}
+
+
+.log_reg
+{
+	margin-left: 48px;
+}
+.log_reg ul li
+{
+	position: relative;
+}
+.log_reg ul li:not(:last-of-type)::after
+{
+	display: inline-block;
+	content: '/';
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.log_reg ul li a
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.log_reg ul li a:hover
+{
+	color: rgba(215,192,17,1);
+}
+.header_content
+{
+	width: 100%;
+	height: 61px;
+	background: #ffffff;
+	padding-left: 64px;
+}
+
+.logo a
+{
+	font-size: 24px;
+	color: #6c7079;
+	font-weight: 600;
+}
+
+.main_nav
+{
+	height: 100%;
+	margin-left: 133px;
+}
+.main_nav ul
+{
+	height: 100%;
+}
+.main_nav ul li
+{
+	position: relative;
+	height: 100%;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.main_nav ul li:not(:last-of-type)
+{
+	margin-right: 2px;
+}
+.main_nav ul li.active,
+.main_nav ul li:hover
+{
+	background: rgba(215,192,17,1);
+	
+}
+.main_nav ul li a
+{
+	display: block;
+	height: 100%;
+	line-height: 61px;
+	padding-left: 13px;
+	padding-right: 13px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #2b2e35;
+}
+.main_nav ul li.active a
+{
+	color: #ffffff;
+}
+.main_nav ul li a:hover
+{
+	color: #ffffff;
+}
+
+
+.hamburger
+{
+	display: none;
+	cursor: pointer;
+}
+.hamburger i
+{
+	font-size: 24px;
+	color: #2b2e35;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.hamburger:hover i
+{
+	color: rgba(215,192,17,1);
+}
+
+/*********************************
+4. Menu
+*********************************/
+
+.menu
+{
+	position: fixed;
+	top: 0;
+	right: -370px;
+	width: 370px;
+	height: 100vh;
+	z-index: 102;
+	background: #ffffff;
+	padding-right: 30px;
+	padding-top: 100px;
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+.menu.active
+{
+	right: 0;
+}
+.menu_close
+{
+	position: absolute;
+	top: 30px;
+	right: 25px;
+	padding: 5px;
+	cursor: pointer;
+}
+.menu_close i
+{
+	font-size: 20px;
+	color: #2b2e35;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.menu_close:hover i
+{
+	color: rgba(215,192,17,1);
+}
+.menu_log_reg
+{
+	display: inline-block;
+}
+.menu .log_reg
+{
+	border-bottom: solid 1px rgba(0,0,0,0.15);
+}
+.menu .log_reg ul li a
+{
+	color: #2b2e35;
+	font-weight: 600;
+}
+.menu .log_reg ul li a:hover
+{
+	color: rgba(215,192,17,1);
+}
+.menu .log_reg ul li:not(:last-of-type)::after
+{
+	color: #2b2e35;
+	font-weight: 600;
+}
+.menu_nav
+{
+	margin-top: 42px;
+}
+.menu_nav ul li:not(:last-of-type)
+{
+	margin-bottom: 2px;
+}
+.menu_nav ul li a
+{
+	font-size: 28px;
+	color: #2b2e35;
+	font-weight: 600;
+}
+.menu_nav ul li a:hover
+{
+	color: rgba(215,192,17,1);
+}
+
+/*********************************
+5. Home
+*********************************/
+
+.home
+{
+	height: 261px;
+}
+
+
+
+/*********************************
+6. Blog
+*********************************/
+
+.blog
+{
+	background: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 0px; 
+	height: 100%;
+}
+.blog_post:not(:last-child)
+{
+	margin-bottom: 66px;
+}
+
+
+
+.blog_post_content
+{
+	padding-top: 45px;
+}
+.blog_post_title a
+{
+	font-size: 36px;
+	font-weight: 600;
+	color: #2b2e35;
+}
+.blog_post_title a:hover
+{
+	color: rgba(215,192,17,1);
+}
+.blog_post_info
+{
+	margin-top: 2px;
+}
+.blog_post_info ul li
+{
+	font-size: 14px;
+	color: #a2b0bf;
+	font-weight: 500;
+}
+.blog_post_info > ul > li:not(:last-of-type) a
+{
+	color: rgba(215,192,17,1);
+}
+.blog_post_info > ul > li:not(:last-of-type)::after
+{
+	display: inline-block;
+	content: '|';
+	margin-left: 12px;
+	margin-right: 13px;
+}
+.blog_post_info > ul > li > ul > li:not(:last-of-type)::after
+{
+	display: inline-block;
+	content: ',';
+	margin-right: 5px;
+}
+.blog_post_info > ul > li > ul > li a
+{
+	color: #a2b0bf;
+}
+.blog_post_info > ul > li > ul > li a:hover
+{
+	color: rgba(215,192,17,1);
+}
+
+
+
+/*********************************
+7. Sidebar
+*********************************/
+
+.sidebar
+{
+margin-top: -60px;
+}
+
+
+.categories
+{
+	margin-top: 60px;
+}
+.sidebar_list
+{
+	margin-top: 16px;
+}
+.sidebar_list ul li:not(:last-of-type)
+{
+	margin-bottom: 15px;
+}
+.sidebar_list ul li a
+{
+	font-size: 14px;
+	font-weight: 600;
+	color: #6c7079;
+}
+.sidebar_list ul li a:hover
+{
+	color: rgba(215,192,17,1);
+}
+.archive
+{
+	margin-top: 24px;
+}
+.sidebar_tags
+{
+	margin-top: 54px;
+}
+.sidebar_tags ul
+{
+	width: calc(100% + 10px);
+	margin-top: 48px;
+}
+
+/*********************************
+8. Footer
+*********************************/
+.SceneStyle {
+  width: 50%;
+  height: 55px;
+  margin-top: -6px;
+  background: rgb(154,36,252);
+  background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%);
+  border-width: thin;
+  border: 1.5px;
+  border-radius: 16px;
+  border-color: rgba(91, 91, 91, 1) align-items: center;
+  text-align: center;
+  margin-left: 0px;
+	cursor: pointer;
+}

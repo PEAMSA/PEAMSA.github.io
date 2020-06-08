@@ -1,0 +1,51 @@
+li {
+    list-style: none;
+}
+
+.unit {
+    margin-left: 0px;
+}
+
+.value {
+    margin-left: 0px;
+}
+
+.ContentReport {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.SceneStyle {
+    width: 90px;
+    height: 35px;
+    margin-top: -5px;
+    background: transparent;
+    border-width: thin;
+    border: 1.5px;
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 0px;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition-duration: 0.4s;
+    margin-left: 55px
+}
+
+.SceneStyle:hover {
+    background-color: #FF9999;
+}
+
+.meter{
+    padding-top: 50px;
+}
+
+.container {
+    margin-top: 100px;
+}
+.chart{
+    width: 550; height: 420px;
+}
+
+.box {
+    padding-top:25px;
+}

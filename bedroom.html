@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bedroom</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="myHOME - real estate template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link From External -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
+
+	<!-- CSS Part ***** -->
+	<link rel="stylesheet" type="text/css" href="styles/bedroom.css">
+	<link rel="stylesheet" href="styles/mainhomepage.css">
+	<link rel="stylesheet" href="styles/btbedroom.css">
+	<link rel="stylesheet" href="styles/air_control.css">
+	<link rel="stylesheet" href="./styles/responsive.css">
+	<!-- CSS Part ***** -->
+
+	<!-- JS Chart Edit *****-->
+
+</head>
+
+<body>
+	<div class="super_container">
+		<!--Header-->
+		<header class="header">
+			<!-- Header Content -->
+			<div class="header_content d-flex flex-row align-items-center justify-content-start"
+				style="background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%)">
+				<div class="logo" style="width: 330px;">
+					<a href="home.html" style="color: aliceblue;">MSA Smart Building</a>
+				</div>
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li class="active"><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./smartplug.html">Smart Plug</a></li>
+						<li><a href="./door.window.html">Security</a></li>
+					</ul>
+				</nav>
+				<!-- <div class="submit ml-auto"><a href="#">Hello admin</a></div> -->
+				<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+
+		</header>
+		<!--Menu-->
+		<div class="menu text-right">
+			<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="menu_log_reg">
+				<div class="log_reg d-flex flex-row align-items-center justify-content-end">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div>
+				<nav class="menu_nav" style="text-align: left;">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./door.window.html">Door/Window Censor</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Home -->
+		<div class="homeContent">
+			<div class="blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3" style="padding-right: 30px;">
+							<div class="left_container" style="margin-top: 0px">
+								<div class="one_left" style="height: 185px;">
+									<h3 style="padding-top: 10px">Scene Control</h3>
+									<div class="row_container">
+										<div class="scene">
+											<div class="row" style="padding-top: 1px;padding-left: 0px;">
+												<div class="col-12" style="padding-left: 80px;">
+													<li>
+														<div>
+															<div style="padding-left: 0px;">
+																<input class="toggle-btn" type="radio" value="Welcome"
+																	onclick="scene_welcome()"
+																	style="padding-right: 10px;" name="scene_control">
+															</div>
+														</div>
+													</li>
+													<li style="margin-top: 20px;">
+														<div>
+															<div style="padding-left: 0px;">
+																<input class="toggle-btn" type="radio"
+																	value="Good Night" onclick="scene_goodnight()"
+																	style="padding-right: 10px;" name="scene_control">
+															</div>
+														</div>
+													</li>
+													<li style="margin-top: 20px;">
+														<div>
+															<div style="padding-left: 0px;">
+																<input class="toggle-btn" type="radio" value="Goodbye"
+																	onclick="scene_goodbye()"
+																	style="padding-right: 10px;" name="scene_control">
+															</div>
+														</div>
+													</li>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="left_container">
+								<div class="two_left" style="height: 185px">
+									<h3 style="padding-top: 10px">Lighting</h3>
+									<div class="row_container">
+										<div class="onoffACbutton">
+											<div class="OffACbutton">
+												<button id="BD01" onclick="turn_off_light(this.id)" type="button" name=""
+													class="device_control_status" style="border: 0px;">
+													<img src="images/remodeair/switchoff.png" alt=""
+														style="width: 48px; height: 48px;">
+												</button>
+												<li>
+													<h5 style="color: black;margin-top: 5px;">
+														Off</h5>
+												</li>
+											</div>
+											<div class="OnACbutton">
+												<button id="BD01" onclick="turn_on_light(this.id)" type="button" name=""
+													class="device_control_status"
+													style="display: inline; border: 0px;">
+													<img src="images/remodeair/switchon.png" alt=""
+														style="width: 48px; height: 48px;">
+												</button>
+												<li>
+													<h5 style="color: black;margin-top: 5px;">
+														On</h5>
+												</li>
+											</div>
+										</div>
+										<!-- <div class="row" style="padding-top: 1px;padding-left: 5px;">
+											<div class="col-12" style="padding-left: 0px;">
+												<li style="margin-top: 5px;">
+													<div style="padding-left: 80px;">
+														<input class="toggle-btn" type="checkbox" value="Row 1"
+															onclick="lighting_row1()" style="padding-right: 10px;">
+													</div>
+												</li>
+												<li style="margin-top: 20px;">
+													<div style="padding-left: 80px;">
+														<input class="toggle-btn" type="checkbox" value="Row 2"
+															onclick="lighting_row2()" style="padding-right: 10px;">
+													</div>
+												</li>
+												<li style="margin-top: 20px;">
+													<div style="padding-left: 80px;">
+														<input class="toggle-btn" type="checkbox" value="Row 3"
+															onclick="lighting_row3()" style="padding-right: 10px;">
+													</div>
+												</li>
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" id="pic">
+							<div class="row" style="border: 1px solid transparent">
+								<div class="col-4" style="border:1px solid transparent"></div>
+								<div class="col-4" style="border: 1px solid transparent;padding: 0px">
+									<div class="row">
+										<div class="col-4" style="border: 1px solid transparent">
+
+											<img id="eorow1_1" src="images/goodbye.jpg" alt=""
+												style=" width: 20px;height: 20px;margin-top:60px;margin-left: 15px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 17px;font-size: 12px;">
+												R.1</h5>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow1_2" src="images/goodbye.jpg" alt=""
+												style=" width: 20px;height: 20px;margin-top:60px;margin-left: 20px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 24px;font-size: 12px;">
+												R.1</h5>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow1_3" src="images/goodbye.jpg" alt=""
+												style=" width: 20px;height: 20px;margin-top:60px;margin-left: 24px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 26px;font-size: 12px;">
+												R.1</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-4"></div>
+							</div>
+							<div class="row" style="border: 1px solid transparent">
+								<div class="col-4" style="border:1px solid transparent"></div>
+								<div class="col-4" style="border: 1px solid transparent;padding: 0px">
+									<div class="row">
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow2_1" src="images/goodbye.jpg" alt="" class="Row2"
+												style=" width: 20px;height: 20px;margin-top:80px;margin-left: 15px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 17px;font-size: 12px;">
+												R.2</h5>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<li>
+												<h5
+													style="color:black;margin-top:5px;margin-left: 5px;font-size: 12px;">
+													A/C</h5>
+
+												<img id="ac1" src="images/goodbye.jpg" alt="" class="Row4"
+													style=" width: 30px;height: 30px;margin-top:9px;margin-left: 15px;border-radius: 10px;">
+											</li>
+											<li>
+												<img id="eorow2_2" src="images/goodbye.jpg" alt="" class="Row2"
+													style=" width: 20px;height: 20px;margin-top:20px;margin-left: 20px;border-radius: 50% ">
+												<h5
+													style="color:black;margin-top:5px;margin-left: 24px;font-size: 12px;">
+													R.2</h5>
+											</li>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow2_3" src="images/goodbye.jpg" alt="" class="Row2"
+												style=" width: 20px;height: 20px;margin-top:80px;margin-left: 24px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 26px;font-size: 12px;">
+												R.2</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-4"></div>
+							</div>
+							<div class="row" style="border: 1px solid transparent">
+								<div class="col-4" style="border:1px solid transparent"></div>
+								<div class="col-4" style="border: 1px solid transparent;padding: 0px">
+									<div class="row">
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow3_1" src="images/goodbye.jpg" alt="" class="Row3"
+												style=" width: 20px;height: 20px;margin-top:80px;margin-left: 15px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 17px;font-size: 12px;">
+												R.3</h5>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow3_2" src="images/goodbye.jpg" alt="" class="Row3"
+												style=" width: 20px;height: 20px;margin-top:80px;margin-left: 20px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 24px;font-size: 12px;">
+												R.3</h5>
+										</div>
+										<div class="col-4" style="border: 1px solid transparent">
+											<img id="eorow3_3" src="images/goodbye.jpg" alt="" class="Row3"
+												style=" width: 20px;height: 20px;margin-top:80px;margin-left: 24px;border-radius: 50% ">
+											<h5 style="color:black;margin-top:5px;margin-left: 26px;font-size: 12px;">
+												R.3</h5>
+										</div>
+									</div>
+								</div>
+								<div class="col-4"></div>
+
+							</div>
+						</div>
+						<div class="col-lg-3" style="padding-left: 0px;">
+							<div class="one_right">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 style="color: black">Air Condition</h3>
+										<!-- <span class="close" onclick="dismissACModal()">&times;</span> -->
+									</div>
+									<div class="modal-body" style="text-align: center; align-items: center;">
+										<!-- <p id="AC_device_name"></p> -->
+
+										<div class="ACremoteControl" style="text-align: center; ">
+											<div class="onoffACbutton">
+												<div class="OffACbutton">
+													<button id="AC104001" onclick="turn_off_ac(this.id)" type="button" name=""
+														class="device_control_status" style="border: 0px;">
+														<img src="images/remodeair/switchoff.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+													<li>
+														<h5 style="color: black;margin-top: 5px;">
+															Off</h5>
+													</li>
+												</div>
+												<div class="OnACbutton">
+													<button id="AC104001" onclick="turn_on_ac(this.id)" type="button" name=""
+														class="device_control_status"
+														style="display: inline; border: 0px;">
+														<img src="images/remodeair/switchon.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+													<li>
+														<h5 style="color: black;margin-top: 5px;">
+															On</h5>
+													</li>
+												</div>
+											</div>
+
+											<hr style="margin: 5px;">
+
+											<div class="ACTempControl">
+
+												<div class="decreaseTemp">
+													<button onclick="down_remote1()" type="button"
+														class="device_control_status" style="border: 0px;">
+														<img src="images/remodeair/iconreduce.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+												</div>
+												<div class="TempDisplay">
+													<div id="result" class="TempMonitoring">
+														25
+													</div>
+													<div class="degreeC" style=""> &#8451;</div>
+												</div>
+												<div class="increaseTemp">
+													<button id="" onclick="up_remote1()" type="button"
+														class="device_control_status" style="border: 0px;">
+														<img src="images/remodeair/iconincrease.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+												</div>
+											</div>
+											<div>
+												<button style="margin-bottom: 10px; background: rgb(108,153,255); background: linear-gradient(135deg, rgba(108,153,255,1) 0%, rgba(213,163,255,1) 100%);
+												width: 120px; height: 40px; border-radius: 5px; border: 2px; font-family: 'Roboto', sans-serif;"
+													type="submit" name="login" value="Login" 
+													onclick="summit_air(this.id)" id="AC104001" class="modal-login-button-2" >
+													Submit
+											</div>
+											<hr style="margin: 5px;">
+											<div class="ACModeControl">
+												<div class="CoolMode">
+													<button id="AC104001" onclick="CoolModeControl(this.id)" type="button" name=""
+														class="device_control_status" style="border: 0px;">
+														<img id="ac_cool" src="images/remodeair/cooloff.png" alt=""
+															style="width: 32px; height: 32px;">
+													</button>
+												</div>
+												<div class="DryMode">
+													<button id="AC104001" onclick="DryModeControl(this.id)" type="button" name=""
+														class="device_control_status" style="border: 0px;">
+														<img id="ac_dry" src="images/remodeair/dryoff.png" alt=""
+															style="width: 32px; height: 32px;">
+													</button>
+												</div>
+												<div class="FanMode">
+													<button id="AC104001" onclick="FenModeControl(this.id)" type="button" name=""
+														class="device_control_status" style="border: 0px;">
+														<img id="ac_fan" src="images/remodeair/fanoff.png" alt=""
+															style="width: 32px; height: 32px;">
+													</button>
+												</div>
+											</div>
+											<hr style="margin: 5px;">
+											<p style="margin: 0px;">Fan Speed:</p>
+											<div class="FanSpeedControl">
+												<div class="FanSpeedIcon" style="margin-top: -6px;">
+													<button class="device_control_status" id="AC104001" onclick="speedone(this.id)">
+														<img id="ac_lv1" src="images/remodeair/fanoff.png" alt=""
+															style="width: 18px; height: 18px; margin-top: 8px;">
+													</button>
+												</div>
+												<div class="FanSpeedIcon" style="margin-top: -6px;">
+													<button class="device_control_status" id="AC104001" onclick="speedtwo(this.id)">
+														<img id="ac_lv2" src="images/remodeair/fanoff.png" alt=""
+															style="width: 24px; height: 24px; margin-top: 6px;">
+													</button>
+												</div>
+												<div class="FanSpeedIcon" style="margin-top: -6px;">
+													<button class="device_control_status" id="AC104001" onclick="speedthree(this.id)">
+														<img id="ac_lv3" src="images/remodeair/fanoff.png" alt=""
+															style="width: 30px; height: 30px; margin-top: 4px;">
+													</button>
+												</div>
+												<div class="FanSpeedIcon" style="margin-top: -6px;">
+													<button class="device_control_status" id="AC104001" onclick="speedfour(this.id)">
+														<img id="ac_lv4" src="images/remodeair/fanoff.png" alt=""
+															style="width: 36px; height: 36px; margin-top: 0px;">
+													</button>
+												</div>
+												<div class="FanSpeedIcon" style="margin-top: -6px;">
+													<button class="device_control_status" id="AC104001" onclick="speedfive(this.id)">
+														<img id="ac_lv5" src="images/remodeair/fanoff.png" alt=""
+															style="width: 36px; height: 36px; margin-top: 0px;">
+													</button>
+												</div>
+											</div>
+
+											<hr style="margin: 5px;">
+
+											<div class="onoffACbutton">
+												<div class="OffACbutton">
+													<button id="AC104001" onclick="swingturn_off_ac(this.id)" type="button" name=""
+														class="device_control_status" style="border: 0px;">
+														<img src="images/remodeair/swingoff.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+												</div>
+												<div class="OnACbutton">
+													<button id="AC104001" onclick="swingturn_on_ac(this.id)" type="button" name=""
+														class="device_control_status"
+														style="display: inline; border: 0px;">
+														<img src="images/remodeair/swingon.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
+	<script src="init-firebase.js"></script>
+	<!-- JS Chart Edit *****-->
+	<script src="./js/bedroom.js/scene_control.js"></script>
+	<script src="./js/bedroom.js/lighting.js"></script>
+	<script src="./js/bedroom.js/air_control.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="plugins/greensock/TweenMax.min.js"></script>
+	<script src="plugins/greensock/TimelineMax.min.js"></script>
+	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="plugins/greensock/animation.gsap.min.js"></script>
+	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/progressbar/progressbar.min.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<!-- <script src="js/about.js"></script> -->
+</body>
+
+</html>
