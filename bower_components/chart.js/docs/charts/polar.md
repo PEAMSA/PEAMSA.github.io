@@ -4,7 +4,7 @@ Polar area charts are similar to pie charts, but each segment has the same angle
 
 This type of chart is often useful when we want to show a comparison data similar to a pie chart, but also show a scale of values for context.
 
-{% chartjs %}
+{{% chartjs %}}
 {
     "type": "polarArea",
     "data": {
@@ -28,7 +28,7 @@ This type of chart is often useful when we want to show a comparison data simila
         }]
     }
 }
-{% endchartjs %}
+{{% endchartjs %}}
 
 ## Example Usage
 

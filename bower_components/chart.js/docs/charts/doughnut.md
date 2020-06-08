@@ -7,7 +7,7 @@ Pie and doughnut charts are effectively the same class in Chart.js, but have one
 
 They are also registered under two aliases in the `Chart` core. Other than their different default value, and different alias, they are exactly the same.
 
-{% chartjs %}
+{{% chartjs %}}
 {
     "type": "doughnut",
     "data": {
@@ -27,7 +27,7 @@ They are also registered under two aliases in the `Chart` core. Other than their
         }]
     }
 }
-{% endchartjs %}
+{{% endchartjs %}}
 
 ## Example Usage
 
