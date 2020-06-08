@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Energypage</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="myHOME - real estate template project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link From External -->
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS Part ***** -->
+    <link rel="stylesheet" type="text/css" href="styles/energy.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/stylernergy.css">
+    <link rel="stylesheet" type="text/css" href="styles/mainhomepage.css">
+
+    <!-- CSS Part ***** -->
+    <script src="./js/energy.js/Chart.js"></script>
+    <!-- JS Chart Edit *****-->
+
+    <!-- JS Chart Edit *****-->
+
+
+    <!-- JS Link From External -->
+    <!--Chart.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="Chart.min.js"></script> -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+
+<body>
+    <div class="super_container">
+        <!--Header-->
+        <header class="header">
+            <!-- Header Content -->
+            <div class="header_content d-flex flex-row align-items-center justify-content-start"
+                style="background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%)">
+                <div class="logo" style="width: 330px">
+					<a href="home.html" style="color: aliceblue;">MSA Smart Building</a>
+                </div>
+                <nav class="main_nav">
+                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="1st_Floor.html">1st Floor</a></li>
+                        <li><a href="2nd_Floor.html">2nd Floor</a></li>
+                        <li><a href="conference_room.html">Conference Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li class="active"><a href="energypage.html">Energy </a></li>
+                        <li><a href="./smartplug.html">Smart Plug</a></li>
+                        <li><a href="./door.window.html">Security</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="submit ml-auto"><a href="#">Hello admin</a></div> -->
+                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+        </header>
+        <!--Menu-->
+        <div class="menu text-right">
+            <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="menu_log_reg">
+                <div class="log_reg d-flex flex-row align-items-center justify-content-end">
+                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <nav class="menu_nav" style="text-align: left;">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="1st_Floor.html">1st Floor</a></li>
+                        <li><a href="2nd_Floor.html">2nd Floor</a></li>
+                        <li><a href="conference_room.html">Conference Room</a></li>
+                        <li><a href="bedroom.html">Bedroom</a></li>
+                        <li><a href="energypage.html">Energy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container" style="">
+            <div class="row">
+
+                <!-- Energy #1 Start-->
+                <div class="col-lg-6" style="">
+                    <div class="row" style="">
+                        <div style="">
+                            <h4>MSA Control Building Energy Report</h4>
+                        </div>
+                    </div>
+
+                    <!-- Chart start -->
+                    <div class="box" style="">
+                        <div class="chart" style="">
+                            <div id="chartContainer1" style="height: 400px; width: 550px;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chart End -->
+
+                </div>
+                <!-- Energy #1 End-->
+
+                <!-- Energy #2 Start-->
+                <div class="col-lg-6" style="">
+                    <div class="row" style="">
+                        <div style="">
+                            <h4>Battery Energy Reserve</h4>
+                        </div>
+                    </div>
+
+                    <!-- Chart start -->
+                    <div class="box" style="">
+                        <div class="chart" style="">
+                            <div id="chartContainerTest" style="height: 400px; width: 550px;"></div>
+                            <!-- <canvas id="myChart" width="400" height="300"></canvas> -->
+                        </div>
+                    </div>
+                    <!-- Chart End -->
+
+                </div>
+                <!-- Energy #2 End-->
+
+
+            </div>
+            <div class="row">
+                <div class="meter">
+
+                    <!-- Link -->
+                    <li>
+                        <button id="myBtn_remote1" class="SceneStyle">
+                            <a href="http://192.168.10.21" target="_blank">
+                                <h5>Meter 1</h5>
+                            </a>
+
+                        </button>
+                        <button id="myBtn_remote2" class="SceneStyle">
+                            <a href="http://192.168.10.22" target="_blank">
+                                <h5>Meter 2</h5>
+                            </a>
+                        </button>
+                        <button id="myBtn_remote3" class="SceneStyle">
+                            <a href="http://192.168.10.23" target="_blank">
+                                <h5>Meter 3</h5>
+                            </a>
+                        </button>
+                        <button id="myBtn_remote4" class="SceneStyle">
+                            <a href="http://192.168.10.24" target="_blank">
+                                <h5>Meter 4</h5>
+                            </a>
+                        </button>
+                        <button id="myBtn_remote5" class="SceneStyle">
+                            <a href="http://192.168.10.25" target="_blank">
+                                <h5>Meter 5</h5>
+                            </a>
+                        </button>
+                        <button id="myBtn_remote4" class="SceneStyle">
+                            <a href="http://192.168.10.26" target="_blank">
+                                <h5>Meter 6</h5>
+                            </a>
+                        </button>
+                        <button id="myBtn_remote4" class="SceneStyle">
+                            <a href="http://192.168.10.27" target="_blank">
+                                <h5>Meter 7</h5>
+                            </a>
+                        </button>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

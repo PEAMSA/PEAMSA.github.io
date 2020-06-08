@@ -1,0 +1,217 @@
+
+
+
+
+
+
+
+/*Remode Control*/
+.ACremoteControl {
+    width: 320px;
+    height: auto;
+    border: 1px;
+    border-radius: 12px;
+    border-color: #999999;
+    border-style: solid;
+    margin-left: 33%;
+  }
+  
+  .onoffACbutton {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .OffACbutton {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    background: none;
+    background-color: none;
+    background-image: none;
+  }
+  
+  .OnACbutton {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .ACTempControl {
+    width: 100%;
+    display: flex;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    border-color: rgba(116, 122, 132, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* text-align: center; */
+   
+  }
+  
+  .decreaseTemp {
+    width: 95%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .increaseTemp {
+    width: 95%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .TempDisplay {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .TempMonitoring {
+    margin-top: 0px;
+    width: 50%;
+    font-size: 36px;
+    color: rgba(67, 66, 93, 1);
+    text-align: right;
+  }
+  
+  .degreeC {
+    width: 50%;
+    font-size: 30px;
+    color: rgba(67, 66, 93, 1);
+    left: auto;
+    text-align: left;
+  }
+  
+  .ACModeControl {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .CoolMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .DryMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .FanMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  hr {
+      display: block;
+      margin-before: 0.5em;
+      margin-after: 0.5em;
+      margin-start: auto;
+      margin-end: auto;
+      overflow: hidden;
+      border-style: inset;
+      border-width: 1px;
+  }
+  
+  .FanSpeedControl {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .FanSpeedIcon {
+    width: 20%;
+    text-align: center;
+    align-items: bottom;
+  }
+  
+  .FanSpeedNumber {
+    width: 12%;
+    text-align: center;
+    align-items: center;
+  }
+.modal{
+  padding-top: 100px;  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 9px;
+  width: 100%;
+  
+}
+
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    height: 550px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    float: left;
+    border-radius: 12px;
+    
+}
+.modal-body{
+    background-color: #fff;
+    border-radius: 12px;
+    
+    
+
+    
+    
+}
+
+.ACremoteControl{
+    margin: 0px;
+    width: 100%;
+}
+
+
+.device_control_status {
+    width: 48;
+    height: 48;
+    background-color: none;
+    background: none;
+    background-image: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .device_control_status:after {
+    content: "";
+    display: block;
+    margin-left: -20px !important;
+    opacity: 0;
+    transition: all 0.8s;
+    border-radius: 50%;
+  }
+  
+  .device_control_status:active {
+    background-color: #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(0px);
+    border-radius: 50%;
+  }

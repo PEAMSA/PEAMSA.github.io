@@ -1,0 +1,133 @@
+.row_container {
+  padding-top: 10px;
+}
+
+.one_left_scene_control .row_container .row .col-lg-8 h4 {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.two_left .row_container .row .col-lg-8 h4 {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.homeContent {
+  margin-top: 50px;
+}
+
+.home_title {
+  width: 100%;
+  height: 120px;
+  background-color: pink;
+}
+
+.FontMenu {
+  font-size: 20px;
+}
+
+/* .namepage {
+  font-size: 24px;
+  color: white;
+  padding-top: 7px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  background: rgb(154,36,252);
+  background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%);
+  width: 100%;
+  height: 40px;
+} */
+
+.flexbox-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.weather-flexbox {
+  width: 100%;
+  display: flex;
+  vertical-align: middle;
+}
+
+.SummaryEnergyReport {
+  width: 30%;
+  height: 100%;
+}
+
+.BuidingFloorPlan {
+  width: 60%;
+  height: 100%;
+}
+
+.ENVReport {
+  width: 20%;
+  height: 100%;
+}
+
+.weather_report_header {
+  margin-top: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.ENVReportBox {
+  background: rgb(154, 36, 252);
+  background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
+  width: 60%;
+  height: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.ENV_report_card {
+  width: 95%;
+  height: 55px;
+  margin-top: 8px;
+  background: rgb(154, 36, 252);
+  background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
+  border-width: thin;
+  border: 1.5px;
+  border-radius: 16px;
+  border-color: rgba(91, 91, 91, 1) align-items: center;
+  text-align: center;
+  margin-left: 6px;
+}
+
+.weather_report_section {
+  align-items: center;
+  text-align: center;
+}
+
+.Outdoor_weather {
+  margin-top: 10px;
+  width: auto;
+  height: 70%;
+}
+
+.Indoor_weather {
+  margin-top: 10px;
+  width: auto;
+  height: 30%;
+}
+
+.weather_icon {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.weather_measure {
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -20px;
+  width: 50%;
+  color: white;
+}
+
+.report_card_header {
+  color: white;
+}

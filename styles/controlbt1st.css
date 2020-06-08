@@ -1,0 +1,534 @@
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 9px;
+  margin-left: 0%;
+}
+
+/* Modal Content For Scene Control */
+
+.modal-content-bedroom {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+
+  /* Width of Modal: Percent of Screen */
+  width: 30%;
+
+  /* Height of Modal: px  */
+  height: 250px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+
+  /* Modal Position of Screen */
+  float: left;
+}
+
+.modal-content-conferenceroom {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  height: 170px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  float: left;
+}
+
+.modal-content-eoroom {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  height: 140px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  float: left;
+}
+
+.modal-content-hallway {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 30%;
+  height: 140px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  float: left;
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  margin: 0;
+  padding: 10px;
+  background: rgb(154, 36, 252);
+  background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
+  color: white
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.menu_1stfloor li {
+  padding-top: 20px;
+  padding-left: 6px;
+}
+
+.control_1st_floor ul {
+  margin-top: 15px;
+}
+
+.pong {
+  float: left;
+}
+
+.close_officeroom {
+  float: right;
+}
+
+/*switch*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 29px;
+  float: right;
+  margin-right: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 29px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container_switch {
+  float: right;
+}
+
+/* Button in Modal Conference>Welcome */
+
+input.conference_welcome {
+  visibility: hidden;
+}
+
+input.conference_welcome::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.conference_welcome:checked::before {
+  background: yellow;
+  color: black;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Conference>Meeting */
+
+input.conference_meeting {
+  visibility: hidden;
+}
+
+input.conference_meeting::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.conference_meeting:checked::before {
+  background: rgb(204, 0, 0);
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Conference>Show Battery */
+
+input.conference_showbattery {
+  visibility: hidden;
+}
+
+input.conference_showbattery::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.conference_showbattery:checked::before {
+  background: green;
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Conference>Goodbye */
+
+input.conference_goodbye {
+  visibility: hidden;
+}
+
+input.conference_goodbye::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.conference_goodbye:checked::before {
+  background: dimgray;
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Eo>Welcome */
+
+input.eo_welcome {
+  visibility: hidden;
+}
+
+input.eo_welcome::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.eo_welcome:checked::before {
+  background: yellow;
+  color: black;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Eo>Goodbye */
+
+input.eo_goodbye {
+  visibility: hidden;
+}
+
+input.eo_goodbye::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.eo_goodbye:checked::before {
+  background: dimgray;
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Hallway>Automatic */
+
+input.hy_automatic {
+  visibility: hidden;
+}
+
+input.hy_automatic::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.hy_automatic:checked::before {
+  background: blue;
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Hallway>Welcome */
+
+input.hy_welcome {
+  visibility: hidden;
+}
+
+input.hy_welcome::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.hy_welcome:checked::before {
+  background: yellow;
+  color: black;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}
+
+/* Button in Modal Hallway>Goodbye */
+
+input.hy_goodbye {
+  visibility: hidden;
+}
+
+input.hy_goodbye::before {
+  text-align: center;
+  content: attr(value);
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  font-size: 10pt;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  visibility: visible;
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: normal;
+}
+
+input.hy_goodbye:checked::before {
+  background: dimgray;
+  color: #eee;
+  /* border-color: #eee; */
+  height: 35px;
+  width: 110px;
+  cursor: pointer;
+}

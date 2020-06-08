@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>1st_Floor</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="myHOME - real estate template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link From External -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="plugins/greensock/TweenMax.min.js"></script>
+	<script src="plugins/greensock/TimelineMax.min.js"></script>
+	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="plugins/greensock/animation.gsap.min.js"></script>
+	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/progressbar/progressbar.min.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+
+	<!-- CSS Part ***** -->
+	<link rel="stylesheet" type="text/css" href="styles/1st_Floor.css">
+	<link rel="stylesheet" href="styles/controlbt1st.css">
+	<link rel="stylesheet" type="text/css" href="styles/mainhomepage.css">
+	<link rel="stylesheet" href="./styles/responsive.css">
+	<!-- CSS Part ***** -->
+
+	<!-- JS Chart Edit *****-->
+	<!-- <script src="./js/1st_floor.js/conference_room.js"></script>
+	<script src="./js/1st_floor.js/eo_room.js"></script>
+	<script src="./js/1st_floor.js/hallway.js"></script> -->
+
+	<!--  Edit *****-->
+	<script src="js/listings.js"></script>
+
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+		<header class="header">
+
+			<!-- Header Content -->
+			<div class="header_content d-flex flex-row align-items-center justify-content-start"
+				style="background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%)">
+				<div class="logo" style="width: 330px">
+					<a href="home.html" style="color: aliceblue;">MSA Smart Building</a>
+				</div>
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="home.html">Home</a></li>
+						<li class="active"><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./smartplug.html">Smart Plug</a></li>
+						<li><a href="./door.window.html">Security</a></li>
+					</ul>
+				</nav>
+				<!-- <div class="submit ml-auto"><a href="#">Hello admin</a></div> -->
+				<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<div class="menu text-right">
+			<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="menu_log_reg">
+				<!-- <div class="log_reg d-flex flex-row align-items-center justify-content-end">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div> -->
+
+				<nav class="menu_nav" style="text-align: left;">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./door.window.html">Security</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Home -->
+		<div class="homeContent">
+
+			<!-- Cover Header -->
+			<div class="blog">
+				<div class="container" style="padding: 0px">
+					<div class="row">
+
+						<!-- Left Side -->
+						<div class="col-lg-4">
+							<div class="sidebar">
+
+								<!--Energy Report Start-->
+									<!-- Energy Report -->
+									<div class="categories">
+										<div class="sidebar_title">
+											<h3>Energy Report</h3>
+										</div>
+										<div class="sidebar_list">
+											<div class="ContentReport">
+												Total Load:
+												<span class="a" id="Floor1_Total_Load" style="margin-left: 105px;"> waiting </span>
+												<span class="a" style="margin-left: 50px;">kW</span>
+											</div>
+											<div class="ContentReport">
+												Lightings Load:
+												<span class="a" id="kW_Lighting_1" style="margin-left: 77px;"> waiting </span>
+												<span class="a" style="margin-left: 30px;">kW</span>
+											</div>
+											<div class="ContentReport">
+												Outlets Load:
+												<span class="a" id="kW_Outlet_1" style="margin-left: 90px;"> waiting </span>
+												<span class="a" style="margin-left: 30px;">kW</span>
+											</div>
+											<div class="ContentReport">
+												Air-Condition Load:
+												<span class="a" id="kW_Aircon_1" style="margin-left: 50px;"> waiting </span>
+												<span class="a" style="margin-left: 30px;">kW</span>
+											</div>
+										</div>
+									</div>
+
+								<!--Energy Report End-->
+
+								<!--Scene Control-->
+								<div class="archive" style="clear: both;padding-top: 5px">
+									<div class="sidebar_title">
+										<h3>Scene Control</h3>
+									</div>
+									<div class="sidebar_list_control" style="margin-top:30px;">
+										<div class="control_1st_floor">
+
+											<!--Conferenceroom-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_conferenceroom" class="SceneStyle">
+													Conference Room
+												</button>
+
+												<!-- The Modal -->
+												<div id="myModal_conferenceroom" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-conferenceroom"
+														style="border-radius:12px;">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">Conferenceroom</h3>
+
+															<!-- x Mark Click -->
+															<span class="close" style="margin-right: 7px"
+																onclick="conferenceroom()">
+																&times
+															</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_one">
+																<div class="row" style="padding-top:15px;">
+																	<div class="col-lg-6" style="padding-left:30px">
+																		<div class="col-lg-6" style="">
+																			<div style="padding-left: 0px;">
+
+																				<!-- Edit Scene Name -->
+																				<!--
+																					value="Welcome" Edit Scene's Name Value
+																					name="conference_control" Edit Scnen Name Group
+																				 -->
+																				<input class="conference_welcome"
+																					type="radio" value="Welcome"
+																					onclick="con_welcome()"
+																					style="padding-right: 10px;"
+																					name="conference_control">
+
+
+																			</div>
+																		</div>
+																		<div class="col-lg-6"
+																			style="padding-top: 10px;">
+																			<div
+																				style="padding-left: 0px;padding-top: 15px;">
+																				<input class="conference_meeting"
+																					type="radio" value="Meeting"
+																					onclick="con_meeting()"
+																					style="padding-right: 10px;"
+																					name="conference_control">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-6" style="padding-left:10px">
+																		<div class="col-lg-6" style="padding-top:0px;">
+																			<div style="padding-left: 0px;">
+																				<input class="conference_showbattery"
+																					type="radio" value="Show Battery"
+																					onclick="con_showbatery()"
+																					style="padding-right: 10px;"
+																					name="conference_control">
+																			</div>
+
+																		</div>
+																		<div class="col-lg-6" style="padding-top: 10px">
+																			<div
+																				style="padding-left: 0px;padding-top: 15px;">
+																				<input class="conference_goodbye"
+																					type="radio" value="Goodbye"
+																					onclick="con_goodbye()"
+																					style="padding-right: 10px;"
+																					name="conference_control">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</ul>
+											<!--EO Room-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_eoroom" class="SceneStyle">EO Room</button>
+
+												<!-- The Modal -->
+												<div id="myModal_eoroom" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-eoroom">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">EO Room</h3>
+															<span class="close" style="margin-right: 7px"
+																onclick="eoroom()">&times;</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_1stfloor">
+																<div class="row" style="margin-top: 20px">
+																	<div class="col-lg-4" style="padding-left: 10px">
+																		<input class="hy_automatic" type="radio"
+																			value="Automatic" onclick="eo_automatic()"
+																			style="padding-right: 10px;"
+																			name="eo_control">
+																	</div>
+
+																	<div class="col-lg-4" style="padding-left:0px;">
+																		<div style="padding-left: 15px;">
+																			<input class="eo_welcome" type="radio"
+																				value="Welcome" onclick="eo_welcome()"
+																				style="padding-right: 10px;"
+																				name="eo_control">
+																		</div>
+																	</div>
+																	<div class="col-lg-4" style="padding-left:10px">
+																		<div style="padding-left: 0px;">
+																			<input class="eo_goodbye" type="radio"
+																				value="Goodbye" onclick="eo_goodbye()"
+																				style="padding-right: 10px;"
+																				name="eo_control">
+																		</div>
+																	</div>
+
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</ul>
+
+											<!--Hallway-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_hallway" class="SceneStyle">Hallway</button>
+
+												<!-- The Modal -->
+												<div id="myModal_hallway" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-hallway">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">Hallway</h3>
+															<span class="close" style="margin-right: 7px"
+																onclick="hallway()">&times;</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_1stfloor">
+																<div class="row" style="padding-top: 20px;">
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_automatic" type="radio"
+																				value="Automatic"
+																				onclick="hy_automatic()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+																	</div>
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_welcome" type="radio"
+																				value="Welcome" onclick="hy_welcome()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+
+																		<!-- <button onclick="hy_welcome()" type="button"
+																			class="btn btn-outline-warning">Welcome</button> -->
+																	</div>
+
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_goodbye" type="radio"
+																				value="Goodbye" onclick="hy_goodbye()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+																		<!-- <button onclick="hy_goodbye()" type="button"
+																			class="btn btn-outline-dark">Close</button> -->
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</ul>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right Side -->
+						<!-- Pic in .css id="back" -->
+						<div class="col-lg-8" id="back">
+							<!-- Position On Pic -->
+							<div class="blog_posts">
+								<div class="row">
+									<div class="col-5">
+										<!-- EO Room -->
+										<div class="eo_pic">
+											<div class="row">
+												<div class="col-12">
+													<div class="eo_pic" style="padding-top: 120px;">
+														<div class="row">
+															<div class="col-6"
+																style="padding: 0px;padding-left: 125px;">
+																<img id="eo" src="images/goodbye.jpg" alt=""
+																	style="border-radius: 50%; width: 30px;height: 30px;">
+															</div>
+															<div class="col-6" style="padding:0px; margin-top: 9px">
+																<h5>EO Room </h5>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- HallWay -->
+										<div class="hy_pic">
+											<div class="row">
+												<div class="col-12">
+													<div class="eo_pic" style="padding-top: 220px;padding-left: ">
+														<div class="row">
+															<div class="col-8"
+																style="padding: 0px;padding-left: 180px;">
+																<img id="hy" src="images/goodbye.jpg" alt=""
+																	style="border-radius: 50%; width: 30px;height: 30px;">
+															</div>
+															<div class="col-4" style="padding:0px;margin-top: 9px">
+																<h5>Hallway </h5>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-7">
+										<!-- Conference Room -->
+										<div class="con_pic" style="padding-top:340px;padding-left: 20px;">
+											<div class="row">
+												<div class="col-1" style="padding: 0px">
+													<img id="con" src="images/goodbye.jpg" alt=""
+														style="border-radius: 50%; width: 30px;height: 30px;">
+												</div>
+												<div class="col-11" style="padding:0px;margin-top: 9px">
+													<h5>Conference Room </h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
+	<script src="init-firebase.js"></script>
+	<script src="js/1st_floor.js/energyFloor1.js"></script>
+	<script src="js/1st_floor.js/SceenControlFl1.js"></script>
+
+	<!--open_modal_conferenceroom-->
+	<script>
+		// Get the modal
+		var modal_conferenceroom = document.getElementById("myModal_conferenceroom");
+
+		// Get the button that opens the modal
+		var btn_conferenceroom = document.getElementById("myBtn_conferenceroom");
+
+		// Get the <span> element that closes the modal
+		var span_conferenceroom = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_conferenceroom.onclick = function () {
+			console.log("myModal_conferenceroom");
+			modal_conferenceroom.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function conferenceroom() {
+			console.log("Pop-up Conference Modal...");
+			modal_conferenceroom.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+	<!--open_modal_eoroom-->
+	<script>
+		// Get the modal
+		var modal_eoroom = document.getElementById("myModal_eoroom");
+
+		// Get the button that opens the modal
+		var btn_eoroom = document.getElementById("myBtn_eoroom");
+
+		// Get the <span> element that closes the modal
+		var span_eoroom = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_eoroom.onclick = function () {
+			modal_eoroom.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function eoroom() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_eoroom.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+		window.onclick = function (event_eoroom) {
+			if (event_eoroom.target == modal) {
+				modal_eoroom.style.display = "none";
+			}
+		}
+	</script>
+
+	<!-- open_modal_hallway-->
+	<script>
+		// Get the modal
+		var modal_hallway = document.getElementById("myModal_hallway");
+
+		// Get the button that opens the modal
+		var btn_hallway = document.getElementById("myBtn_hallway");
+
+		// Get the <span> element that closes the modal
+		var span_hallway = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_hallway.onclick = function () {
+			modal_hallway.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+
+		function hallway() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_hallway.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal_hallway) {
+				modal_hallway.style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+
+</html>

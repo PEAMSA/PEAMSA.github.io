@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>2nd_Floor</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="myHOME - real estate template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link From External -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- CSS Part ***** -->
+	<link rel="stylesheet" type="text/css" href="styles/2nd_Floor.css">
+	<link rel="stylesheet" href="styles/modalbt2nd.css">
+	<link rel="stylesheet" type="text/css" href="styles/mainhomepage.css">
+	<link rel="stylesheet" href="./styles/responsive.css">
+	<!-- CSS Part ***** -->
+
+	<!-- JS Chart Edit *****-->
+	<script src="./js/2nd_floor.js/office_room_1.js"></script>
+	<script src="./js/2nd_floor.js/office_room_2.js"></script>
+	<script src="./js/2nd_floor.js/mgc_room.js"></script>
+	<script src="./js/2nd_floor.js/hallway.js"></script>
+	<!-- JS Chart Edit *****-->
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+		<header class="header">
+
+			<!-- Header Content -->
+			<div class="header_content d-flex flex-row align-items-center justify-content-start"
+				style="background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%)">
+				<div class="logo" style="width: 330px">
+					<a href="home.html" style="color: aliceblue;">MSA Smart Building</a>
+				</div>
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li class="active"><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./smartplug.html">Smart Plug</a></li>
+						<li><a href="./door.window.html">Security</a></li>
+					</ul>
+				</nav>
+				<!-- <div class="submit ml-auto"><a href="#">Hello admin</a></div> -->
+				<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<div class="menu text-right">
+			<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="menu_log_reg">
+				<!-- <div class="log_reg d-flex flex-row align-items-center justify-content-end">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div> -->
+				<nav class="menu_nav" style="text-align: left;">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Conference Room</a></li>
+						<li><a href="bedroom.html">Bedroom</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./door.window.html">Security</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Home -->
+		<div class="homeContent">
+
+			<!-- Cover Header -->
+			<div class="blog">
+				<div class="container" style="padding: 0px;">
+					<div class="row">
+
+						<!-- Left Side -->
+						<div class="col-lg-4">
+							<div class="sidebar">
+
+								<!-- Energy Report -->
+								<div class="categories">
+									<div class="sidebar_title">
+										<h3>Energy Report</h3>
+									</div>
+									<div class="sidebar_list">
+										<div class="ContentReport">
+											Total Load:
+											<span class="a" id="Floor2_Total_Load" style="margin-left: 105px;"> waiting </span>
+											<span class="a" style="margin-left: 50px;">kW</span>
+										</div>
+										<div class="ContentReport">
+											Lightings Load:
+											<span class="a" id="kW_Lighting_2" style="margin-left: 77px;"> waiting </span>
+											<span class="a" style="margin-left: 30px;">kW</span>
+										</div>
+										<div class="ContentReport">
+											Outlets Load:
+											<span class="a" id="kW_Outlet_2" style="margin-left: 90px;"> waiting </span>
+											<span class="a" style="margin-left: 30px;">kW</span>
+										</div>
+										<div class="ContentReport">
+											Air-Condition Load:
+											<span class="a" id="kW_Aircon_2" style="margin-left: 50px;"> waiting </span>
+											<span class="a" style="margin-left: 30px;">kW</span>
+										</div>
+										<div class="ContentReport">
+											Critical Load:
+											<span class="a" id="kW_Criticalload" style="margin-left: 95px;">
+												waiting
+											</span>
+											<span class="a" style="margin-left: 30px;">
+												kW
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Scene Control -->
+								<div class="archive" style="clear: both; padding-top: 5px;">
+									<div class="sidebar_title">
+										<h3>Scene Control</h3>
+									</div>
+									<div class="sidebar_list_control" style="margin-top:30px;">
+										<div class="control_2nd_floor">
+
+											<!--Office room 1 new-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_officeroom1" class="SceneStyle">Office
+													Room 1</button>
+
+												<!-- The Modal -->
+												<div id="myModal_officeroom1" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-officeroom1"
+														style="border-radius:12px;">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">Office Room 1</h3>
+
+															<!-- x Mark Click -->
+															<span class="close" style="margin-right: 7px"
+																onclick="officeroom1()">&times;</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_one">
+																<div class="row" style="padding-top:15px;">
+																	<div class="col-lg-6" style="padding-left:30px">
+																		<div class="col-lg-6" style="">
+																			<div style="padding-left: 0px;">
+
+																				<!-- Edit Scene Name -->
+																				<!--
+																					value="Welcome" Edit Scene's Name Value
+																					name="conference_control" Edit Scnen Name Group
+																				 -->
+																				<input class="or1_welcome"
+																					type="radio" value="Welcome"
+																					onclick="or1_welcome()"
+																					style="padding-right: 10px;"
+																					name="officeroom1_control">
+
+
+																			</div>
+																		</div>
+																		<div class="col-lg-6"
+																			style="padding-top: 10px;">
+																			<div
+																				style="padding-left: 0px;padding-top: 15px;">
+																				<input class="or1_goodbye"
+																					type="radio" value="Goodbye"
+																					onclick="or1_goodbye()"
+																					style="padding-right: 10px;"
+																					name="officeroom1_control">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="col-lg-6" style="padding-left:10px">
+																		<div class="col-lg-6" style="padding-top:0px;">
+																			<div style="padding-left: 0px;">
+																				<input class="or1_curtain_open"
+																					type="radio" value="Curtain Open"
+																					onclick="or1_curtain_open()"
+																					style="padding-right: 10px;"
+																					name="officeroom1_control">
+																			</div>
+
+																		</div>
+																		<div class="col-lg-6" style="padding-top: 10px">
+																			<div
+																				style="padding-left: 0px;padding-top: 15px;">
+																				<input class="or1_curtain_close"
+																					type="radio" value="Curtain Close"
+																					onclick="or1_curtain_close()"
+																					style="padding-right: 10px;"
+																					name="officeroom1_control">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</ul>
+	<!--Office room 1 new end-->
+
+
+	<!--Office room 2 new-->
+	<ul>
+		<!-- Trigger/Open The Modal -->
+		<button id="myBtn_officeroom2" class="SceneStyle">Office
+			Room 2</button>
+
+		<!-- The Modal -->
+		<div id="myModal_officeroom2" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content-officeroom2"
+				style="border-radius:12px;">
+				<div class="modal-header">
+					<h3 style="margin-left: 10px">Office Room 2</h3>
+
+					<!-- x Mark Click -->
+					<span class="close" style="margin-right: 7px"
+						onclick="officeroom2()">&times;</span>
+				</div>
+				<div class="modal-body">
+					<div class="menu_one">
+						<div class="row" style="padding-top:15px;">
+							<div class="col-lg-6" style="padding-left:30px">
+								<div class="col-lg-6" style="">
+									<div style="padding-left: 0px;">
+
+										<!-- Edit Scene Name -->
+										<!--
+											value="Welcome" Edit Scene's Name Value
+											name="conference_control" Edit Scnen Name Group
+										 -->
+										<input class="or2_welcome"
+											type="radio" value="Welcome"
+											onclick="or2_welcome()"
+											style="padding-right: 10px;"
+											name="officeroom2_control">
+
+
+									</div>
+								</div>
+								<div class="col-lg-6"
+									style="padding-top: 10px;">
+									<div
+										style="padding-left: 0px;padding-top: 15px;">
+										<input class="or2_goodbye"
+											type="radio" value="Goodbye"
+											onclick="or2_goodbye()"
+											style="padding-right: 10px;"
+											name="officeroom2_control">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6" style="padding-left:10px">
+								<div class="col-lg-6" style="padding-top:0px;">
+									<div style="padding-left: 0px;">
+										<input class="or2_curtain_open"
+											type="radio" value="Curtain Open"
+											onclick="or2_curtain_open()"
+											style="padding-right: 10px;"
+											name="officeroom2_control">
+									</div>
+
+								</div>
+								<div class="col-lg-6" style="padding-top: 10px">
+									<div
+										style="padding-left: 0px;padding-top: 15px;">
+										<input class="or2_curtain_close"
+											type="radio" value="Curtain Close"
+											onclick="or2_curtain_close()"
+											style="padding-right: 10px;"
+											name="officeroom2_control">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</ul>
+<!--Office room 1 new end-->
+
+
+
+
+
+
+
+											<!--MGC Control-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_maincontrol" class="SceneStyle">MGC Room</button>
+
+												<!-- The Modal -->
+												<div id="myModal_maincontrol" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-maincontrol">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">MGC Room</h3>
+															<span class="close" style="margin-right: 7px"
+																onclick="maincontrol()">&times;</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_2ndfloor">
+																<div class="row" style="margin-top: 20px">
+																	<div class="col-lg-4">
+																		<div style="padding-left: 0px;">
+																			<input class="mc_automatic" type="radio"
+																				value="Automatic"
+																				onclick="mc_automatic()"
+																				style="padding-right: 10px;"
+																				name="mc_control">
+																		</div>
+																	</div>
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="mc_welcome" type="radio"
+																				value="Welcome" onclick="mc_welcome()"
+																				style="padding-left: 10px;"
+																				name="mc_control">
+																		</div>
+																		<!-- <button onclick="mc_welcome()" type="button"
+																			class="btn btn-outline-warning">Welcome</button> -->
+																	</div>
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="mc_goodbye" type="radio"
+																				value="Goodbye" onclick="mc_goodbye()"
+																				style="padding-right: px;"
+																				name="mc_control">
+																		</div>
+																		<!-- <button onclick="mc_goodbye()" type="button"
+																			class="btn btn-outline-dark">Goodbye</button> -->
+																	</div>
+
+																	<!-- <div class="col-lg-8">
+																		<h4 style="padding-top:5px;">Welcome</h4>
+																		<h4 style="padding-top: 15px;">Goodbye</h4>
+																	</div>
+																	<div class="col-lg-4">
+																		<label class="switch">
+																			<input type="checkbox" checked>
+																			<span class="slider round"></span>
+																		</label>
+																		<label class="switch">
+																			<input type="checkbox" checked>
+																			<span class="slider round"></span>
+																		</label>
+																	</div> -->
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</ul>
+											<!--Hallway-->
+											<ul>
+												<!-- Trigger/Open The Modal -->
+												<button id="myBtn_hallway" class="SceneStyle">Hallway</button>
+
+												<!-- The Modal -->
+												<div id="myModal_hallway" class="modal">
+
+													<!-- Modal content -->
+													<div class="modal-content-hallway">
+														<div class="modal-header">
+															<h3 style="margin-left: 10px">Hallway</h3>
+															<span class="close" style="margin-right: 7px"
+																onclick="hallway()">&times;</span>
+														</div>
+														<div class="modal-body">
+															<div class="menu_2ndfloor">
+																<div class="row" style="margin-top: 20px;">
+
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_automatic" type="radio"
+																				value="Automatic"
+																				onclick="hy_automatic()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+																	</div>
+
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_welcome" type="radio"
+																				value="Welcome" onclick="hy_welcome()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+																	</div>
+
+																	<div class="col-lg-4" style="">
+																		<div style="padding-left: 0px;">
+																			<input class="hy_goodbye" type="radio"
+																				value="Goodbye" onclick="hy_goodbye()"
+																				style="padding-right: 10px;"
+																				name="hy_control">
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right Side -->
+						<!-- Pic in .css id="back" -->
+						<div class="col-lg-8" id="back">
+							<!-- Position On Pic -->
+							<div class="blog_posts">
+								<div class="row" style="height: 500px;">
+									<div class="col-5">
+										<!-- HallWay -->
+										<div class="h_pic" style="margin-top: 260px;margin-left: 70px">
+											<div class="row">
+												<div class="col-9" style="padding: 0px ;padding-left: 155px;">
+													<img id="hy" src="images/goodbye.jpg" alt=""
+														style="border-radius: 50%; width: 30px;height: 30px;">
+												</div>
+												<div class="col-3" style="padding:0px;margin-top: 9px">
+													<h5>Hallway</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-7" style="padding: 0px">
+										<!-- Office Room 1 -->
+										<div class="or1_pic" style="margin-top: 88px; margin-left: 20px;">
+											<div class="row">
+												<div class="col-1" style="padding: 0px ;">
+													<img id="or1" src="images/goodbye.jpg" alt=""
+														style="border-radius: 50%; width: 30px;height: 30px;">
+												</div>
+												<div class="col-11" style="padding:0px;margin-top: 9px">
+													<h5>Office Room 1</h5>
+												</div>
+											</div>
+										</div>
+
+										<!-- Main Control -->
+										<div class="mc_pic" style="margin-top: 80px;margin-left: 50px;">
+											<div class="row">
+												<div class="col-1" style="padding: 0px ;">
+													<img id="mc" src="images/goodbye.jpg" alt=""
+														style="border-radius: 50%; width: 30px;height: 30px;">
+												</div>
+												<div class="col-11" style="padding:0px;margin-top: 9px">
+													<h5>MGC Room</h5>
+												</div>
+											</div>
+										</div>
+
+										<!-- Office Room 2 -->
+										<div class="or2_pic" style="margin-top: 160px; margin-left:20px;">
+											<div class="row">
+												<div class="col-1" style="padding: 0px ;">
+													<img id="or2" src="images/goodbye.jpg" alt=""
+														style="border-radius: 50%; width: 30px;height: 30px;">
+												</div>
+												<div class="col-11" style="padding:0px;margin-top: 9px">
+													<h5>Office Room 2</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
+	<script src="init-firebase.js"></script>
+	<script src="js/2nd_floor.js/energyFloor2.js"></script>
+
+	<!--open_modal_officeroom1-->
+	<script>
+
+		// Get the modal
+		var modal_officeroom1 = document.getElementById("myModal_officeroom1");
+
+		// Get the button that opens the modal
+		var btn_officeroom1 = document.getElementById("myBtn_officeroom1");
+
+		// Get the <span> element that closes the modal
+		var span_officeroom1 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_officeroom1.onclick = function () {
+			console.log("myModal_officeroom1");
+			modal_officeroom1.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function officeroom1() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_officeroom1.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+
+	</script>
+
+	<!--open_modal_officeroom2-->
+	<script>
+
+		// Get the modal
+		var modal_officeroom2 = document.getElementById("myModal_officeroom2");
+
+		// Get the button that opens the modal
+		var btn_officeroom2 = document.getElementById("myBtn_officeroom2");
+
+		// Get the <span> element that closes the modal
+		var span_officeroom2 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_officeroom2.onclick = function () {
+			console.log("myModal_officeroom2");
+			modal_officeroom2.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function officeroom2() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_officeroom2.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+	<!--open_modal_maincontrol-->
+	<script>
+
+		// Get the modal
+		var modal_maincontrol = document.getElementById("myModal_maincontrol");
+
+		// Get the button that opens the modal
+		var btn_maincontrol = document.getElementById("myBtn_maincontrol");
+
+		// Get the <span> element that closes the modal
+		var span_maincontrol = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_maincontrol.onclick = function () {
+			modal_maincontrol.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function maincontrol() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_maincontrol.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event_maincontrol) {
+			if (event_maincontrol.target == modal) {
+				modal_maincontrol.style.display = "none";
+			}
+		}
+
+	</script>
+
+	<!-- open_modal_hallway-->
+	<script>
+
+		// Get the modal
+		var modal_hallway = document.getElementById("myModal_hallway");
+
+		// Get the button that opens the modal
+		var btn_hallway = document.getElementById("myBtn_hallway");
+
+		// Get the <span> element that closes the modal
+		var span_hallway = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_hallway.onclick = function () {
+			modal_hallway.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+
+		function hallway() {
+			console.log("rfgfhgcfchxedhgbhjbmhbhjbh");
+			modal_hallway.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal_hallway) {
+				modal_hallway.style.display = "none";
+			}
+		}
+
+	</script>
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="plugins/greensock/TweenMax.min.js"></script>
+	<script src="plugins/greensock/TimelineMax.min.js"></script>
+	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="plugins/greensock/animation.gsap.min.js"></script>
+	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/progressbar/progressbar.min.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="js/blog.js"></script>
+</body>
+
+</html>
