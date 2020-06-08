@@ -3,7 +3,7 @@ A radar chart is a way of showing multiple data points and the variation between
 
 They are often useful for comparing the points of two or more different data sets.
 
-{% chartjs %}
+{{% chartjs %}}
 {
     "type": "radar",
     "data": {
@@ -49,7 +49,7 @@ They are often useful for comparing the points of two or more different data set
         }
     }
 }
-{% endchartjs %}
+{{% endchartjs %}}
 
 ## Example Usage
 ```javascript
