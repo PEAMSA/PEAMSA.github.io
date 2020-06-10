@@ -15,7 +15,7 @@ function scene_welcome() {
     },
     contentType: "application/x-www-form-urlencoded",
     data: {
-      "scene_id": "fl1_scene041",
+      "scene_id": "fl1_scene031",
     },
   })
 .done(function (data, textStatus, jqXHR) {
@@ -51,7 +51,7 @@ function scene_goodnight() {
     },
     contentType: "application/x-www-form-urlencoded",
     data: {
-      "scene_id": "fl1_scene042",
+      "scene_id": "fl1_scene032",
     },
   })
     .done(function (data, textStatus, jqXHR) {
@@ -87,7 +87,7 @@ function scene_goodbye() {
     },
     contentType: "application/x-www-form-urlencoded",
     data: {
-      "scene_id": "fl1_scene043",
+      "scene_id": "fl1_scene033",
     },
   })
     .done(function (data, textStatus, jqXHR) {

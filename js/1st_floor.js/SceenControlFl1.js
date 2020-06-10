@@ -16,7 +16,7 @@ function con_welcome() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene011",
+        "scene_id": "fl1_scene021",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -51,7 +51,7 @@ function con_meeting() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene012",
+        "scene_id": "fl1_scene023",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -86,7 +86,7 @@ function con_goodbye() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene013",
+        "scene_id": "fl1_scene024",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -121,7 +121,7 @@ function con_showbatery() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene014",
+        "scene_id": "fl1_scene022",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -156,7 +156,7 @@ function eo_welcome() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene021",
+        "scene_id": "fl1_scene011",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -189,7 +189,7 @@ function eo_automatic() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene022",
+        "scene_id": "fl1_scene013",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -222,7 +222,7 @@ function eo_goodbye() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene023",
+        "scene_id": "fl1_scene012",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -257,7 +257,7 @@ function hy_welcome() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene031",
+        "scene_id": "fl1_scene042",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -290,7 +290,7 @@ function hy_automatic() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene032",
+        "scene_id": "fl1_scene041",
       },
     })
   .done(function (data, textStatus, jqXHR) {
@@ -323,7 +323,7 @@ function hy_goodbye() {
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
-        "scene_id": "fl1_scene033",
+        "scene_id": "fl1_scene043",
       },
     })
   .done(function (data, textStatus, jqXHR) {
