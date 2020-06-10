@@ -6,7 +6,7 @@ ref_bedroom_AC.on("value", function(snapshot) {
     console.log("Get ref_bedroom_AC from firebase")
     var bedroom_AC = snapshot.val();
     var Status_bedroom_AC = bedroom_AC["STATUS"];
-    var temp_bedroom_AC = bedroom_AC["TEMPERATURE"];
+    var temp_bedroom_AC = bedroom_AC["SET_TEMPERATURE"];
     console.log("Get Status bedroom AC: ")
     console.log("bedroom_AC is: " + Status_bedroom_AC + " and temperature is: " + temp_bedroom_AC);
     document.getElementById("result").innerHTML = temp_bedroom_AC;
