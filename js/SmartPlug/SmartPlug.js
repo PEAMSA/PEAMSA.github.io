@@ -115,6 +115,8 @@ function smartplug2(devieID_smart_plug_2) {
         Status_smart_plug_2 = "OFF"
     }
     //
+    console.log(devieID_smart_plug_2)
+    console.log(Status_smart_plug_2)
     console.log("POST method by jQuery");
     jQuery.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
@@ -127,11 +129,11 @@ function smartplug2(devieID_smart_plug_2) {
             "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
-        data: JSON.stringify({
+        data: {
             "device_type": "plug",
             "device_id": devieID_smart_plug_2,
             "status": Status_smart_plug_2,
-        })
+        },
     })
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -202,11 +204,11 @@ function smartplug3(devieID_smart_plug_3) {
             "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
-        data: JSON.stringify({
+        data: {
             "device_type": "plug",
             "device_id": devieID_smart_plug_3,
             "status": Status_smart_plug_3,
-        })
+        },
     })
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -277,11 +279,11 @@ function smartplug4(devieID_smart_plug_4) {
             "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
-        data: JSON.stringify({
+        data: {
             "device_type": "plug",
             "device_id": devieID_smart_plug_4,
             "status": Status_smart_plug_4,
-        })
+        },
     })
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -352,11 +354,11 @@ function smartplug5(devieID_smart_plug_5) {
             "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
-        data: JSON.stringify({
+        data: {
             "device_type": "plug",
             "device_id": devieID_smart_plug_5,
             "status": Status_smart_plug_5,
-        })
+        },
     })
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
@@ -427,11 +429,11 @@ function smartplug6(devieID_smart_plug_6) {
             "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
-        data: JSON.stringify({
+        data: {
             "device_type": "plug",
             "device_id": devieID_smart_plug_6,
             "status": Status_smart_plug_6,
-        })
+        },
     })
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
