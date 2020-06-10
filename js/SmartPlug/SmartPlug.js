@@ -1,4 +1,4 @@
-//Smart Plug 1
+//Smart Plug 1: TV in Conference Room
 // Retrieve data from Firebase for Checking Device Status
 var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devicetype").child("plug");
 var ref_smart_plug_1 = ref_devices_data.child("SP101001");
@@ -7,9 +7,9 @@ ref_smart_plug_1.on("value", function(snapshot) {
     console.log("Get smart_plug_1 from firebase")
     var smart_plug_1 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_1").innerHTML = smart_plug_1["POWER"].toFixed(2);
-    document.getElementById("V_Plug_1").innerHTML = smart_plug_1["VOLTAGE"];
-    document.getElementById("I_Plug_1").innerHTML = smart_plug_1["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_1").innerHTML = Number(smart_plug_1["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_1").innerHTML = Number(smart_plug_1["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_1").innerHTML = Number(smart_plug_1["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_1 = smart_plug_1["STATUS"];
     console.log(Status_smart_plug_1);
@@ -82,9 +82,9 @@ ref_smart_plug_2.on("value", function(snapshot) {
     console.log("Get smart_plug_2 from firebase")
     var smart_plug_2 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_2").innerHTML = smart_plug_2["POWER"].toFixed(2);
-    document.getElementById("V_Plug_2").innerHTML = smart_plug_2["VOLTAGE"];
-    document.getElementById("I_Plug_2").innerHTML = smart_plug_2["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_2").innerHTML = Number(smart_plug_2["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_2").innerHTML = Number(smart_plug_2["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_2").innerHTML = Number(smart_plug_2["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_2 = smart_plug_2["STATUS"];
     console.log(Status_smart_plug_2);
@@ -157,9 +157,9 @@ ref_smart_plug_3.on("value", function(snapshot) {
     console.log("Get smart_plug_3 from firebase")
     var smart_plug_3 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_3").innerHTML = smart_plug_3["POWER"].toFixed(2);
-    document.getElementById("V_Plug_3").innerHTML = smart_plug_3["VOLTAGE"];
-    document.getElementById("I_Plug_3").innerHTML = smart_plug_3["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_3").innerHTML = Number(smart_plug_3["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_3").innerHTML = Number(smart_plug_3["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_3").innerHTML = Number(smart_plug_3["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_3 = smart_plug_3["STATUS"];
     console.log(Status_smart_plug_3);
@@ -232,9 +232,9 @@ ref_smart_plug_4.on("value", function(snapshot) {
     console.log("Get smart_plug_4 from firebase")
     var smart_plug_4 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_4").innerHTML = smart_plug_4["POWER"].toFixed(2);
-    document.getElementById("V_Plug_4").innerHTML = smart_plug_4["VOLTAGE"];
-    document.getElementById("I_Plug_4").innerHTML = smart_plug_4["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_4").innerHTML = Number(smart_plug_4["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_4").innerHTML = Number(smart_plug_4["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_4").innerHTML = Number(smart_plug_4["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_4 = smart_plug_4["STATUS"];
     console.log(Status_smart_plug_4);
@@ -307,9 +307,9 @@ ref_smart_plug_5.on("value", function(snapshot) {
     console.log("Get smart_plug_5 from firebase")
     var smart_plug_5 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_5").innerHTML = smart_plug_5["POWER"].toFixed(2);
-    document.getElementById("V_Plug_5").innerHTML = smart_plug_5["VOLTAGE"];
-    document.getElementById("I_Plug_5").innerHTML = smart_plug_5["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_5").innerHTML = Number(smart_plug_5["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_5").innerHTML = Number(smart_plug_5["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_5").innerHTML = Number(smart_plug_5["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_5 = smart_plug_5["STATUS"];
     console.log(Status_smart_plug_5);
@@ -382,9 +382,9 @@ ref_smart_plug_6.on("value", function(snapshot) {
     console.log("Get smart_plug_6 from firebase")
     var smart_plug_6 = snapshot.val();
     // console.log(smart_plug_1["CURRENT"])
-    document.getElementById("kW_Plug_6").innerHTML = smart_plug_6["POWER"].toFixed(2);
-    document.getElementById("V_Plug_6").innerHTML = smart_plug_6["VOLTAGE"];
-    document.getElementById("I_Plug_6").innerHTML = smart_plug_6["CURRENT"].toFixed(2);
+    document.getElementById("kW_Plug_6").innerHTML = Number(smart_plug_6["POWER"]).toFixed(2);
+    document.getElementById("V_Plug_6").innerHTML = Number(smart_plug_6["VOLTAGE"]).toFixed(2);
+    document.getElementById("I_Plug_6").innerHTML = Number(smart_plug_6["CURRENT"]).toFixed(2);
     // Recheck Device Status from Firebase //
     var Status_smart_plug_6 = smart_plug_6["STATUS"];
     console.log(Status_smart_plug_6);
