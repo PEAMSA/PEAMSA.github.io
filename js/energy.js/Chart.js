@@ -68,8 +68,15 @@ window.onload = function () {
         title: {
             // text: "MSA Control Building Energy Report"
         },
+        axisX:{
+            interval:8, 
+            intervalType: "hour",        
+            valueFormatString: "hh:mm", 
+            labelAngle: 0
+          },
         axisY: {
-            title: "Energy (W)"
+            title: "Energy (W)",
+            minimum: 0,
         },
         toolTip: {
             shared: true
@@ -170,7 +177,10 @@ window.onload = function () {
             // text: "MSA Control Building Energy Report"
         },
         axisY: {
-            title: "%SOC Battery"
+            title: "%SOC Battery",
+            minimum: 0,
+            maximum: 100,
+            interval: 20,
         },
         toolTip: {
             shared: true

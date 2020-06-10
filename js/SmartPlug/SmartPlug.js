@@ -54,7 +54,7 @@ function smartplug1(devieID_smart_plug_1) {
         contentType: "application/x-www-form-urlencoded",
         data: {
             "device_type": "plug",
-            "device_id": "plug001",
+            "device_id": devieID_smart_plug_1,
             "status": Status_smart_plug_1,
         },
         })
@@ -129,7 +129,7 @@ function smartplug2(devieID_smart_plug_2) {
         contentType: "application/x-www-form-urlencoded",
         data: JSON.stringify({
             "device_type": "plug",
-            "device_id": "plug002",
+            "device_id": devieID_smart_plug_2,
             "status": Status_smart_plug_2,
         })
     })
@@ -204,7 +204,7 @@ function smartplug3(devieID_smart_plug_3) {
         contentType: "application/x-www-form-urlencoded",
         data: JSON.stringify({
             "device_type": "plug",
-            "device_id": "plug003",
+            "device_id": devieID_smart_plug_3,
             "status": Status_smart_plug_3,
         })
     })
@@ -279,7 +279,7 @@ function smartplug4(devieID_smart_plug_4) {
         contentType: "application/x-www-form-urlencoded",
         data: JSON.stringify({
             "device_type": "plug",
-            "device_id": "plug004",
+            "device_id": devieID_smart_plug_4,
             "status": Status_smart_plug_4,
         })
     })
@@ -354,7 +354,7 @@ function smartplug5(devieID_smart_plug_5) {
         contentType: "application/x-www-form-urlencoded",
         data: JSON.stringify({
             "device_type": "plug",
-            "device_id": "plug005",
+            "device_id": devieID_smart_plug_5,
             "status": Status_smart_plug_5,
         })
     })
@@ -429,7 +429,7 @@ function smartplug6(devieID_smart_plug_6) {
         contentType: "application/x-www-form-urlencoded",
         data: JSON.stringify({
             "device_type": "plug",
-            "device_id": "plug006",
+            "device_id": devieID_smart_plug_6,
             "status": Status_smart_plug_6,
         })
     })
