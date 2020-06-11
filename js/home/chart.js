@@ -28,11 +28,18 @@ ref_battery_data.on("value", function(snapshot) {
 var cal_Total_PowerMeter = parseInt(localStorage.getItem("Total_PowerMeter_local"));
 var cal_PV_Total_Power = parseInt(localStorage.getItem("PV_Total_Power_local"));
 var cal_Battery_Export_Power = parseInt(localStorage.getItem("Battery_Export_Power_local"));
-var cal_Grid_Import = Math.abs(cal_Total_PowerMeter - cal_PV_Total_Power);
-var Total_MSA_Load = cal_Total_PowerMeter + cal_PV_Total_Power;
-var ratio_grid = 100 * (cal_Grid_Import / Total_MSA_Load).toFixed(2);
-var ratio_PV = 100 * (cal_PV_Total_Power / Total_MSA_Load).toFixed(2);
-var ratio_batt = 100 * (cal_Battery_Export_Power / Total_MSA_Load).toFixed(2);
+
+if ( (cal_Total_PowerMeter == "NaN") || (cal_PV_Total_Power == "NaN") || (cal_Battery_Export_Power == "NaN")) {
+    var ratio_grid = 100;
+    var ratio_PV = 0;
+    var ratio_batt = 0;
+} else {
+    var cal_Grid_Import = Math.abs(cal_Total_PowerMeter - cal_PV_Total_Power);
+    var Total_MSA_Load = cal_Total_PowerMeter + cal_PV_Total_Power;
+    var ratio_grid = 100 * (cal_Grid_Import / Total_MSA_Load).toFixed(2);
+    var ratio_PV = 100 * (cal_PV_Total_Power / Total_MSA_Load).toFixed(2);
+    var ratio_batt = 100 * (cal_Battery_Export_Power / Total_MSA_Load).toFixed(2);
+    }
 
 display_source_ratio(ratio_grid, ratio_PV, ratio_batt);
 
@@ -64,3 +71,9 @@ function display_source_ratio(ratio_grid, ratio_PV, ratio_batt) {
     });
     chart.render();
 }
+
+// Set time for refresh page:
+// setTimeout(function(){
+//     location.reload();
+// },15000);
+// ---------------------- //
