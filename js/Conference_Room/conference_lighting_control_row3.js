@@ -7,13 +7,10 @@ var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devic
 var ref_lighting_row_3 = ref_devices_data.child("yyyyyy");
 
 ref_lighting_row_3.on("value", function(snapshot) {
-    console.log("Get lighting_row_3 from firebase")
     var lighting_row_3 = snapshot.val();
-    // console.log(smart_plug_1["CURRENT"])
     document.getElementById("xxx").innerHTML = lighting_row_3["STATUS"];
     // Recheck Device Status from Firebase // 
     var Status_lighting_row_3 = lighting_row_3["STATUS"];
-    console.log(Status_lighting_row_3);
     Status_lighting_row_3_changeImage(Status_lighting_row_3)
     var Status_lighting_row_3_Local = localStorage.setItem("Status_lighting_row_3_Local", Status_lighting_row_3)
   });
@@ -38,17 +35,12 @@ function Status_lighting_row_3_changeImage(Status_lighting_row_3) {
 
 //  On/Off Lighting Row 3
 function lightingrow3(devieID_lighting_row_3) {
-    console.log("-----Control_Lighting_row_3-----");
-    console.log(devieID_lighting_row_3)
-    console.log(localStorage.getItem("Status_lighting_row_3_Local"))
-    //
     var Status_lighting_row_3 = localStorage.getItem("Status_lighting_row_3_Local")
     if (Status_lighting_row_3 == "OFF") {
       Status_lighting_row_3 = "ON"
     } else {
       Status_lighting_row_3 = "OFF"
     }
-    //
     lighting3_post_data = { 
         device_type: "lighting",
         device_id: devieID_lighting_row_3, 

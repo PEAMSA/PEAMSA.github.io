@@ -2,7 +2,6 @@
 // Scene Control Wecome Start
 function con_welcome() {
     console.log("Activate Scene: Welcome:");
-    //
     console.log("POST method by jQuery");
     jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
@@ -37,7 +36,6 @@ function con_welcome() {
 
 function con_showbatery() {
   console.log("Activate Scene: Show Battery:");
-  //
   console.log("POST method by jQuery");
   jQuery.ajax({
     url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
@@ -55,7 +53,7 @@ function con_showbatery() {
       "scene_id": "fl1_scene022",
     },
   })
-.done(function (data, textStatus, jqXHR) {
+    .done(function (data, textStatus, jqXHR) {
       console.log("HTTP Request Succeeded: " + jqXHR.status);
       console.log(data);
     })
@@ -74,7 +72,6 @@ function con_showbatery() {
 // Scene Control Meeting Start
 function con_meeting() {
     console.log("Activate Scene: Meeting:");
-    //
     console.log("POST method by jQuery");
     jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
@@ -91,7 +88,7 @@ function con_meeting() {
         "scene_id": "fl1_scene023",
       },
     })
-  .done(function (data, textStatus, jqXHR) {
+      .done(function (data, textStatus, jqXHR) {
         console.log("HTTP Request Succeeded: " + jqXHR.status);
         console.log(data);
       })
@@ -109,7 +106,6 @@ function con_meeting() {
 // Scene Control Good Bye Start
 function con_goodbye() {
     console.log("Activate Scene: Good Bye:");
-    //
     console.log("POST method by jQuery");
     jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
@@ -126,7 +122,7 @@ function con_goodbye() {
         "scene_id": "fl1_scene024",
       },
     })
-  .done(function (data, textStatus, jqXHR) {
+      .done(function (data, textStatus, jqXHR) {
         console.log("HTTP Request Succeeded: " + jqXHR.status);
         console.log(data);
       })

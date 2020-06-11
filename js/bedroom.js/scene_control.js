@@ -1,7 +1,5 @@
 // Scene Control Wecome Start
 function scene_welcome() {
-  console.log("Activate Scene: Welcome:");
-  //
   console.log("POST method by jQuery");
   jQuery.ajax({
     url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
