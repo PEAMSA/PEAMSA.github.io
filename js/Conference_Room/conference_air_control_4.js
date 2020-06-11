@@ -3,14 +3,11 @@ var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devic
 var ref_conference_AC_4 = ref_devices_data.child("AC101001");
 
 ref_conference_AC_4.on("value", function(snapshot) {
-    console.log("Get conference_AC_4 from firebase")
     var conference_AC_4 = snapshot.val();
     var Status_conference_AC_4 = conference_AC_4["STATUS"];
     var temp_conference_AC_4 = conference_AC_4["SET_TEMPERATURE"];
     var fan_speed_conference_AC_4 = conference_AC_4["FAN_SPEED"];
     var mode_conference_AC_4 = conference_AC_4["MODE"];
-    console.log("Get Status Conference AC 4: ")
-    console.log("Conference AC 4 is: " + Status_conference_AC_4 + " and temperature is: " + temp_conference_AC_4);
     document.getElementById("result4").innerHTML = temp_conference_AC_4;
     localStorage.setItem("temp_conference_AC_4_local", temp_conference_AC_4)
     localStorage.setItem("fan_speed_conference_AC_4_local", fan_speed_conference_AC_4)
@@ -32,7 +29,6 @@ function Status_conference_AC_4_changeImage(Status_conference_AC_4) {
 }
 
 function Status_remote_AC_changeImage(Status_conference_AC_4, fan_speed_conference_AC_4, mode_conference_AC_4) {
-    console.log("------- Status_remote_AC_4_changeImage -------")
     var image1 = document.getElementById('ac4_cool');
     var image2 = document.getElementById('ac4_dry');
     var image3 = document.getElementById('ac4_fan');
@@ -124,8 +120,6 @@ function Status_remote_AC_changeImage(Status_conference_AC_4, fan_speed_conferen
 // On
 function turn_on_con_ac_4(device_id) {
     console.log("turn_on_con_ac_4" + device_id);
-    console.log(device_id)
-    //
     console.log("POST method by jQuery");
     jQuery.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
@@ -159,8 +153,6 @@ function turn_on_con_ac_4(device_id) {
 // Off
 function turn_off_con_ac_4(device_id) {
     console.log("turn_off_con_ac_4" + device_id);
-    console.log(device_id)
-    //
     console.log("POST method by jQuery");
     jQuery.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
@@ -216,9 +208,7 @@ function summit_air4(device_id) {
                           device_id: device_id, 
                           command: JSON.stringify({status:"ON",mode:"COLD",FAN: fan_speed_conference_AC_4_local,stemp: score_AC4.toString()} 
                           )};
-    console.log(set_temp_data)
     console.log(device_id + " adjust Con_1 AC Temp: " + score_AC4 + "degreeC")
-    console.log("Please wait...we are adjusting your AC temp.")
     jQuery.ajax({
         url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
@@ -249,9 +239,7 @@ function summit_air4(device_id) {
 function CoolModeControl_4(device_id) {
     var fan_speed_conference_AC_4_local = localStorage.getItem("fan_speed_conference_AC_4_local");
     var mode_conference_AC_4_local = "COLD";
-    console.log("CoolModeControl_4")
-    console.log(device_id + " cool mode control: COOL");
-    console.log("Temp is : " + score_AC4)
+    console.log(device_id + " cool mode control: COOL. And " + "Temp is : " + score_AC4);
     var set_mode_data = {   device_type: "AC",
                             device_id: device_id, 
                             command: JSON.stringify({status:"ON",mode: mode_conference_AC_4_local,FAN: fan_speed_conference_AC_4_local,stemp: score_AC4.toString()})

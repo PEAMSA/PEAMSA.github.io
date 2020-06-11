@@ -6,8 +6,6 @@ function conference_curtain_open(device_id) {
         command: JSON.stringify({status: "up"})
     };
   console.log("conference_curtain_open" + device_id);
-  console.log(device_id)
-  //
   console.log("POST method by jQuery");
   jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
@@ -42,8 +40,6 @@ function conference_curtain_close(device_id) {
         command: JSON.stringify({status: "down"})
     };
   console.log("conference_curtain_close" + device_id);
-  console.log(device_id)
-  //
   console.log("POST method by jQuery");
   jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
@@ -78,8 +74,6 @@ function conference_curtain_pause(device_id) {
         command: JSON.stringify({status: "stop"})
     };
   console.log("conference_curtain_pause" + device_id);
-  console.log(device_id)
-  //
   console.log("POST method by jQuery");
   jQuery.ajax({
       url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
