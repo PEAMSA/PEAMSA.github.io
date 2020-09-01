@@ -381,7 +381,7 @@ input.eo_welcome::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -393,7 +393,7 @@ input.eo_welcome:checked::before {
   color: black;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -415,7 +415,7 @@ input.eo_goodbye::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -427,7 +427,7 @@ input.eo_goodbye:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -449,7 +449,7 @@ input.hy_automatic::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -461,7 +461,7 @@ input.hy_automatic:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -483,7 +483,7 @@ input.hy_welcome::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -495,7 +495,7 @@ input.hy_welcome:checked::before {
   color: black;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -517,7 +517,7 @@ input.hy_goodbye::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -529,6 +529,6 @@ input.hy_goodbye:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }

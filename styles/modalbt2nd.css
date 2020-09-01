@@ -31,8 +31,8 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 30%;
-  height: 170px;
+  width: 35%;
+  height: 180px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -48,8 +48,8 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 30%;
-  height: 140px;
+  width: 35%;
+  height: 170px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -64,7 +64,7 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 30%;
+  width: 35%;
   height: 140px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
@@ -124,7 +124,7 @@
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 0px 8px;
 }
 
 .menu_2ndfloor li {
@@ -503,7 +503,7 @@ input.mc_automatic::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -515,7 +515,7 @@ input.mc_automatic:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -540,7 +540,7 @@ input.mc_welcome::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -552,7 +552,7 @@ input.mc_welcome:checked::before {
   color: black;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -575,7 +575,7 @@ input.mc_goodbye::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -587,7 +587,7 @@ input.mc_goodbye:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -615,7 +615,7 @@ input.hy_automatic::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -627,7 +627,7 @@ input.hy_automatic:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -649,7 +649,7 @@ input.hy_welcome::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -661,7 +661,7 @@ input.hy_welcome:checked::before {
   color: black;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
 
@@ -683,7 +683,7 @@ input.hy_goodbye::before {
   border: 1px solid rgb(0, 0, 0);
   visibility: visible;
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -695,6 +695,6 @@ input.hy_goodbye:checked::before {
   color: #eee;
   /* border-color: #eee; */
   height: 35px;
-  width: 110px;
+  width: 90px;
   cursor: pointer;
 }
