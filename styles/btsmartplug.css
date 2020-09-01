@@ -12,7 +12,7 @@
 .smartplug1  {
 	background: rgb(154,36,252);
 	background: linear-gradient(135deg, rgba(154,36,252,0.7) 0%, rgba(168,195,255,0.5) 100%);
-  width: 360px;
+  width: 270px;
   height: 180px;
   border-radius: 24px;
 }
