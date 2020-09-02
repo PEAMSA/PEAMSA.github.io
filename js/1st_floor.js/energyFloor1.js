@@ -44,3 +44,70 @@ var total_load_floor1 = cal_kW_Lighting_1_local + cal_kW_Outlet_1_local + cal_kW
 
 
 document.getElementById("Floor1_Total_Load").innerHTML = (total_load_floor1);
+
+// Sync Scene status from firebase
+var ref_scene_fl1 = firebase.database().ref().child("peasbhmsr").child("scene")
+var ref_auditorium = ref_scene_fl1.child("auditorium").child("scene_name")
+var ref_eo_room = ref_scene_fl1.child("eo_room").child("scene_name")
+var ref_hallway_fl1 = ref_scene_fl1.child("hallway_fl1").child("scene_name")
+
+ref_auditorium.on("value", function(snapshot) {
+    console.log("Get ref_auditorium from firebase")
+    var ref_auditorium_status = snapshot.val();
+    console.log(ref_auditorium_status);
+    switch(ref_auditorium_status) {
+        case "welcome":
+            document.getElementById('con').style.backgroundColor = "#fca3b5"
+            break;
+
+        case "meeting":
+            document.getElementById('con').style.backgroundColor = "#ba83c4"
+            break;
+
+        case "show battery":
+            document.getElementById('con').style.backgroundColor = "#fcf3b5"
+            break;
+
+        case "goodbye":
+            document.getElementById('con').style.backgroundColor = "#b1d1ed"
+            break;
+    }
+  });
+
+  ref_eo_room.on("value", function(snapshot) {
+    console.log("Get ref_eo_room from firebase")
+    var ref_eo_room_status = snapshot.val();
+    console.log(ref_eo_room_status);
+    switch(ref_eo_room_status) {
+        case "automatic":
+            document.getElementById('eo').style.backgroundColor = "#fcf3b5"
+            break;
+
+        case "welcome":
+            document.getElementById('eo').style.backgroundColor = "#fca3b5"
+            break;
+
+        case "goodbye":
+            document.getElementById('eo').style.backgroundColor = "#b1d1ed"
+            break;
+    }
+  });
+
+  ref_hallway_fl1.on("value", function(snapshot) {
+    console.log("Get ref_hallway_fl1 from firebase")
+    var ref_hallway_fl1_status = snapshot.val();
+    console.log(ref_hallway_fl1_status);
+    switch(ref_hallway_fl1_status) {
+        case "automatic":
+            document.getElementById('hy1').style.backgroundColor = "#fcf3b5"
+            break;
+
+        case "welcome":
+            document.getElementById('hy1').style.backgroundColor = "#fca3b5"
+            break;
+
+        case "goodbye":
+            document.getElementById('hy1').style.backgroundColor = "#b1d1ed"
+            break;
+    }
+  });

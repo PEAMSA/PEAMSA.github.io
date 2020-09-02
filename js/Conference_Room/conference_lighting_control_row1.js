@@ -4,7 +4,7 @@ localStorage.setItem("Status_lighting_row_1_Local", Status_lighting_row_1)
 
 // Retrieve data from Firebase for Checking Device Status
 var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devicetype").child("lighting");
-var ref_lighting_row_1 = ref_devices_data.child("xxxxxx");
+var ref_lighting_row_1 = ref_devices_data.child("MT01");
 
 ref_lighting_row_1.on("value", function(snapshot) {
     var lighting_row_1 = snapshot.val();
