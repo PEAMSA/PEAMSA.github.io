@@ -2,16 +2,12 @@ window.onload = function () {
 
         // -------------------------- Get data from Heroku Backend------------------------------ //
         jQuery.ajax({
-            url: "https://cors-anywhere.herokuapp.com/https://msrdatalog.herokuapp.com/energy/api/getenergy",
+            url: "https://msrdatalog.herokuapp.com/energy/api/getenergy",
             type: "GET",
-            headers: {
-                "Authorization": "Token cefa4dbd91305b2eb26ed7961a44970f5d4cb83f",
-                "Content-Type": "application/json; charset=utf-8",
-                "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msrdatalog.herokuapp.com/energy/api/getenergy",
-                "Access-Control-Allow-Methods": "POST",
-                "Access-Control-Allow-Headers": "Content-Type, Authorization",
-    
-            },
+            // headers: {
+            //     "Authorization": "Token cefa4dbd91305b2eb26ed7961a44970f5d4cb83f",
+            //     "Content-Type": "application/json; charset=utf-8",
+            // },
         })
         .done(function(data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);

@@ -18,24 +18,39 @@ ref_lighting_row_2.on("value", function(snapshot) {
 // Change Image for Smart Plug
 function Status_lighting_row_2_changeImage(Status_lighting_row_2) {
   var image = document.getElementById('Conference_Lighting_row2_Button');
-  var image1_1 = document.getElementById('row1_1');
-  var image1_2 = document.getElementById('row1_2');
-  var image1_3 = document.getElementById('row1_3');
   var image2_1 = document.getElementById('row2_1');
+  var image2_2 = document.getElementById('row2_2');
+  var image2_3 = document.getElementById('row2_3');
+  var image2_4 = document.getElementById('row2_4');
+  var image2_5 = document.getElementById('row2_5');
+  var image2_6 = document.getElementById('row2_6');
+  var image2_7 = document.getElementById('row2_7');
+  var image2_8 = document.getElementById('row2_8');
+  var image2_9 = document.getElementById('row2_9');
 
 
   if (Status_lighting_row_2 == "OFF") {
       image.src = "images/remodeair/switchoff.png";
-      image1_1.src = "images/goodbye.jpg";
-      image1_2.src = "images/goodbye.jpg";
-      image1_3.src = "images/goodbye.jpg";
-      image2_1.src = "images/goodbye.jpg";
+      image2_1.style.backgroundColor = "grey";
+      image2_2.style.backgroundColor = "grey";
+      image2_3.style.backgroundColor = "grey";
+      image2_4.style.backgroundColor = "grey";
+      image2_5.style.backgroundColor = "grey";
+      image2_6.style.backgroundColor = "grey";
+      image2_7.style.backgroundColor = "grey";
+      image2_8.style.backgroundColor = "grey";
+      image2_9.style.backgroundColor = "grey";
       } else {
       image.src = "images/remodeair/switchon.png";
-      image1_1.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_2.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_3.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image2_1.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
+      image2_1.style.backgroundColor = "#FBAB7E";
+      image2_2.style.backgroundColor = "#FBAB7E";
+      image2_3.style.backgroundColor = "#FBAB7E";
+      image2_4.style.backgroundColor = "#FBAB7E";
+      image2_5.style.backgroundColor = "#FBAB7E";
+      image2_6.style.backgroundColor = "#FBAB7E";
+      image2_7.style.backgroundColor = "#FBAB7E";
+      image2_8.style.backgroundColor = "#FBAB7E";
+      image2_9.style.backgroundColor = "#FBAB7E";
         }
 }
 

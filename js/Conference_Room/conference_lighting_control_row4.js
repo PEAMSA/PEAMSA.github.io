@@ -21,36 +21,18 @@ function Status_lighting_row_4_changeImage(Status_lighting_row_4) {
   var image4_1 = document.getElementById('row4_1');
   var image4_2 = document.getElementById('row4_2');
   var image4_3 = document.getElementById('row4_3');
-  var image4_4 = document.getElementById('row4_4');
-  var image4_5 = document.getElementById('row4_5');
-  var image4_6 = document.getElementById('row4_6');
-  var image4_7 = document.getElementById('row4_7');
-  var image4_8 = document.getElementById('row4_8');
-  var image4_9 = document.getElementById('row4_9');
 
   if (Status_lighting_row_4 == "OFF") {
         image.src = "images/remodeair/switchoff.png";
-        image4_1.src = "images/goodbye.jpg";
-        image4_2.src = "images/goodbye.jpg";
-        image4_3.src = "images/goodbye.jpg";
-        image4_4.src = "images/goodbye.jpg";
-        image4_5.src = "images/goodbye.jpg";
-        image4_6.src = "images/goodbye.jpg";
-        image4_7.src = "images/goodbye.jpg";
-        image4_8.src = "images/goodbye.jpg";
-        image4_9.src = "images/goodbye.jpg";
+        image4_1.style.backgroundColor = "grey";
+        image4_2.style.backgroundColor = "grey";
+        image4_3.style.backgroundColor = "grey";
 
       } else {
       image.src = "images/remodeair/switchon.png";
-      image4_1.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_2.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_3.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_4.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_5.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_6.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_7.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_8.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image4_9.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
+      image4_1.style.backgroundColor = "#FBAB7E";
+      image4_2.style.backgroundColor = "#FBAB7E";
+      image4_3.style.backgroundColor = "#FBAB7E";
     }
 }
 

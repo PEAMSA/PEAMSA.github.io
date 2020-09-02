@@ -20,16 +20,64 @@ function Status_lighting_row_3_changeImage(Status_lighting_row_3) {
   var image = document.getElementById('Conference_Lighting_row3_Button');
   var image3_1 = document.getElementById('row3_1');
   var image3_2 = document.getElementById('row3_2');
+  var image3_3 = document.getElementById('row3_3');
+  var image3_4 = document.getElementById('row3_4');
+  var image3_5 = document.getElementById('row3_5');
+  var image3_6 = document.getElementById('row3_6');
+  var image3_7 = document.getElementById('row3_7');
+  var image3_8 = document.getElementById('row3_8');
+  var image3_9 = document.getElementById('row3_9');
+  var image3_10 = document.getElementById('row3_10');
+  var image3_11 = document.getElementById('row3_11');
+  var image3_12 = document.getElementById('row3_12');
+  var image3_13 = document.getElementById('row3_13');
+  var image3_14 = document.getElementById('row3_14');
+  var image3_15 = document.getElementById('row3_15');
+  var image3_16 = document.getElementById('row3_16');
+  var image3_17 = document.getElementById('row3_17');
+  var image3_18 = document.getElementById('row3_18');
+
 
   if (Status_lighting_row_3 == "OFF") {
       image.src = "images/remodeair/switchoff.png";
-      image3_1.src = "images/goodbye.jpg";
-      image3_2.src = "images/goodbye.jpg";
-
+      image3_1.style.backgroundColor = "grey";
+      image3_2.style.backgroundColor = "grey";
+      image3_3.style.backgroundColor = "grey";
+      image3_4.style.backgroundColor = "grey";
+      image3_5.style.backgroundColor = "grey";
+      image3_6.style.backgroundColor = "grey";
+      image3_7.style.backgroundColor = "grey";
+      image3_8.style.backgroundColor = "grey";
+      image3_9.style.backgroundColor = "grey";
+      image3_10.style.backgroundColor = "grey";
+      image3_11.style.backgroundColor = "grey";
+      image3_12.style.backgroundColor = "grey";
+      image3_13.style.backgroundColor = "grey";
+      image3_14.style.backgroundColor = "grey";
+      image3_15.style.backgroundColor = "grey";
+      image3_16.style.backgroundColor = "grey";
+      image3_17.style.backgroundColor = "grey";
+      image3_18.style.backgroundColor = "grey";
       } else {
       image.src = "images/remodeair/switchon.png";
-      image3_1.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image3_2.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";        
+      image3_1.style.backgroundColor = "#FBAB7E";
+      image3_2.style.backgroundColor = "#FBAB7E";
+      image3_3.style.backgroundColor = "#FBAB7E";
+      image3_4.style.backgroundColor = "#FBAB7E";
+      image3_5.style.backgroundColor = "#FBAB7E";
+      image3_6.style.backgroundColor = "#FBAB7E";
+      image3_7.style.backgroundColor = "#FBAB7E";
+      image3_8.style.backgroundColor = "#FBAB7E";
+      image3_9.style.backgroundColor = "#FBAB7E";
+      image3_10.style.backgroundColor = "#FBAB7E";
+      image3_11.style.backgroundColor = "#FBAB7E";
+      image3_12.style.backgroundColor = "#FBAB7E";
+      image3_13.style.backgroundColor = "#FBAB7E";
+      image3_14.style.backgroundColor = "#FBAB7E";
+      image3_15.style.backgroundColor = "#FBAB7E";
+      image3_16.style.backgroundColor = "#FBAB7E";
+      image3_17.style.backgroundColor = "#FBAB7E";
+      image3_18.style.backgroundColor = "#FBAB7E";
     }
 }
 

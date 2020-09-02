@@ -120,7 +120,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .close:hover, .close:focus {
