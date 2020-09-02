@@ -11,8 +11,8 @@ window.onload = function () {
         })
         .done(function(data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
-            data_prepareation(data)        
-            
+            data_prepareation(data)
+
         })
         .fail(function(jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
@@ -20,9 +20,9 @@ window.onload = function () {
         .always(function() {
             /* ... */
         });
-    
+
         // -------------------------- Call function: data_prepareation ------------------------------ //
-    
+
         // Data prep:
         function data_prepareation(data) {
             console.log(data)
@@ -46,7 +46,7 @@ window.onload = function () {
                 var precisionac_obj = {label: data[i]["pub_time"], y: data[i]["precisionac"]}
                 var batt_obj = {label: data[i]["pub_time"], y: data[i]["batt"]}
                 var socbatt_obj = {label: data[i]["pub_time"], y: data[i]["percentbatt"]}
-              
+
                 grid_data_set.push(grid_obj)
                 solar_data_set.push(solar_obj)
                 total_load_data_set.push(load_obj)
@@ -56,7 +56,7 @@ window.onload = function () {
                 precisionac_data_set.push(precisionac_obj)
                 batt_data_set.push(batt_obj)
                 soc_batt.push(socbatt_obj)
-                }    
+                }
 
     var chart_1 = new CanvasJS.Chart("chartContainer1", {
         animationEnabled: true,
@@ -65,13 +65,13 @@ window.onload = function () {
             // text: "MSA Control Building Energy Report"
         },
         axisX:{
-            interval:8, 
-            intervalType: "hour",        
-            valueFormatString: "hh:mm", 
+            interval:8,
+            intervalType: "hour",
+            valueFormatString: "hh:mm",
             labelAngle: 0
           },
         axisY: {
-            title: "Energy (W)",
+            title: "Power (W)",
             minimum: 0,
         },
         toolTip: {
@@ -199,9 +199,9 @@ window.onload = function () {
         }
     );
     // -------------------------- END of CANVAS.js --------------------------
-            
+
         console.log("-------Done!!!---------")
-    
+
         chart_Test.render();
 
         function toggleDataSeries(e) {
@@ -214,7 +214,7 @@ window.onload = function () {
             chart_Test.render();
             chart_1.render();
         }
-    
+
     // -------------------------- End of function: data_prepareation ------------------------------ //
     }
 
