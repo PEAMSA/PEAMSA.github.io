@@ -17,38 +17,26 @@ ref_lighting_row_1.on("value", function(snapshot) {
 // Change Image for Smart Plug
 function Status_lighting_row_1_changeImage(Status_lighting_row_1) {
   var image = document.getElementById('Conference_Lighting_row1_Button');
+  var image1_1 = document.getElementById('row1_1');
+  var image1_2 = document.getElementById('row1_2');
+  var image1_3 = document.getElementById('row1_3');
   var image1_4 = document.getElementById('row1_4');
   var image1_5 = document.getElementById('row1_5');
-  var image1_6 = document.getElementById('row1_6');
-  var image1_7 = document.getElementById('row1_7');
-  var image1_8 = document.getElementById('row1_8');
-  var image1_9 = document.getElementById('row1_9');
-  var image2_2 = document.getElementById('row2_2');
-  var image2_3 = document.getElementById('row2_3');
-  var image2_4 = document.getElementById('row2_4');
 
   if (Status_lighting_row_1 == "OFF") {
       image.src = "images/remodeair/switchoff.png";
-      image1_4.src = "images/goodbye.jpg";
-      image1_5.src = "images/goodbye.jpg";
-      image1_6.src = "images/goodbye.jpg";
-      image1_7.src = "images/goodbye.jpg";
-      image1_8.src = "images/goodbye.jpg";
-      image1_9.src = "images/goodbye.jpg";
-      image2_2.src = "images/goodbye.jpg";
-      image2_3.src = "images/goodbye.jpg";
-      image2_4.src = "images/goodbye.jpg";
+      image1_1.style.backgroundColor = "grey";
+      image1_2.style.backgroundColor = "grey";
+      image1_3.style.backgroundColor = "grey";
+      image1_4.style.backgroundColor = "grey";
+      image1_5.style.backgroundColor = "grey";
     } else {
       image.src = "images/remodeair/switchon.png";
-      image1_4.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_5.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_6.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_7.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_8.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image1_9.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image2_2.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image2_3.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
-      image2_4.src = "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-chrome-yellow-solid-color-background.jpg";
+      image1_1.style.backgroundColor = "#FBAB7E";
+      image1_2.style.backgroundColor = "#FBAB7E";
+      image1_3.style.backgroundColor = "#FBAB7E";
+      image1_4.style.backgroundColor = "#FBAB7E";
+      image1_5.style.backgroundColor = "#FBAB7E";
       }
 }
 

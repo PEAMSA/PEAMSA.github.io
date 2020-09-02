@@ -1,0 +1,737 @@
+body {
+    /* background-image: url("http://aspaaccts.org/wp-content/uploads/2018/06/coworking-space-colony-common-ground-f4.jpg") */
+  }
+  
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(67, 66, 93, 1);
+  }
+  
+  .flexbox-title {
+    width: 100%;
+    display: flex;
+  }
+  
+  #PEA_Innovation_Hub {
+    width: 33.33%;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(67, 66, 93, 1);
+  }
+  
+  #Select-Floor {
+    width: 33.33%;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+  }
+  
+  #DateTimeHeader {
+    width: 33.33%;
+    justify-content: end;
+    margin-right: auto;
+  }
+  
+  .Date-time {
+    width: 144px;
+    white-space: nowrap;
+    line-height: 27px;
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(116, 122, 132, 1);
+  }
+  
+  .Date {
+    width: 144px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(190, 190, 190, 1);
+  }
+  
+  #hr-head {
+    width: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  #floorLabel {
+    color: rgba(139, 138, 160, 1);
+    text-align: center;
+    align-items: center;
+  }
+  
+  #floorLabelFontStyle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  
+  #ReportFontStyle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 0px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .flexbox-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .SceneControlBox {
+    width: 320px;
+    z-index: 1;
+  }
+  
+  .Scene_name {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(67, 66, 93, 1);
+  }
+  
+  .FloorplanBox {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .split-page {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .floorplan {
+    align-items: center;
+  }
+  
+  .floorplan-image {
+    object-fit: contain;
+    z-index: -1;
+    height: 100%;
+  }
+  
+  /* 1fl-lighting-group */
+  .working_area_1-position {
+    margin-top: -240px;
+    margin-left: -400px;
+  }
+  
+  .working_area_2-position {
+    margin-top: -32px;
+    margin-left: -150px;
+  }
+  
+  .working_area_3-position {
+    margin-top: 36px;
+    margin-left: -400px;
+  }
+  
+  .working_area_4-position {
+    margin-top: -32px;
+    margin-left: -150px;
+  }
+  
+  .canteen-position {
+    margin-top: -44px;
+    margin-left: 80px;
+  }
+  
+  .hall-position {
+    margin-top: -32px;
+    margin-left: 378px;
+  }
+  
+  .women-toilet-1-position {
+    margin-top: -20px;
+    margin-left: 500px;
+  }
+  
+  .women-toilet-2-position {
+    margin-top: -32px;
+    margin-left: 590px;
+  }
+  
+  .men-toilet-1-position {
+    margin-top: 90px;
+    margin-left: 380px;
+  }
+  
+  .men-toilet-2-position {
+    margin-top: -50px;
+    margin-left: 540px;
+  }
+  
+  .side_working_area_1-position {
+    margin-top: -170px;
+    margin-left: -550px;
+  }
+  
+  /* 1fl-AC-group */
+  .AC_1-position {
+    margin-top: -88.5px;
+    margin-left: -525px;
+  }
+  
+  .AC_2-position {
+    margin-top: -42px;
+    margin-left: -275px;
+  }
+  
+  .AC_3-position {
+    margin-top: -42px;
+    margin-left: -25px;
+  }
+  
+  /* 2fl-lighting-group */
+  .meeting-1-position {
+    margin-top: -180px;
+    margin-left: -360px;
+  }
+  
+  .meeting-2-position {
+    margin-top: -32px;
+    margin-left: -550px;
+  }
+  
+  .inwall-Working-Area-1 {
+    margin-top: -110px;
+    margin-left: 125px;
+  }
+  
+  .inwall-Working-Area-2 {
+    margin-top: -32px;
+    margin-left: 500px;
+  }
+  
+  .fl2WorkingArea1 {
+    margin-top: 24px;
+    margin-left: -80px;
+  }
+  
+  .fl2WorkingArea2 {
+    margin-top: -32px;
+    margin-left: 320px;
+    z-index: 1;
+  }
+  
+  .front-hall-1-position {
+    margin-top: 100px;
+    margin-left: -360px;
+  }
+  
+  .front-hall-2-position {
+    margin-top: -32px;
+    margin-left: -80px;
+  }
+  
+  .stair-1-position {
+    margin-top: -32px;
+    margin-left: 135px;
+  }
+  
+  .stair-2-position {
+    margin-top: -32px;
+    margin-left: 250px;
+  }
+  
+  /* 2fl-AC-group */
+  .AC_4-position {
+    margin-top: -225px;
+    margin-left: -475px;
+  }
+  
+  .AC_5-position {
+    margin-top: -42px;
+    margin-left: -80px;
+  }
+  
+  .AC_6-position {
+    margin-top: -42px;
+    margin-left: 320px;
+  }
+  
+  .AC_7-position {
+    margin-top: 30px;
+    margin-left: 485px;
+  }
+  
+  .AC_8-position {
+    margin-top: 40px;
+    margin-left: 485px;
+  }
+  
+  /* device style */
+  .device_control_render {
+    width: auto;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .device_control_render:after {
+    content: "";
+    /* background: #666; */
+    display: block;
+    margin-left: -20px !important;
+    opacity: 0;
+    transition: all 0.8s;
+    border-radius: 50%;
+  }
+  
+  .device_control_render:active {
+    background-color: #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(0px);
+    border-radius: 50%;
+  }
+  
+  .EnergyReportBox {
+    width: 22%;
+    z-index: 1;
+    justify-content: end;
+    margin-right: auto;
+  }
+  
+  .EnergyReportBox-inside {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flexbox-report {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .SceneCard {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 25%;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    border: 0.5px;
+    background: rgb(108, 153, 255);
+    background: linear-gradient(135deg, rgba(108, 153, 255, 1) 0%, rgba(255, 163, 192, 1) 100%);
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0.5em;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+  }
+  
+  .SceneCard:after {
+    content: "";
+    transition: all 0.8s;
+    border-radius: 0%;
+  }
+  
+  .SceneCard:active {
+    background-color: #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(0px);
+    border-radius: 0%;
+  }
+  
+  .SceneCard:hover {
+    outline-width: 1px;
+  }
+  
+  .SceneControl {
+    width: auto;
+    height: auto;
+    background: rgb(108, 153, 255);
+    background: linear-gradient(135deg, rgba(108, 153, 255, 1) 0%, rgba(255, 163, 192, 1) 100%);
+  }
+  
+  .split-3-page {
+    width: 100%;
+    height: auto;
+  }
+  
+  .chart-style {
+    align-items: center;
+    align: middle;
+    height: 50%;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+  
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+  
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+  
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+  
+  /* The Close Button */
+  .close {
+    color: gray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .onoffswitch {
+    position: relative;
+    margin-left: 435px;
+    width: 90px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  .onoffswitch-checkbox {
+    display: none;
+  }
+  
+  .onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+  }
+  
+  .onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #6C99FF;
+    color: #FFFFFF;
+  }
+  
+  .onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #FF9E9E;
+    color: #999999;
+    text-align: right;
+  }
+  
+  .onoffswitch-switch {
+    display: block;
+    width: 25px;
+    margin: 2.5px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+  
+  .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+  }
+  
+  .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+  }
+  
+  /* device style */
+  .device_control_status {
+    width: 48;
+    height: 48;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 0px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .device_control_status:after {
+    content: "";
+    display: block;
+    margin-left: -20px !important;
+    opacity: 0;
+    transition: all 0.8s;
+    border-radius: 50%;
+  }
+  
+  .device_control_status:active {
+    background-color: #666;
+    box-shadow: 0 2px #666;
+    transform: translateY(0px);
+    border-radius: 50%;
+  }
+  
+  .ACremoteControl {
+    width: 320px;
+    height: auto;
+    border: 1px;
+    border-radius: 12px;
+    border-color: #999999;
+    border-style: solid;
+    margin-left: 33%;
+  }
+  
+  .onoffACbutton {
+    width: 100%;
+    display: flex;
+    margin-top: 6px;
+  }
+  
+  .OffACbutton {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .OnACbutton {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .ACTempControl {
+    width: 100%;
+    display: flex;
+    margin-top: -8px;
+    border-color: rgba(116, 122, 132, 1);
+  }
+  
+  .decreaseTemp {
+    width: 35%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .increaseTemp {
+    width: 35%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .TempDisplay {
+    width: 35%;
+    /* text-align: center; */
+    align-items: center;
+    display: flex;
+  }
+  
+  .TempMonitoring {
+    margin-top: 0px;
+    width: 50%;
+    font-size: 36px;
+    color: rgba(67, 66, 93, 1);
+    text-align: right;
+  }
+  
+  .degreeC {
+    width: 50%;
+    font-size: 30px;
+    color: rgba(67, 66, 93, 1);
+    left: auto;
+    text-align: left;
+  }
+  
+  .ACModeControl {
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+  }
+  
+  .CoolMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .DryMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .FanMode {
+    width: 33.33%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
+  
+  .FanSpeedControl {
+    width: 100%;
+    display: flex;
+    margin-top: 14px;
+  }
+  
+  .FanSpeedIcon {
+    width: 20%;
+    text-align: center;
+    align-items: bottom;
+  }
+  
+  .FanSpeedNumber {
+    width: 12%;
+    text-align: center;
+    align-items: center;
+  }
+  
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+      
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    
+  }
+
+
+  /* Status Component */
+  .groupComponent {
+      position: relative;
+  }

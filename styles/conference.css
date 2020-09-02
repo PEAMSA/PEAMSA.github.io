@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	/* background-size: 50%; */
 	height: 550px;
-	width: 700px; 700
+	width: 100%;
 	position: relative;
 	background-size:95%;
 	border: 1px solid transparent;
@@ -25,7 +25,6 @@
 	background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%);
   	border-radius: 12px;
 	padding-left: 10px;
-	
 	width: 105%;
 }
 

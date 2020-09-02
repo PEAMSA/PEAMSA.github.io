@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Auditorium</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="myHOME - real estate template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Link From External -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS Part ***** -->
+    <link rel="stylesheet" href="./styles/remoteair.css">
+    <link rel="stylesheet" href="./styles/conference.css">
+    <link rel="stylesheet" href="./styles/new_conference.css">
+	<link rel="stylesheet" href="styles/mainhomepage.css">
+	<link rel="stylesheet" href="./styles/btconference_old.css">
+	<link rel="stylesheet" href="./styles/responsive.css">
+	<link rel="stylesheet" href="./styles/con_lighting.css">
+    <!-- CSS Part ***** -->
+    
+
+	<!-- JS Chart Edit *****-->
+
+	<!-- JS Link From External -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="super_container">
+		<!-- Header -->
+
+		<header class="header">
+			<!-- Header Content -->
+			<div class="header_content d-flex flex-row align-items-center justify-content-start"
+				style="background: linear-gradient(135deg, rgba(154,36,252,1) 0%, rgba(168,195,255,1) 100%)">
+				<div class="logo" style="width: 330px">
+					<a href="home.html" style="color: aliceblue;">MSA Smart Building</a>
+				</div>
+				<nav class="main_nav">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li class="active"><a href="new_conference.html"> Auditorium</a></li>
+						<li><a href="bedroom.html">Dormitory</a></li>
+						<li class="nav-item dropdown d-flex flex-row align-items-start justify-content-start">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="padding-top: 0px;">
+								Others
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="energypage.html">Energy</a>
+								<a class="dropdown-item" href="./smartplug.html">Smart Plug</a>
+								<a class="dropdown-item" href="./door.window.html">Security</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+					<!-- <div class="submit ml-auto"><a href="#">Hello admin</a></div> -->
+				<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>
+
+		</header>
+		<!-- Menu -->
+
+		<div class="menu text-right">
+			<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+			<div class="menu_log_reg">
+				<div class="log_reg d-flex flex-row align-items-center justify-content-end">
+					<ul class="d-flex flex-row align-items-start justify-content-start">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div>
+				<nav class="menu_nav" style="text-align: left;">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="1st_Floor.html">1st Floor</a></li>
+						<li><a href="2nd_Floor.html">2nd Floor</a></li>
+						<li><a href="conference_room.html">Auditorium</a></li>
+						<li><a href="bedroom.html">Dormitory</a></li>
+						<li><a href="energypage.html">Energy</a></li>
+						<li><a href="./door.window.html">Door/Window Censor</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+		<!-- Home -->
+		<div class="homeContent">
+			<div class="blog">
+				<div class="flexbox-body">
+                    <!-- Scene  -->
+                
+                    <div class="SceneControlBox">
+                        <div class="split-page">
+                            <!-- Scene Control Start-->
+                            <div class="">
+                                <div class="one_left" style="margin-top: 0px; height: 140px;">
+                                    <h3 style="padding-top:10px;color: aliceblue;">Scene Control</h3>
+                                    <div class="row_container">
+                                        <div class="">
+                                            <div class="row" style="align-items: center;">
+                                                <div class="col-5">
+                                                    <div>
+                                                        <button class="scbtn" onclick="con_welcome()">
+                                                            <h5>Welcome</h5>
+                                                        </button>
+                                                    </div>
+                                                    <div style="padding-top: 10px;">
+                                                        <button class="scbtn" onclick="con_meeting()">
+                                                            <h5>Meeting</h5>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5" style="padding-left: 15px;">
+                                                    <div>
+                                                        <button class="scbtn" onclick="con_showbatery()">
+                                                            <h5 style="font-size: 12px;">Show Battery</h5>
+                                                        </button>
+                                                    </div>
+                                                    <div style="padding-top: 10px;">
+                                                        <button class="scbtn" onclick="con_goodbye()">
+                                                            <h5>Goodbye</h5>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Scene Control End-->
+                            <!-- Air Condition Start-->
+							<div class="left_container">
+								<div class="two_left" style="height: 135px;">
+									<h3 style="padding-top:10px;">Air Condition</h3>
+									<div class="row_container">
+										<div class="row">
+											<div class="col-lg-5"
+												style="padding:0px;padding-top:3px; padding-left: 10px;">
+												<!-- Remote Air 1 -->
+												<ul>
+													<!-- Trigger/Open The Modal -->
+													<button id="myBtn_remote1" class="SceneStyle">
+														<h5>Remote 1</h5>
+													</button>
+                                                </ul>
+												<!-- Remote Air 2 -->
+												<ul style="padding-top:12px;">
+													<!-- Trigger/Open The Modal -->
+													<button id="myBtn_remote2" class="SceneStyle">
+														<h5>Remote 2</h5>
+													</button>
+												</ul>
+											</div>
+											<div class="col-lg-7" style="padding-top:3px;padding-left: 10px;">
+
+												<!-- Remote Air 3 -->
+												<ul>
+													<!-- Trigger/Open The Modal -->
+													<button id="myBtn_remote3" class="SceneStyle">
+														<h5>Remote 3</h5>
+													</button>
+												</ul>
+
+												<!-- Remote Air 4 -->
+												<ul style="padding-top:12px">
+													<!-- Trigger/Open The Modal -->
+													<button id="myBtn_remote4" class="SceneStyle">
+														<h5>Remote 4</h5>
+													</button>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <!-- Air Condition End-->
+                            <!-- Curtain Start-->
+							<div class="left_container">
+								<div class="three_left" style="height: 99px;">
+									<div class="row">
+										<div class="col-lg-6">
+											<h3 style="padding-top:10px;">Curtain</h3>
+										</div>
+										<div class="col-lg-6">
+											<!-- Pause -->
+											<div style="padding-top: 5px;padding-left:50px;">
+												<button id="SC999ALL" onclick="conference_curtain_pause(this.id)" type="radio" name="curtain"
+													class="device_control_status_curtain"
+													style="display: inline; border: 0px;">
+													<img src="./images/pause-thin-rounded-button.png" alt=""
+														style="width: 35px; height: 35px;">
+												</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="row_container">
+										<div class="row" style="padding-top: 1px;padding-left: 0px;">
+											<div class="col-lg-5">
+												<div>
+													<div style="padding-left: 0px;">
+														<input id="SC999ALL" class="toggle-btn" type="radio" value="All Close"
+															onclick="conference_curtain_close(this.id)" style="padding-right: 10px;"
+															name="curtain">
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-5" style="padding-left:10px;">
+												<div>
+													<div style="padding-left: 0px;">
+														<input id="SC999ALL" class="toggle-btn" type="radio" value="All Open"
+															onclick="conference_curtain_open(this.id)" style="padding-right: 10px;"
+															name="curtain">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <!-- Curtain End-->
+                            <!-- Ligting Start-->
+							<div class="left_container">
+								<div class="four_left" style="height: 140px;">
+									<h3 style="padding-top:10px;">Lighting</h3>
+									<div class="row_container">
+										<div class="row" style="padding-top: 1px;padding-left: 5px;">
+											<div class="col-5" style="margin-left: 16px;">
+												<div style="padding-left: 0px;">
+													<div>
+														<h4 style="font-size: 11px;">Row1
+															<button id="MT01" class="device_control_status" style="height: 35%; width: 35%; margin-left: 3px;"
+															onclick="lightingrow1(this.id)"
+															>
+																<img id="Conference_Lighting_row1_Button" class="" src="images/remodeair/switchoff.png" alt="">
+															</button>
+														</h3>
+													</div>
+												</div>
+												<div style="padding-left: 0px;padding-top: 10px;">
+													<div>
+														<h4 style="font-size: 11px;">Row2
+															<button id="MT02" class="device_control_status" style="height: 35%; width: 35%; margin-left: -1px;"
+															onclick="lightingrow2(this.id)"
+															>
+																<img id="Conference_Lighting_row2_Button" class="" src="images/remodeair/switchoff.png" alt="">
+															</button>
+														</h3>
+													</div>
+												</div>
+											</div>
+											<div class="col-5" style="margin-left: 5 px;">
+												<div style="padding-left: 0px;">
+													<div>
+														<h4 style="font-size: 11px;">Row3
+															<button id="MT03" class="device_control_status" style="height: 35%; width: 35%;"
+															onclick="lightingrow3(this.id)"
+															>
+																<img id="Conference_Lighting_row3_Button" class="" src="images/remodeair/switchoff.png" alt="">
+															</button>
+														</h3>
+													</div>
+												</div>
+												<div style="padding-left: -5 px; padding-top: 10px">
+													<div>
+														<h4 style="font-size: 11px;">Row4
+															<button id="MT04" class="device_control_status" style="height: 35%; width: 35%; margin-left: -2px;"
+															onclick="lightingrow4(this.id)"
+															>
+																<img id="Conference_Lighting_row4_Button" class="" src="images/remodeair/switchoff.png" alt="">
+															</button>
+														</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- Ligting End-->
+                      </div>
+                
+                    </div>
+                
+                    <!-- Floor Plan -->
+                    <div class="FloorplanBox">
+                        <div class="floorplan">
+                            <img class="floorplan-image" src="./images/MGBT.svg" style="width: 560px; height:560px;" alt="">
+                            <!-- R1 -->
+                            <img id="row1_1" class="Row1" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -531px; margin-top: 416px; position: absolute;"
+                            >
+                            <img id="row1_2" class="Row1" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -473px; margin-top: 513px; position: absolute;"
+                            >  
+                            <img id="row1_3" class="Row1" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -317px; margin-top: 513px; position: absolute;"
+                            >  
+                            <img id="row1_4" class="Row1" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -142px; margin-top: 513px; position: absolute;"
+                            >  
+                            <img id="row1_5" class="Row1" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -64px; margin-top: 435px; position: absolute;"
+                            >  
+                            <!-- R1 -->
+                            <!-- R2 -->
+                            <img id="row2_1" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -531px; margin-top: 299px; position: absolute;"
+                            >
+                            <img id="row2_2" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -531px; margin-top: 173px; position: absolute;"
+                            >
+                            <img id="row2_3" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -473px; margin-top: 134px; position: absolute;"
+                            >
+                            <img id="row2_4" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -395px; margin-top: 85px; position: absolute;"
+                            >
+                            <img id="row2_5" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -317px; margin-top: 46px; position: absolute;"
+                            >
+                            <img id="row2_6" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -142px; margin-top: 46px; position: absolute;"
+                            >
+                            <img id="row2_7" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -64px; margin-top: 85px; position: absolute;"
+                            >
+                            <img id="row2_8" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -64px; margin-top: 182px; position: absolute;"
+                            >
+                            <img id="row2_9" class="Row2" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -64px; margin-top: 328px; position: absolute;"
+                            >
+                            <!-- R2 -->
+                            <!-- R3 -->
+                            <img id="row3_1" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -473px; margin-top: 445px; position: absolute;"
+                            >
+                            <img id="row3_2" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -404px; margin-top: 445px; position: absolute;"
+                            >
+                            <img id="row3_3" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -336px; margin-top: 445px; position: absolute;"
+                            >
+                            <img id="row3_4" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -268px; margin-top: 445px; position: absolute;"
+                            >
+                            <img id="row3_5" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -200px; margin-top: 445px; position: absolute;"
+                            >
+                            <img id="row3_6" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -122px; margin-top: 445px; position: absolute;"
+                            >
+
+                            <img id="row3_7" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -473px; margin-top: 309px; position: absolute;"
+                            >
+                            <img id="row3_8" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -336px; margin-top: 309px; position: absolute;"
+                            >
+                            <img id="row3_9" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -200px; margin-top: 309px; position: absolute;"
+                            >
+
+                            <img id="row3_10" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -473px; margin-top: 202px; position: absolute;"
+                            >
+                            <img id="row3_11" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -404px; margin-top: 202px; position: absolute;"
+                            >
+                            <img id="row3_12" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -268px; margin-top: 202px; position: absolute;"
+                            >
+                            <img id="row3_13" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -200px; margin-top: 202px; position: absolute;"
+                            >
+                            <img id="row3_14" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -122px; margin-top: 202px; position: absolute;"
+                            >
+
+                            <img id="row3_15" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -336px; margin-top: 115px; position: absolute;"
+                            >
+                            <img id="row3_16" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -268px; margin-top: 115px; position: absolute;"
+                            >
+                            <img id="row3_17" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -200px; margin-top: 115px; position: absolute;"
+                            >
+                            <img id="row3_18" class="Row3" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -122px; margin-top: 115px; position: absolute;"
+                            >
+                            <!-- R3 -->
+                            <!-- R4 -->
+                            <img id="row4_1" class="Row4" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -404px; margin-top: 309px; position: absolute;"
+                            >
+                            <img id="row4_2" class="Row4" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -268px; margin-top: 309px; position: absolute;"
+                            >
+                            <img id="row4_3" class="Row4" 
+                                         style=" width: 20px; height: 20px; background-color: gray; opacity: 0.6; border-radius: 10px;
+                                                 margin-left: -122px; margin-top: 309px; position: absolute;"
+                            >
+                            <!-- R4 -->
+                            <!-- AC -->
+                            <img id="ac_1" class="Row4" 
+                                         style=" width: 30px; height: 32px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -365px; margin-top: 193px; position: absolute;"
+                            >
+                            <img id="ac_2" class="Row4" 
+                                         style=" width: 30px; height: 32px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -365px; margin-top: 407px; position: absolute;"
+                            >
+                            <img id="ac_3" class="Row4" 
+                                         style=" width: 30px; height: 32px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -220px; margin-top: 163px; position: absolute;"
+                            >
+                            <img id="ac_4" class="Row4" 
+                                         style=" width: 30px; height: 32px; background-color: gray; opacity: 0.6; border-radius: 2px;
+                                                 margin-left: -220px; margin-top: 407px; position: absolute;"
+                            >
+                            <!--  -->
+
+                        </div>
+                    </div>
+
+
+            <!-- The Modal of Remote 1 Start-->
+            <div id="myModal_remote1" class="modal" style="margin-left: 0px;">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="colormodal">Remote 1</h3>
+                        <span class="close" onclick="xremote1()">&times;</span>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: center; align-items: center;">
+                        <div class="ACremoteControl"
+                            style="align-items: center; text-align: center; margin-left: 0px;">
+                            <div class="onoffACbutton" style="padding: 4px;">
+                                <div class="OffACbutton">
+
+                                    <!-- On Click = Sent Command = turn_off_ac1() to External-->
+                                    <button id="AC101004" onclick="turn_off_con_ac_1(this.id)"
+                                        type="button"
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img src="images/remodeair/switchoff.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                    <li>
+                                        <h5
+                                            style="color: black;margin-top: 5px;">
+                                            Off</h5>
+                                    </li>
+                                </div>
+                                <div class="OnACbutton">
+                                    <button id="AC101004" onclick="turn_on_con_ac_1(this.id)"
+                                        type="button"
+                                        class="device_control_status"
+                                        style="display: inline; border: 0px;">
+                                        <img src="images/remodeair/switchon.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                    <li>
+                                        <h5
+                                            style="color: black;margin-top: 5px;">
+                                            On</h5>
+                                    </li>
+                                </div>
+                            </div>
+
+                            <hr style="margin: 5px;">
+
+                            <div class="ACTempControl" style="margin: 10px">
+                                <div class="decreaseTemp">
+                                    <button onclick="down_temp_con_ac_1()"
+                                        type="button"
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img src="images/remodeair/iconreduce.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                </div>
+                                <div class="TempDisplay">
+                                    <div id="result1" class="TempMonitoring">25
+                                    </div>
+                                    <div class="degreeC" style=""> &#8451;</div>
+                                </div>
+                                <div class="increaseTemp">
+                                    <button id="" onclick="up_temp_con_ac_1()"
+                                        type="button"
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img src="images/remodeair/iconincrease.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <button style="margin-bottom: 10px; background: rgb(108,153,255); background: linear-gradient(135deg, rgba(108,153,255,1) 0%, rgba(213,163,255,1) 100%);
+                                width: 100px; height: 35px; border-radius: 5px; border: 2px; font-family: 'Roboto', sans-serif;"
+                                    type="submit" name="login" value="Login"
+                                    onclick="summit_air1(this.id)"
+                                    class="modal-login-button-2"
+                                    id="AC101004">
+                                    Submit
+                            </div>
+
+                            <hr style="margin: 5px;">
+
+                            <div class="ACModeControl" style="margin: 10px">
+                                <div class="CoolMode">
+                                    <button id="AC101004" onclick="CoolModeControl_1(this.id)"
+                                        type="button" name=""
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img id="ac1_cool" src="images/remodeair/coolon.png"
+                                            alt=""
+                                            style="width: 32px; height: 32px;">
+                                    </button>
+                                </div>
+                                <div class="DryMode">
+                                    <button id="AC101004" onclick="DryModeControl_1(this.id)"
+                                        type="button" name=""
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img id="ac1_dry" src="images/remodeair/dryon.png"
+                                            alt=""
+                                            style="width: 32px; height: 32px;">
+                                    </button>
+                                </div>
+                                <div class="FanMode">
+                                    <button id="AC101004" onclick="FenModeControl_1(this.id)"
+                                        type="button" name=""
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img id="ac1_fan" src="images/remodeair/fanon.png"
+                                            alt=""
+                                            style="width: 32px; height: 32px;">
+                                    </button>
+                                </div>
+                            </div>
+                            <hr style="margin: 5px">
+                            <p style="margin-top:0px;">Fan Speed:</p>
+                            <div class="FanSpeedControl"
+                                style="margin-top: 10px;margin-bottom: 10px">
+                                <div class="FanSpeedIcon"
+                                    style="margin-top: -6px;">
+                                    <button class="device_control_status" id="AC101004"
+                                        onclick="remote1_speedone(this.id)">
+                                        <img id="ac1_lv1" src="images/remodeair/fanoff.png"
+                                            alt=""
+                                            style="width: 18px; height: 18px; margin-top: 8px;">
+                                    </button>
+                                </div>
+                                <div class="FanSpeedIcon"
+                                    style="margin-top: -6px;">
+                                    <button class="device_control_status" id="AC101004"
+                                        onclick="remote1_speedtwo(this.id)">
+                                        <img id="ac1_lv2" src="images/remodeair/fanoff.png"
+                                            alt=""
+                                            style="width: 24px; height: 24px; margin-top: 6px;">
+                                    </button>
+                                </div>
+                                <div class="FanSpeedIcon"
+                                    style="margin-top: -6px;">
+                                    <button class="device_control_status" id="AC101004"
+                                        onclick="remote1_speedthree(this.id)">
+                                        <img id="ac1_lv3" src="images/remodeair/fanoff.png"
+                                            alt=""
+                                            style="width: 30px; height: 30px; margin-top: 4px;">
+                                    </button>
+                                </div>
+                                <div class="FanSpeedIcon"
+                                    style="margin-top: -6px;">
+                                    <button class="device_control_status" id="AC101004"
+                                        onclick="remote1_speedfour(this.id)">
+                                        <img id="ac1_lv4" src="images/remodeair/fanoff.png"
+                                            alt=""
+                                            style="width: 36px; height: 36px; margin-top: 0px;">
+                                    </button>
+                                </div>
+                                <div class="FanSpeedIcon"
+                                    style="margin-top: -6px;">
+                                    <button class="device_control_status" id="AC101004"
+                                        onclick="remote1_speedfive (this.id)">
+                                        <img id="ac1_lv5" src="images/remodeair/fanon.png"
+                                            alt=""
+                                            style="width: 36px; height: 36px; margin-top: 0px;">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <hr style="margin: 5px;">
+
+                            <div class="onoffACbutton" style="margin: 10px;">
+                                <div class="OffACbutton">
+                                    <button id="AC101004" onclick="swingturn_off_con_ac_1(this.id)"
+                                        type="button" name=""
+                                        class="device_control_status"
+                                        style="border: 0px;">
+                                        <img src="images/remodeair/swingoff.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                </div>
+                                <div class="OnACbutton">
+                                    <button id="AC101004" onclick="swingturn_on_con_ac_1(this.id)"
+                                        type="button" name=""
+                                        class="device_control_status"
+                                        style="display: inline; border: 0px;">
+                                        <img src="images/remodeair/swingon.png"
+                                            alt=""
+                                            style="width: 48px; height: 48px;">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal of Remote 1 End-->
+            <!-- The Modal -->
+                    <div id="myModal_remote2" class="modal" style="margin-left: 0px;">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="colormodal">Remote 2</h3>
+                                <span class="close" onclick="xremote2()">&times;</span>
+                            </div>
+                            <div class="modal-body"
+                                style="text-align: center; align-items: center;">
+                                <div class="ACremoteControl"
+                                style="align-items: center; text-align: center; margin-left: 0px;">
+                                <div class="onoffACbutton" style="padding: 5px;">
+                                        <div class="OffACbutton">
+                                            <button id="AC101003" onclick="turn_off_con_ac_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/switchoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    Off</h5>
+                                            </li>
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="AC101003" onclick="turn_on_con_ac_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/switchon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    On</h5>
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACTempControl" style="margin: 10px">
+                                        <div class="decreaseTemp">
+                                            <button onclick="down_temp_con_ac_2()"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconreduce.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="TempDisplay">
+                                            <div id="result2" class="TempMonitoring">25
+                                            </div>
+                                            <div class="degreeC" style=""> &#8451;</div>
+                                        </div>
+                                        <div class="increaseTemp">
+                                            <button id="" onclick="up_temp_con_ac_2()"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconincrease.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button style="margin-bottom: 10px; background: rgb(108,153,255); background: linear-gradient(135deg, rgba(108,153,255,1) 0%, rgba(213,163,255,1) 100%);
+                                        width: 100px; height: 35px; border-radius: 5px; border: 2px; font-family: 'Roboto', sans-serif;"
+                                            id="AC101003" type="submit" name="login" value="Login"
+                                            onclick="summit_air2(this.id)"
+                                            class="modal-login-button-2"
+                                            >
+                                            Submit
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACModeControl" style="margin: 10px">
+                                        <div class="CoolMode">
+                                            <button id="AC101003" onclick="CoolModeControl_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac2_cool" src="images/remodeair/coolon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="DryMode">
+                                            <button id="AC101003" onclick="DryModeControl_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac2_dry" src="images/remodeair/dryon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanMode">
+                                            <button id="AC101003" onclick="FenModeControl_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac2_fan" src="images/remodeair/fanon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr style="margin: 5px">
+                                    <p style="margin-top:0px;">Fan Speed:</p>
+                                    <div class="FanSpeedControl"
+                                        style="margin-top: 10px;margin-bottom: 10px">
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101003" class="device_control_status"
+                                                onclick="remote2_speedone()">
+                                                <img id="ac2_lv1" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 18px; height: 18px; margin-top: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101003" class="device_control_status"
+                                                onclick="remote2_speedtwo()">
+                                                <img id="ac2_lv2" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 24px; height: 24px; margin-top: 6px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101003" class="device_control_status"
+                                                onclick="remote2_speedthree()">
+                                                <img id="ac2_lv3" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 30px; height: 30px; margin-top: 4px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101003" class="device_control_status"
+                                                onclick="remote2_speedfour()">
+                                                <img id="ac2_lv4" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101003" class="device_control_status"
+                                                onclick="remote2_speedfive()">
+                                                <img id="ac2_lv5" src="images/remodeair/fanon.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr style="margin: 5px;">
+                                    <div class="onoffACbutton" style="margin: 10px;">
+                                        <div class="OffACbutton">
+                                            <button id="AC101003" onclick="swingturn_off_con_ac_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/swingoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="AC101003" onclick="swingturn_on_con_ac_2(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/swingon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scene2 -->
+                    <!-- The Modal -->
+                    <div id="myModal_remote3" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="colormodal">Remote 3</h3>
+                                <span class="close" onclick="xremote3()">&times;</span>
+                            </div>
+                            <div class="modal-body"
+                                style="text-align: center; align-items: center;">
+                                <div class="ACremoteControl"
+                                style="align-items: center; text-align: center; margin-left: 0px;">
+                                    <div class="onoffACbutton" style="padding: 5px;">
+                                        <div class="OffACbutton">
+                                            <button id="AC101002" onclick="turn_off_con_ac_3(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/switchoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    Off</h5>
+                                            </li>
+
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="AC101002" onclick="turn_on_con_ac_3(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/switchon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    On</h5>
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACTempControl" style="margin: 10px">
+                                        <div class="decreaseTemp">
+                                            <button onclick="down_temp_con_ac_3()"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconreduce.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="TempDisplay">
+                                            <div id="result3" class="TempMonitoring">25
+                                            </div>
+                                            <div class="degreeC" style=""> &#8451;</div>
+                                        </div>
+                                        <div class="increaseTemp">
+                                            <button id="" onclick="up_temp_con_ac_3()"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconincrease.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button style="margin-bottom: 10px; background: rgb(108,153,255); background: linear-gradient(135deg, rgba(108,153,255,1) 0%, rgba(213,163,255,1) 100%);
+                                        width: 100px; height: 35px; border-radius: 5px; border: 2px; font-family: 'Roboto', sans-serif;"
+                                            id="AC101002" type="submit" name="login" value="Login"
+                                            onclick="summit_air3(this.id)"
+                                            class="modal-login-button-2"
+                                            >
+                                            Submit
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACModeControl" style="margin: 10px">
+                                        <div class="CoolMode">
+                                            <button id="AC101002" onclick="CoolModeControl_3(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac3_cool" src="images/remodeair/coolon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="DryMode">
+                                            <button id="AC101002" onclick="DryModeControl_3(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac3_dry" src="images/remodeair/dryon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanMode">
+                                            <button id="AC101002" onclick="FenModeControl_3(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac3_fan" src="images/remodeair/fanon.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr style="margin: 5px">
+                                    <p style="margin-top:0px;">Fan Speed:</p>
+                                    <div class="FanSpeedControl"
+                                        style="margin-top: 10px;margin-bottom: 10px">
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101002" class="device_control_status"
+                                                onclick="remote3_speedone(this.id)">
+                                                <img id="ac3_lv1" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 18px; height: 18px; margin-top: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101002" class="device_control_status"
+                                                onclick="remote3_speedtwo(this.id)">
+                                                <img id="ac3_lv2" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 24px; height: 24px; margin-top: 6px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101002" class="device_control_status"
+                                                onclick="remote3_speedthree(this.id)">
+                                                <img id="ac3_lv3" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 30px; height: 30px; margin-top: 4px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101002" class="device_control_status"
+                                                onclick="remote3_speedfour(this.id)">
+                                                <img id="ac3_lv4" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101002" class="device_control_status"
+                                                onclick="remote3_speedfive(this.id)">
+                                                <img id="ac3_lv5" src="images/remodeair/fanon.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="onoffACbutton" style="margin: 10px;">
+                                        <div class="OffACbutton">
+                                            <button id="" onclick="swingturn_off_con_ac_3()"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/swingoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="" onclick="swingturn_on_con_ac_3()"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/swingon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal_remote4" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="colormodal">Remote 4</h3>
+                                <span class="close" onclick="xremote4()">&times;</span>
+                            </div>
+                            <div class="modal-body"
+                                style="text-align: center; align-items: center;">
+                                <!-- <p id="AC_device_name"></p> -->
+                                <!-- <p> Press or Tab the device control button:</p> -->
+                                <div class="ACremoteControl"
+                                style="align-items: center; margin-left: 0px;">
+                                    <div class="onoffACbutton" style="padding: 5px;">
+                                        <div class="OffACbutton">
+                                            <button id="AC101001" onclick="turn_off_con_ac_4(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/switchoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    Off</h5>
+                                            </li>
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="AC101001" onclick="turn_on_con_ac_4(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/switchon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                            <li>
+                                                <h5
+                                                    style="color: black;margin-top: 5px;">
+                                                    On</h5>
+                                            </li>
+                                        </div>
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACTempControl" style="margin: 10px">
+                                        <div class="decreaseTemp">
+                                            <button onclick="down_temp_con_ac_4()"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconreduce.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="TempDisplay">
+                                            <div id="result4" class="TempMonitoring">
+                                            </div>
+                                            <div class="degreeC" style=""> &#8451;</div>
+                                        </div>
+                                        <div class="increaseTemp">
+                                            <button id="AC101001" onclick="up_temp_con_ac_4(this.id)"
+                                                type="button"
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/iconincrease.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button style="margin-bottom: 10px; background: rgb(108,153,255); background: linear-gradient(135deg, rgba(108,153,255,1) 0%, rgba(213,163,255,1) 100%);
+                                        width: 100px; height: 35px; border-radius: 5px; border: 2px; font-family: 'Roboto', sans-serif;"
+                                            id="AC101001" type="submit" name="login" value="Login"
+                                            onclick="summit_air4(this.id)"
+                                            class="modal-login-button-2"
+                                            >
+                                            Submit
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="ACModeControl" style="margin: 10px">
+                                        <div class="CoolMode">
+                                            <button id="AC101001" onclick="CoolModeControl_4(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac4_cool" src="images/remodeair/cooloff.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="DryMode">
+                                            <button id="AC101001" onclick="DryModeControl_4(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac4_dry" src="images/remodeair/dryoff.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanMode">
+                                            <button id="AC101001" onclick="FenModeControl_4(this.id)"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img id="ac4_fan" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 32px; height: 32px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr style="margin: 5px">
+                                    <p style="margin-top:0px;">Fan Speed:</p>
+                                    <div class="FanSpeedControl"
+                                        style="margin-top: 10px;margin-bottom: 10px">
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101001" class="device_control_status"
+                                                    onclick="remote4_speedone(this.id)">
+                                                <img id="ac4_lv1" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 18px; height: 18px; margin-top: 8px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101001" class="device_control_status"
+                                                onclick="remote4_speedtwo(this.id)">
+                                                <img id="ac4_lv2" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 24px; height: 24px; margin-top: 6px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101001" class="device_control_status"
+                                                onclick="remote4_speedthree(this.id)">
+                                                <img id="ac4_lv3" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 30px; height: 30px; margin-top: 4px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101001" class="device_control_status"
+                                                onclick="remote4_speedfour(this.id)">
+                                                <img id="ac4_lv4" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                        <div class="FanSpeedIcon"
+                                            style="margin-top: -6px;">
+                                            <button id="AC101001" class="device_control_status"
+                                                onclick="remote4_speedfive(this.id)">
+                                                <img id="ac4_lv5" src="images/remodeair/fanoff.png"
+                                                    alt=""
+                                                    style="width: 36px; height: 36px; margin-top: 0px;">
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <hr style="margin: 5px;">
+
+                                    <div class="onoffACbutton" style="margin: 10px;">
+                                        <div class="OffACbutton">
+                                            <button id="" onclick="swingturn_off_con_ac_4()"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="border: 0px;">
+                                                <img src="images/remodeair/swingoff.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                        <div class="OnACbutton">
+                                            <button id="" onclick="swingturn_on_con_ac_4()"
+                                                type="button" name=""
+                                                class="device_control_status"
+                                                style="display: inline; border: 0px;">
+                                                <img src="images/remodeair/swingon.png"
+                                                    alt=""
+                                                    style="width: 48px; height: 48px;">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Floorplan -->
+                    <div class="EnergyReportBox">
+                        <div class="EnergyReportBox-inside">
+						<!-- Right Side -->
+						<div class="col-3" style="padding-right:10px;">
+
+							<!-- KVM  Start-->
+							<div class="right_container" style="margin-top: 0px; width: 200px;">
+								<div class="one_right" style="height:140px;">
+									<h3 style="padding-top:10px;">KVM</h3>
+									<div class="row_container">
+										<div class="row" style="padding-left: 5px;padding-top:1px">
+											<div class="col-lg-5">
+												<div>
+													<div style="padding-left: 0px;">
+														<button id="KS101001" onclick="kvm_input1(this.id)" class="SceneStyle" style="padding-right: 10px;">
+															<h5>Input 1</h5>
+														</button>
+														<!-- <input class="toggle-btn" type="radio" value="Input 1"
+															onclick="kvm_input1()" style="padding-right: 10px;"
+															name="kvm"> -->
+													</div>
+													<!-- <button class="scbtn" onclick="kvm_input1()">
+														<h5>Input 1</h5>
+													</button> -->
+												</div>
+												<div style="padding-top: 20px;">
+													<div style="padding-left: 0px;">
+														<button id="KS101001" onclick="kvm_input2(this.id)" class="SceneStyle" style="padding-right: 10px;">
+															<h5>Input 2</h5>
+														</button>
+														<!-- <input class="toggle-btn" type="radio" value="Input 2"
+															onclick="kvm_input2()" style="padding-right: 10px;"
+															name="kvm"> -->
+													</div>
+													<!-- <button class="scbtn" onclick="kvm_input2()">
+														<h5>Input 2</h5>
+													</button> -->
+												</div>
+											</div>
+											<div class="col-lg-7" style="padding-left: 22px;">
+												<div>
+													<div style="padding-left: 0px;">
+														<button id="KS101001" onclick="kvm_input3(this.id)" class="SceneStyle" style="padding-right: 10px;">
+															<h5>Input 3</h5>
+														</button>
+														<!-- <input class="toggle-btn" type="radio" value="Input 3"
+															onclick="kvm_input3()" style="padding-right: 10px;"
+															name="kvm"> -->
+													</div>
+													<!-- <button class="scbtn" onclick="kvm_input3()">
+														<h5>Input 3</h5>
+													</button> -->
+												</div>
+												<div style="padding-top: 20px;">
+													<div style="padding-left: 0px;">
+														<button id="KS101001" onclick="kvm_input4(this.id)" class="SceneStyle" style="padding-right: 10px;">
+															<h5>Input 4</h5>
+														</button>
+														<!-- <input class="toggle-btn" type="radio" value="Input 4"
+															onclick="kvm_input4()" style="padding-right: 10px;"
+															name="kvm"> -->
+													</div>
+													<!-- <button class="scbtn" onclick="kvm_input4()">
+														<h5>Input 4</h5>
+													</button> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- KVM  End-->
+
+							<!-- Projector Start-->
+							<div class="right_container" style="width: 200px">
+								<div class="two_right" style="height:115px;">
+									<h3 style="padding-top:10px;">Projecter</h3>
+									<div class="row_container">
+										<div class="row">
+											<div class="col-lg-5" style="padding: 0px;">
+												<!-- <h4 style="margin-top: 14px">Power</h4>
+												<h4 style="margin-top: 25px;">Source</h4> -->
+												<!-- Power -->
+												<ul style="padding-left: 50px;">
+													<div class="menuof">
+														<button id="PR101001" onclick="control_projector(this.id)" type="button" name=""
+															class="device_control_status" style="border: 0px;">
+															<img src="images/remodeair/switchoff.png" alt=""
+																id="myImage"
+																style="width: 48px; height: 48px;">
+														</button>
+													</div>
+
+												</ul>
+											</div>
+											<div class="col-lg-7" style="padding: 0px;">
+												<div class="menuof">
+
+
+													<!-- Source -->
+													<ul style="padding-left: 20px;padding-top:10px;">
+														<!-- Trigger/Open The Modal -->
+														<button id="myBtn_source" class="SceneStyle" style="">
+															<h5>Source</h5>
+														</button>
+														<!-- The Modal -->
+														<div id="myModal_source" class="modal">
+
+															<!-- Modal content -->
+															<div class="modal-contentprojecter">
+																<div class="modal-header">
+																	<h3 class="colormodal">Source</h3>
+																	<span class="close"
+																		onclick="source()">&times;</span>
+																</div>
+																<div class="modal-body"
+																	style="text-align: center; align-items: center; margin-left: 0px;">
+
+																	<div class="ACremoteControl"
+																		style="text-align: center; margin-left: 0px;">
+
+                                                                        <div class="ACModeControl" 
+                                                                        style="align-items: center; text-align: center; margin-left: 0px;">
+                                                                        <div class="CoolMode">
+																			</div>
+																			<div class="DryMode">
+																			</div>
+																			<div class="FanMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_source(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<img src="./images/Projector+/enter.png"
+																						alt=""
+																						style="width: 40px; height: 40px;">
+																				</button>
+																			</div>
+																		</div>
+																		<hr style="margin: 10px;">
+
+																		<div class="ACModeControl" style="margin: 15px">
+																			<div class="CoolMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_home(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<img src="./images/Projector+/home.png"
+																						alt=""
+																						style="width: 40px; height: 40px;">
+																				</button>
+																			</div>
+																			<div class="DryMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_setting(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="display: inline; border: 0px;">
+																					<img src="./images/Projector+/controls.png"
+																						alt=""
+																						style="width: 40px; height: 40px;">
+																				</button>
+																			</div>
+																			<div class="FanMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_back(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="display: inline; border: 0px;">
+																					<img src="./images/Projector+/undo.png"
+																						alt=""
+																						style="width: 40px; height: 40px;">
+																				</button>
+																			</div>
+																		</div>
+																		<hr style="margin: 10px">
+
+																		<div class="ACModeControl" style="margin: 15px">
+																			<div class="CoolMode">
+																			</div>
+																			<div class="DryMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_up(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<img src="./images/Projector+/up.png"
+																						alt=""
+																						style="width: 48px; height: 48px;">
+																				</button>
+																			</div>
+																			<div class="FanMode">
+																			</div>
+																		</div>
+																		<div class="ACModeControl" style="margin: 15px">
+																			<div class="CoolMode"
+																				style="padding-left: 50px;">
+																				<button id="PR101001"
+																					onclick="projectorsource_left(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="display: inline; border: 0px;">
+																					<img src="./images/Projector+/left.png"
+																						alt=""
+																						style="width: 48px; height: 48px;">
+																				</button>
+																			</div>
+																			<div class="DryMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_enter(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<h4 style="color: black;widows: 48px;height:48px;padding-top:15px;">
+																						Enter
+																					</h4>
+																				</button>
+																			</div>
+																			<div class="FanMode"
+																				style="padding-right: 50px;">
+																				<button id="PR101001"
+																					onclick="projectorsource_right(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<img src="images/Projector+/right.png"
+																						alt style="width: 48px; height: 48px;">
+																				</button>
+																			</div>
+
+																		</div>
+																		<div class="ACModeControl" style="margin: 15px">
+																			<div class="CoolMode">
+																			</div>
+																			<div class="DryMode">
+																				<button id="PR101001"
+																					onclick="projectorsource_down(this.id)"
+																					type="button" name=""
+																					class="device_control_status"
+																					style="border: 0px;">
+																					<img src="./images/Projector+/down.png"
+																						alt=""
+																						style="width: 48px; height: 48px;">
+																				</button>
+																			</div>
+																			<div class="FanMode">
+																			</div>
+																		</div>
+																		<h3 style=" margin-top:20px ;color: black">
+																			Optoma
+																		</h3>
+																		<hr style="margin: 5px;">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Projecter End -->
+
+							<!-- Screen Start-->
+							<div class="right_container" style="width: 200px">
+								<div class="three_right" style="height: 200px;">
+									<h3 style="padding-top:10px;">Screen</h3>
+									<div class="row_container">
+										<div class="row">
+											<div class="col-lg-5">
+												<h4>Up</h4>
+												<h4>Pause</h4>
+												<h4>Down</h4>
+											</div>
+											<div class="col-lg-7">
+												<li>
+													<!-- Up -->
+													<button id="PT101001" onclick="screen_up(this.id)" type="button" name=""
+															class="device_control_status" ontouchstart=""
+															style="display: inline; border: 0px; -webkit-tap-highlight-color: rgba(0,0,0,0);">
+														<img src="images/screen/up-button.png" alt=""
+															style="width: 48px; height: 48px;">
+													</button>
+												</li>
+												<li>
+													<!-- Pause -->
+													<div style="padding-left: 3px">
+														<button id="PT101001" onclick="screen_pause(this.id)" type="button" name=""
+															class="device_control_status" ontouchstart=""
+															style="display: inline; border: 0px; -webkit-tap-highlight-color: rgba(0,0,0,0);">
+															<img src="./images/pause-thin-rounded-button.png" alt=""
+																style="width: 40px; height: 40px;">
+														</button>
+													</div>
+
+												</li>
+												<li>
+													<!-- Down -->
+													<button id="PT101001" onclick="screen_down(this.id)" type="button" name=""
+														class="device_control_status" ontouchstart=""
+														style="display: inline; border: 0px; -webkit-tap-highlight-color: rgba(0,0,0,0);">
+														<img src="images/screen/down-button.png" alt=""
+																style="width: 48px; height: 48px;">
+													</button>
+												</li>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Screen End-->
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
+	<script src="init-firebase.js"></script>
+
+	<!-- JS Logical *****-->
+	<script src="./js/Conference_Room/conference_lighting_control_row1.js"></script>
+	<script src="./js/Conference_Room/conference_lighting_control_row2.js"></script>
+	<script src="./js/Conference_Room/conference_lighting_control_row3.js"></script>
+	<script src="./js/Conference_Room/conference_lighting_control_row4.js"></script>
+	<script src="./js/Conference_Room/conference_curtain_control.js"></script>
+	<script src="./js/Conference_Room/conference_scene_control.js"></script>
+	<script src="./js/Conference_Room/conference_kvm_control.js"></script>
+	<script src="./js/Conference_Room/conference_screen_control.js"></script>
+	<script src="./js/Conference_Room/conference_air_control_1.js"></script>
+	<script src="./js/Conference_Room/conference_air_control_2.js"></script>
+	<script src="./js/Conference_Room/conference_air_control_3.js"></script>
+	<script src="./js/Conference_Room/conference_air_control_4.js"></script>
+	<script src="./js/Conference_Room/conference_projector.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+	<!-- MOdal Air Remote 1-->
+	<script>
+		// Get the modal
+		var modal_remote1 = document.getElementById("myModal_remote1");
+
+		// Get the button that opens the modal
+		var btn_remote1 = document.getElementById("myBtn_remote1");
+
+		// Get the <span> element that closes the modal
+		var span_remote1 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_remote1.onclick = function () {
+			console.log("myModal_remote1");
+			modal_remote1.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function xremote1() {
+			console.log("close the modal with: X");
+			modal_remote1.style.display = "none";
+		}
+
+			// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+	<!-- MOdal Air Remote 2-->
+	<script>
+		// Get the modal
+		var modal_remote2 = document.getElementById("myModal_remote2");
+
+		// Get the button that opens the modal
+		var btn_remote2 = document.getElementById("myBtn_remote2");
+
+		// Get the <span> element that closes the modal
+		var span_remote2 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_remote2.onclick = function () {
+			console.log("myModal_remote2");
+			modal_remote2.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function xremote2() {
+			console.log("close the modal with: X");
+			modal_remote2.style.display = "none";
+		}
+
+			// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+	<!--MOdal Air Remote 3-->
+	<script>
+		// Get the modal
+		var modal_remote3 = document.getElementById("myModal_remote3");
+
+		// Get the button that opens the modal
+		var btn_remote3 = document.getElementById("myBtn_remote3");
+
+		// Get the <span> element that closes the modal
+		var span_remote3 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_remote3.onclick = function () {
+			console.log("myModal_remote3");
+			modal_remote3.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function xremote3() {
+			console.log("close the modal with: X");
+			modal_remote3.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+	<!--MOdal Air Remote 4-->
+	<script>
+		// Get the modal
+		var modal_remote4 = document.getElementById("myModal_remote4");
+
+		// Get the button that opens the modal
+		var btn_remote4 = document.getElementById("myBtn_remote4");
+
+		// Get the <span> element that closes the modal
+		var span_remote4 = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_remote4.onclick = function () {
+			console.log("myModal_remote4");
+			modal_remote4.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function xremote4() {
+			console.log("close the modal with: X");
+			modal_remote4.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+	<!--MOdal Projecter Source-->
+	<script>
+		// Get the modal
+		var modal_source = document.getElementById("myModal_source");
+
+		// Get the button that opens the modal
+		var btn_source = document.getElementById("myBtn_source");
+
+		// Get the <span> element that closes the modal
+		var span_source = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal
+		btn_source.onclick = function () {
+			console.log("myModal_source");
+			modal_source.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function source() {
+			console.log("close the modal with: X");
+			modal_source.style.display = "none";
+		}
+
+					// When the user clicks anywhere outside of the modal, close it
+
+	</script>
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="plugins/greensock/TweenMax.min.js"></script>
+	<script src="plugins/greensock/TimelineMax.min.js"></script>
+	<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="plugins/greensock/animation.gsap.min.js"></script>
+	<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="plugins/easing/easing.js"></script>
+	<script src="plugins/progressbar/progressbar.min.js"></script>
+	<script src="plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+	<script src="js/contact.js"></script>
+</body>
+
+</html>

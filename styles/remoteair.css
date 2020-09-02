@@ -144,8 +144,8 @@ hr {
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 25%;
-  height: 480px;
+  width: auto;
+  height: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -153,7 +153,7 @@ hr {
   animation-duration: 0.4s;
   float: left;
   border-radius: 12px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 /* Air Control */
@@ -163,8 +163,8 @@ hr {
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 25%;
-  height: 480px;
+  width: auto;
+  height: 500px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -175,11 +175,13 @@ hr {
   margin-right: 10px;
 }
 
-
-
-
-
-
+.modal-header {
+  margin: 0;
+  /* padding: 10px; */
+  background: rgb(154, 36, 252);
+  background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
+  color: white
+}
 
 
 .modal-body {
