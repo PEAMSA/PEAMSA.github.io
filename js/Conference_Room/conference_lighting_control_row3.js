@@ -4,11 +4,10 @@ localStorage.setItem("Status_lighting_row_3_Local", Status_lighting_row_3)
 
 // Retrieve data from Firebase for Checking Device Status
 var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devicetype").child("lighting");
-var ref_lighting_row_3 = ref_devices_data.child("yyyyyy");
+var ref_lighting_row_3 = ref_devices_data.child("MT03");
 
 ref_lighting_row_3.on("value", function(snapshot) {
     var lighting_row_3 = snapshot.val();
-    document.getElementById("xxx").innerHTML = lighting_row_3["STATUS"];
     // Recheck Device Status from Firebase // 
     var Status_lighting_row_3 = lighting_row_3["STATUS"];
     Status_lighting_row_3_changeImage(Status_lighting_row_3)

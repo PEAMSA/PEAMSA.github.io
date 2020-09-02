@@ -238,7 +238,8 @@ input.conference_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -253,7 +254,8 @@ input.conference_welcome::before {
 }
 
 input.conference_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -272,7 +274,8 @@ input.conference_meeting::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #ba83c4;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -287,8 +290,9 @@ input.conference_meeting::before {
 }
 
 input.conference_meeting:checked::before {
-  background: rgb(204, 0, 0);
-  color: #eee;
+  background-color: #ba83c4;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 110px;
@@ -306,7 +310,8 @@ input.conference_showbattery::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -321,8 +326,9 @@ input.conference_showbattery::before {
 }
 
 input.conference_showbattery:checked::before {
-  background: green;
-  color: #eee;
+  background-color: #fcf3b5;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 110px;
@@ -340,7 +346,8 @@ input.conference_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -355,8 +362,9 @@ input.conference_goodbye::before {
 }
 
 input.conference_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 110px;
@@ -374,7 +382,8 @@ input.eo_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -389,7 +398,8 @@ input.eo_welcome::before {
 }
 
 input.eo_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -408,7 +418,8 @@ input.eo_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -423,8 +434,9 @@ input.eo_goodbye::before {
 }
 
 input.eo_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
@@ -442,7 +454,8 @@ input.hy_automatic::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -457,8 +470,9 @@ input.hy_automatic::before {
 }
 
 input.hy_automatic:checked::before {
-  background: blue;
-  color: #eee;
+  background-color: #fcf3b5;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
@@ -476,7 +490,8 @@ input.hy_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -491,7 +506,8 @@ input.hy_welcome::before {
 }
 
 input.hy_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -510,7 +526,8 @@ input.hy_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -525,8 +542,9 @@ input.hy_goodbye::before {
 }
 
 input.hy_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;

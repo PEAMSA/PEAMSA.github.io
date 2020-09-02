@@ -224,7 +224,8 @@ input.or1_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -239,7 +240,8 @@ input.or1_welcome::before {
 }
 
 input.or1_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -257,7 +259,8 @@ input.or1_curtain_open::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -272,7 +275,8 @@ input.or1_curtain_open::before {
 }
 
 input.or1_curtain_open:checked::before {
-  background: yellow;
+  background-color: #fcf3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -291,7 +295,8 @@ input.or1_curtain_close::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #ba83c4;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -306,7 +311,8 @@ input.or1_curtain_close::before {
 }
 
 input.or1_curtain_close:checked::before {
-  background: yellow;
+  background-color: #ba83c4;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -325,7 +331,8 @@ input.or1_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -340,8 +347,9 @@ input.or1_goodbye::before {
 }
 
 input.or1_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 110px;
@@ -360,7 +368,8 @@ input.or2_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -375,7 +384,8 @@ input.or2_welcome::before {
 }
 
 input.or2_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -393,7 +403,8 @@ input.or2_curtain_open::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -408,7 +419,8 @@ input.or2_curtain_open::before {
 }
 
 input.or2_curtain_open:checked::before {
-  background: yellow;
+  background-color: #fcf3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -427,7 +439,8 @@ input.or2_curtain_close::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #ba83c4;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -442,7 +455,8 @@ input.or2_curtain_close::before {
 }
 
 input.or2_curtain_close:checked::before {
-  background: yellow;
+  background-color: #ba83c4;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -461,7 +475,8 @@ input.or2_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -476,8 +491,9 @@ input.or2_goodbye::before {
 }
 
 input.or2_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 110px;
@@ -496,7 +512,8 @@ input.mc_automatic::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -511,8 +528,9 @@ input.mc_automatic::before {
 }
 
 input.mc_automatic:checked::before {
-  background: blue;
-  color: #eee;
+  background-color: #fcf3b5;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
@@ -533,7 +551,8 @@ input.mc_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -548,7 +567,8 @@ input.mc_welcome::before {
 }
 
 input.mc_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -568,7 +588,8 @@ input.mc_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -583,8 +604,9 @@ input.mc_goodbye::before {
 }
 
 input.mc_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
@@ -608,7 +630,8 @@ input.hy_automatic::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fcf3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -623,8 +646,9 @@ input.hy_automatic::before {
 }
 
 input.hy_automatic:checked::before {
-  background: blue;
-  color: #eee;
+  background-color: #fcf3b5;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
@@ -642,7 +666,8 @@ input.hy_welcome::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #fca3b5;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -657,7 +682,8 @@ input.hy_welcome::before {
 }
 
 input.hy_welcome:checked::before {
-  background: yellow;
+  background-color: #fca3b5;
+  opacity: 1.0;
   color: black;
   /* border-color: #eee; */
   height: 35px;
@@ -676,7 +702,8 @@ input.hy_goodbye::before {
   content: attr(value);
   display: inline-block;
   padding: 5px;
-  background: transparent;
+  background-color: #b1d1ed;
+  opacity: 0.6;
   font-size: 10pt;
   color: black;
   border-radius: 10px;
@@ -691,8 +718,9 @@ input.hy_goodbye::before {
 }
 
 input.hy_goodbye:checked::before {
-  background: dimgray;
-  color: #eee;
+  background-color: #b1d1ed;
+  opacity: 1.0;
+  color: black;
   /* border-color: #eee; */
   height: 35px;
   width: 90px;
