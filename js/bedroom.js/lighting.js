@@ -1,3 +1,19 @@
+// Retrieve data from Firebase for Checking Device Status
+var ref_devices_data = firebase.database().ref().child("peasbhmsr").child("devicetype").child("lighting");
+var ref_lighting_row = ref_devices_data.child("BD01");
+
+ref_lighting_row.on("value", function(snapshot) {
+    var lighting_row = snapshot.val();
+    // Recheck Device Status from Firebase // 
+    var Status_lighting_row = lighting_row["STATUS"];
+    
+    lighting_changeImage(Status_lighting_row)
+    // var Status_lighting_row_1_Local = localStorage.setItem("Status_lighting_row_1_Local", Status_lighting_row_1)
+  });
+
+
+
+
 //  On/Off Lighting Row 1
 function turn_off_light(device_id) {
     lighting_post_data = { 
@@ -22,7 +38,7 @@ function turn_off_light(device_id) {
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
             console.log(data);
-            lighting_changeImage(status = "OFF")
+            // lighting_changeImage(status = "OFF")
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
@@ -56,7 +72,7 @@ function turn_on_light(device_id) {
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
             console.log(data);
-            lighting_changeImage(status = "ON")
+            // lighting_changeImage(status = "ON")
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
@@ -67,7 +83,7 @@ function turn_on_light(device_id) {
     //
 }
 
-function lighting_changeImage() {
+function lighting_changeImage(status) {
     var image1_1 = document.getElementById('eorow1_1');
     var image1_2 = document.getElementById('eorow1_2');
     var image1_3 = document.getElementById('eorow1_3');
