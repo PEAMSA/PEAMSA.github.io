@@ -39,12 +39,14 @@ function Login() {
     .done(function(data, textStatus, jqXHR) {
       console.log("HTTP Request Succeeded: " + jqXHR.status);
       console.log(data);
+      console.log(data['data']['token'])
       // Loading Animation while login
       // $('.modal-x').modal('hide');
       // --------------------------- //
       if (jqXHR.status == 200) {
         console.log("Login successful.");
         localStorage.setItem("token_local", data['token']);
+        setCookie(document.getElementById("username").value, data['data']['token'], 1)
         window.location.replace("home.html");
       }
     })
@@ -67,4 +69,11 @@ window.onclick = function(event) {
     console.log("Dismiss Modal");
     modal.style.display = "none";
   }
+}
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }

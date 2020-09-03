@@ -111,7 +111,7 @@ function lightingrow3(devieID_lighting_row_3) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
             console.log(data);
             var Status_lighting_row_3_Local = localStorage.setItem("Status_lighting_row_3_Local", Status_lighting_row_3)
-            Status_lighting_row_3_changeImage(Status_lighting_row_3)
+            // Status_lighting_row_3_changeImage(Status_lighting_row_3)
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
