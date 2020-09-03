@@ -17,7 +17,7 @@
   padding-left: 50px;
 }
 
-h3 {
+h6 {
   font-weight: normal;
 }
 
@@ -26,7 +26,10 @@ h3 {
 }
 
 .login {
-  margin-left: 180px;
+  position: absolute;
+  right: 100px;
+  align-items: center;
+  margin-left: 0px;
   margin-top: -5px;
 }
 
@@ -65,7 +68,7 @@ li {
 #content {
   background: transparent;
   position: absolute;
-  width: 70%;
+  width: 100%;
   margin-left: 30px;
   padding: 0px;
   color: #8633FF;
