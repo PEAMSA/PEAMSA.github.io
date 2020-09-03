@@ -1,5 +1,5 @@
 window.onload = function () {
-
+        console.log("Energy Page!!!!!!!!!!!!")
         // -------------------------- Get data from Heroku Backend------------------------------ //
         jQuery.ajax({
             url: "https://msrdatalog.herokuapp.com/energy/api/getenergy",

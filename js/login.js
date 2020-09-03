@@ -16,7 +16,6 @@ function Login() {
     username: document.getElementById("username").value,
     password: document.getElementById("password").value
   })
-  console.log(login_data)
   console.log("POST Login method by jQuery")
   // Loading Animation while login
   // $('.modal-x').modal('show');
@@ -38,10 +37,7 @@ function Login() {
   })
     .done(function(data, textStatus, jqXHR) {
       console.log("HTTP Request Succeeded: " + jqXHR.status);
-      console.log(data);
-      console.log(data['data']['token'])
-      // Loading Animation while login
-      // $('.modal-x').modal('hide');
+      // console.log(data);
       // --------------------------- //
       if (jqXHR.status == 200) {
         console.log("Login successful.");
