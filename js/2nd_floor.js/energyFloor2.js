@@ -42,8 +42,17 @@ ref_kW_Criticalload.on("value", function(snapshot) {
     var kW_Criticalload = snapshot.val();
     var kW_Criticalload = parseFloat(kW_Criticalload);
     // console.log("Temp is " + temp_server);
-    document.getElementById("kW_Criticalload").innerHTML = kW_Criticalload;
-    localStorage.setItem("kW_Criticalload_local", kW_Criticalload)
+
+    if (kW_Criticalload == "") {
+        console.log("kW_Criticalload = " + kW_Criticalload)
+        kW_Criticalload = 0;
+        document.getElementById("kW_Criticalload").innerHTML = kW_Criticalload;
+        localStorage.setItem("kW_Criticalload_local", kW_Criticalload)
+    } else {
+        console.log("kW_Criticalload = " + kW_Criticalload)
+        document.getElementById("kW_Criticalload").innerHTML = kW_Criticalload;
+        localStorage.setItem("kW_Criticalload_local", kW_Criticalload)    
+    }
 });
 
 
