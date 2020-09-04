@@ -235,7 +235,7 @@ function projectorsource_up(device_id) {
 // Enter Start
 function projectorsource_enter(device_id) {
     console.log("-----Control_projector----- :" + device_id);
-    var Status_projector_device = "ENTER"
+    var Status_projector_device = "OK"
     projector_post = { 
         device_type: "projector",
         device_id: device_id, 
