@@ -40,7 +40,7 @@ ref_kW_Criticalload.on("value", function(snapshot) {
     console.log("Get kW_Criticalload from firebase")
     //  console.log(snapshot.val());
     var kW_Criticalload = snapshot.val();
-    var kW_Criticalload = parseFloat(kW_Criticalload);
+    var kW_Criticalload = parseFloat(kW_Criticalload) * 1000;
     // console.log("Temp is " + temp_server);
 
     if (kW_Criticalload == "") {
