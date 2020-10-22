@@ -26,12 +26,16 @@
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
 
+   
+
 </head>
 
 <body>
     <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase.js"></script>
 	<script src="init-firebase.js"></script>
     <script src="./js/door.window/door.window.js"></script>
+
+   
 
     <div class="super_container">
         <!-- Header -->
@@ -97,330 +101,195 @@
         <!-- Right Content For Respondsive End-->
 
         <!-- Home -->
-        <div class="homeContent">
-            <div class="blog" style="padding-top: 35px">
-                <div class="container">
-                    <div class="row" style="padding-top:0px;">
+        <body>
+            <link rel="stylesheet" type="text/css" href="/styles/door.window.css">
+                <div class="homeContent">
+                    <div class="floorplan">
+                        <img class="floorplan1-image" src="images/floor_1.jpg" style="width: 450px; height:450px; " alt="">   
+
+                        <img id="WS103001_15" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                            margin-left: -395px; margin-top: 145px; position: absolute;" >
+                        
+                        <img id="WS103002_16" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                            margin-left: -400px; margin-top: 180px; position: absolute;" >
+                        
+                        <img id="DS103001_1" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                            margin-left: -406px; margin-top: 218px; position: absolute;" >
+                        
+                        <img id="SD103001_2" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                              margin-left: -330px; margin-top: 185px; position: absolute;" >
+                        
+                        <img id="WS103003_17" src="images/closed.jpg" class="Row1" 
+                         style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                               margin-left: -350px; margin-top: 250px; position: absolute;" >
+                        
+                        <img id="WS109001_24" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                              margin-left: -305px; margin-top: 270px; position: absolute;" >
+                       
+                        <img id="WS109002_25" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                              margin-left: -305px; margin-top: 300px; position: absolute;" >
+                        
+                        <img id="DS103002_2" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                              margin-left: -290px; margin-top: 190px; position: absolute;" >
+
+                        <img id="DS109001_3" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                             margin-left: -267px; margin-top: 230px; position: absolute;" >
+
+                        <img id="DS101001_5" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                               margin-left: -230px; margin-top: 298px; position: absolute;" >
+
+                        <img id="SD101002_7" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -165px; margin-top: 333px; position: absolute;" >
+
+                        <img id="SD101001_1" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -120px; margin-top: 333px; position: absolute;" >
+
+                        <img id="DS104001_6" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -330px; margin-top: 380px; position: absolute;" >
+
+                        <img id="DS109002_4" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -250px; margin-top: 390px; position: absolute;" >
+
+                        <img id="SD104001_3" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -360px; margin-top: 400px; position: absolute;" >
+
+                        <img id="WS104001_21" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -400px; margin-top: 453px; position: absolute;" >
+
+                        <img id="WS104002_22" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -370px; margin-top: 453px; position: absolute;" >
+
+                        <img id="WS104002_22" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -340px; margin-top: 453px; position: absolute;" >
+
+                        <img id="WS101001_18" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -175px; margin-top: 425px; position: absolute;" >
+
+                        <img id="WS101002_19" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -140px; margin-top: 425px; position: absolute;" >
+
+                        <img id="WS101003_20" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -110px; margin-top: 425px; position: absolute;" >
+
+              <!-- Floor 1 Part End -->
+
+              <!-- Floor 2 Part Start -->
+                        <img class="floorplan2-image" src="/images/floor_2.jpg" style="width: 450px; height:450px; " alt="">   
+
+                        <img id="DS206001_14" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -290px; margin-top: 336px; position: absolute;" >
+        
+                        <img id="WS201001_26" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -212px; margin-top: 108px; position: absolute;" >
+                  
+                        <img id="WS201002_27" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -170px; margin-top: 108px; position: absolute;" >
+
+                        <img id="WS201003_28" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -144px; margin-top: 108px; position: absolute;" >
+
+                        <img id="WS201004_29" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -119px; margin-top: 108px; position: absolute;" >
+
+                        <img id="SD201001_4" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -147px; margin-top: 170px; position: absolute;" >        
+
+                        <img id="SD202001_5" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -147px; margin-top: 285px; position: absolute;" >
+                                
+                        <img id="SD203001_6" src="images/SmokeClear.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 20%; opacity: 1; 
+                                margin-left: -147px; margin-top: 355px; position: absolute;" >
+
+                        <img id="DS205001_13" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -248px; margin-top: 140px; position: absolute;" >
+
+                        <img id="DS201001_7" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -248px; margin-top: 180px; position: absolute;" >
+                            
+                        <img id="DS202001_8" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -248px; margin-top: 285px; position: absolute;" >
+
+                        <img id="DS203001_10" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -248px; margin-top: 352px; position: absolute;" >
+
+                        <img id="DS202002_9" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -75px; margin-top: 300px; position: absolute;" >
+
+                        <img id="DS203002_11" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -100px; margin-top: 324px; position: absolute;" >
+
+                        <img id="DS204001_12" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -75px; margin-top: 345px; position: absolute;" >
+
+                        <img id="WS203001_30" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -170px; margin-top: 410px; position: absolute;" >
+
+                        <img id="WS203002_31" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -144px; margin-top: 410px; position: absolute;" >
+
+                        <img id="WS203003_32" src="images/closed.jpg" class="Row1" 
+                        style=" width: 20px; height: 20px; border-radius: 50%; opacity: 1; 
+                                margin-left: -119px; margin-top: 410px; position: absolute;" >
 
 
-                        <!-- Floor 1 Part Start -->
-                        <div class="col-lg-6" id="first-floor" style="">
-                            <div class="row">
-
-                                <!-- Floor 1 Left Part Start-->
-                                <div class="col-lg-7" style="padding:0px;border: 1px solid transparent;">
-                                    <div class="row">
-
-                                        <!-- Floor 1 Left Part #1 Start-->
-                                        <div class="col-lg-5" style="padding: 0px;border:1px solid transparent;">
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS103001_15" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 91px;margin-top: 75px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS103002_16" src="images/closed.jpg" alt="" class="Row1"
-                                                        style="margin-left: 86px;margin-top: 20px; ">
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS103001_1" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 70px;margin-top: 33px; ">
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="SD104001_3" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 130px;margin-top: 210px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS104001_21" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 80px;margin-top: 48px; ">
-                                                    <img id="WS104002_22" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 115px;margin-top: -43px; ">
-                                                </div>
-                                            </li>
+                    </div>
+              <!-- Floor 2 Part End-->
+                    <div class="namefloor_1" style="">
+                        <h3>1st Floor</h3>
+                      </div>
+                      <div class="namefloor_2" style="">
+                        <h3>2nd Floor</h3>
+                      </div>
+                
 
 
-                                        </div>
-                                        <!-- Floor 1 Left Part #1 End-->
+            </div>
+
+        </body>
+        
+            
+                    
+        </div>
+                        
 
 
-                                        <!-- Floor 1 Left Part #2 Start-->
-                                        <div class="col-lg-7" style="padding:0px;border:1px solid transparent ">
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="SD103001_2" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 20px;margin-top: 130px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS103002_2" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 70px;margin-top: -10px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="ST103001_2" src="" alt="" class="Row1"
-                                                        style=" margin-left: 45px;margin-top: 5px; ">
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS109001_3" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 103px;margin-top: -30px; ">
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS103003_17" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 5px;margin-top: -10px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS109001_24" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 55px;margin-top: 5px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS101001_5" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 150px;margin-top: 9px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS109002_25" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 55px;margin-top: -20px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS104001_6" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 20px;margin-top: 60px; ">
-                                                    <img id="DS109002_4" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 80px;margin-top: 70px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS104003_23" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 0px;margin-top: 66px; ">
-                                                </div>
-                                            </li>
-                                        </div>
-                                        <!-- Floor 1 Left Part #2 End-->
-
-
-                                    </div>
-                                </div>
-                                <!-- Floor 1 Left Part End-->
-
-                                <!-- Floor 1 Right Part Start-->
-                                <div class="col-lg-5" style="padding: 0px;border: 1px solid transparent">
-
-                                        <li>
-                                        <div class="status_sensor">
-                                            <img id="SD101002_7" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                style=" margin-left: 35px;margin-top: 315px;border:1px solid transparent ">
-                                            <img id="SD101001_1" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                style=" margin-left: 35px;margin-top: 315px;border:1px solid transparent ">
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="WS101001_18" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 20px;margin-top: 100px; ">
-                                            <img id="WS101002_19" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 20px;margin-top: 100px; ">
-                                            <img id="WS101003_20" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 20px;margin-top: 100px; ">
-                                        </div>
-                                    </li>
-                                </div>
-                                <!-- Floor 1 Right Part End-->
-
-
-                            </div>
-                            <div class="namefloor" style="">
-                                <h3>1st Floor</h3>
-                            </div>
-                        </div>
-                        <!-- Floor 1 Part End -->
-
-
-                        <!-- Floor 2 Part Start -->
-                        <div class="col-lg-6" id="second-floor">
-                            <div class="row">
-
-                                <!-- Floor 2 Left Part Start-->
-                                <div class="col-lg-7" style="padding: 0px;border:1px solid transparent;height: 522px;;">
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="WS201001_26" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 315px;margin-top: 30px; ">
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="DS205001_13" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 273px;margin-top: 25px;  ">
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="DS201001_7" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 270px;margin-top: 27px; ">
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="DS202001_8" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 270px;margin-top: 117px;  ">
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="DS206001_14" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 210px;margin-top: 50px;  ">
-
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="status_sensor">
-                                            <img id="DS203001_10" src="images/closed.jpg" alt="" class="Row1"
-                                                style=" margin-left: 270px;margin-top: 2px; ">
-                                        </div>
-                                    </li>
-                                </div>
-                                <!-- Floor 2 Left Part End-->
-
-
-
-                                <!-- Floor 2 Right Part Start-->
-                                <div class="col-lg-5" style="padding: 0px;border:1px solid transparent">
-                                <!-- Floor 2 Right Part Row 1 Start-->
-                                    <div class="row" style="padding: 0px; border:1px solid transparent">
-                                        <li>
-                                            <div class="status_sensor">
-                                                <img id="WS201002_27" src="images/closed.jpg" alt="" class="Row1"
-                                                    style=" margin-left: 55px;margin-top: 25px; ">
-                                                <img id="WS201003_28" src="images/closed.jpg" alt="" class="Row1"
-                                                    style=" margin-left: 10px;margin-top: 25px; ">
-                                                <img id="WS201004_29" src="images/closed.jpg" alt="" class="Row1"
-                                                    style=" margin-left: 10px;margin-top: 25px; ">
-                                            </div>
-                                        </li>
-                                    </div>
-                                    <!-- Floor 2 Right Part Row 1 End-->
-
-
-                                    <!-- Floor 2 Right Part Row 2 Start-->
-                                    <div class="row" style="">
-
-                                        <!-- Floor 2 Right Part Row 2/Part 1 Start-->
-                                        <div class="col-lg-6" style="border:1px solid transparent;padding:0px">
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="SD201001_4" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 80px;margin-top: 65px; ">
-
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="SD202001_5" src="images/SmokeClear.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 85px;margin-top: 130px;  ">
-
-                                                </div>
-                                            </li>
-
-
-                                                <li>
-                                                <div class="status_sensor">
-                                                    <img id="SD203001_6" src="images/SmokeClear.jpg.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 80px;margin-top: 80px; border: 1px solid transparent ">
-
-                                                </div>
-                                            </li>
-
-                                        </div>
-                                        <!-- Floor 2 Right Part Row 2/Part 1 End-->
-
-                                        <!-- Floor 2 Right Part Row 2/Part 2 Start-->
-                                        <div class="col-lg-6" style="padding: 0px;border:1px solid transparent;">
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS202002_9" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 50px;margin-top: 245px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS203002_11" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 5px;margin-top: 5px; ">
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="DS204001_12" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 50px;margin-top: 4px;">
-                                                </div>
-                                            </li>
-                                        </div>
-                                        <!-- Floor 2 Right Part Row 2/Part 2 End-->
-
-
-                                    </div>
-                                    <!-- Floor 2 Right Part Row 2 End-->
-
-
-
-                                    <!-- Floor 2 Right Part Row 3 Start-->
-                                    <div class="row">
-                                        <div class="col-lg-12" style="border: 1px solid transparent ;">
-                                            <li>
-                                                <div class="status_sensor">
-                                                    <img id="WS203001_30" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 40px;margin-top: 40px;  ">
-                                                    <img id="WS203002_31" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 10px;margin-top: 40px; ">
-                                                    <img id="WS203003_32" src="images/closed.jpg" alt="" class="Row1"
-                                                        style=" margin-left: 10px;margin-top: 40px; ">
-                                                </div>
-                                            </li>
-                                        </div>
-                                    </div>
-                                    <!-- Floor 2 Right Part Row 3 End-->
-
-                                </div>
-                                <!-- Floor 2 Right Part End-->
-
-                            </div>
-                            <div class="namefloor" style="">
-                                <h3>2nd Floor</h3>
-                            </div>
-                        </div>
-                        <!-- Floor 2 Part End-->
 
                     </div>
                 </div>
