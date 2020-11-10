@@ -136,31 +136,3 @@ function con_goodbye() {
   
   }
   // Scene Control Wecome Start
-
-/////////////////////////// Sync Scene status from firebase by Torty:) //////////////////
-var ref_scene_fl1 = firebase.database().ref().child("peasbhmsr").child("scene")
-var ref_auditorium = ref_scene_fl1.child("auditorium").child("scene_name")
-
-ref_auditorium.on("value", function(snapshot) {
-  console.log("Get ref_auditorium from firebase")
-  var ref_auditorium_status = snapshot.val();
-  console.log(ref_auditorium_status);
-  switch(ref_auditorium_status) {
-      case "welcome":
-          document.getElementById('scene_new').style.backgroundColor = "#fca3b5"
-          break;
-
-      case "meeting":
-          document.getElementById('scene_new').style.backgroundColor = "#ba83c4"
-          break;
-
-      case "show battery":
-          document.getElementById('scene_new').style.backgroundColor = "#fcf3b5"
-          break;
-
-      case "goodbye":
-          document.getElementById('scene_new').style.backgroundColor = "#b1d1ed"
-          break;
-  }
-});
-/////////////////////////// Sync Scene status from firebase by Torty:) //////////////////
