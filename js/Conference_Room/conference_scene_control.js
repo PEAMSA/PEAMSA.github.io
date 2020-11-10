@@ -151,7 +151,7 @@ ref_auditorium.on("value", function(snapshot) {
           break;
 
       case "meeting":
-          document.getElementById('scene_new').style.backgroundColor = "#ba83c4"
+          document.getElementById('scene_new').style.backgroundColor = ":#be41d4"
           break;
 
       case "show battery":
