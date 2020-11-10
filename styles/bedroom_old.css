@@ -1,4 +1,14 @@
-
+#pic {
+	background-image: url(./bedroom.jpg);
+	/* transform: rotate(20deg); */
+	background-repeat: no-repeat;
+	/* background-size: 50%; */
+	height: 560px;
+	width: 700px;
+	position: relative;
+	background-size: 47%;
+	background-position: 50%;
+}
 
 .container {
 	padding: 0px;
@@ -11,20 +21,15 @@
 	background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
 	border-radius: 12px;
 	padding-left: 10px;
-	width: 200px;
-    margin-left: 19px;
+	width: 105%;
 }
 
 .left_container {
-	margin-top: 13px;
-	margin-bottom: 20px;
-	
+	margin-top: 13px
 }
 
 .four_left .row_container .row .col-lg-3 h4 {
-	padding-top: 4px;
-	
-	
+	padding-top: 4px
 }
 
 .three_right .row_container .row .col-lg-8 h4 {

@@ -106,14 +106,14 @@ function lighting_changeImage(status) {
         image1_9.src = "images/goodbye.jpg";
 
     } else {
-        image1_1.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_2.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_3.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_4.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_5.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_6.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_7.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_8.src = "https://www.colorhexa.com/fbab7e.png";
-        image1_9.src = "https://www.colorhexa.com/fbab7e.png";
+        image1_1.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_2.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_3.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_4.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_5.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_6.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_7.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_8.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
+        image1_9.src = "https://thumbs.dreamstime.com/t/lights-garland-abstract-blurred-led-light-orange-lighting-bokeh-yellow-perspective-as-explosion-rays-62413661.jpg";
     }
 }

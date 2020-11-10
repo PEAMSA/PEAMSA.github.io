@@ -1,27 +1,4 @@
-// Sync Scene status from firebase
-var ref_scene_bedroom = firebase.database().ref().child("peasbhmsr").child("scene")
-var ref_bedroom = ref_scene_bedroom.child("bedroom").child("scene_name")
-
-ref_bedroom.on("value", function(snapshot) {
-  console.log("Get ref_bedroom from firebase")
-  var ref_bedroom_status = snapshot.val();
-  console.log(ref_bedroom_status);
-  switch(ref_bedroom_status) {
-    case "welcome":
-          document.getElementById('bedroom_new').style.backgroundColor = "#fca3b5"
-          break;
-    
-    case "goodnight":
-          document.getElementById('bedroom_new').style.backgroundColor = "#f2ff5d"
-          break;
-      
-    case "goodbye":
-          document.getElementById('bedroom_new').style.backgroundColor = "#b1d1ed"
-          break;
-  }
-});
-
-// Scene Control Welcome Start
+// Scene Control Wecome Start
 function scene_welcome() {
   console.log("POST method by jQuery");
   jQuery.ajax({
@@ -125,4 +102,3 @@ function scene_goodbye() {
 
 }
 // Scene ControlBye End
-
