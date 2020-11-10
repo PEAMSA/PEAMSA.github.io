@@ -54,7 +54,6 @@
 .SummaryEnergyReport {
   width: 30%;
   height: 100%;
-  margin-right: 20px;
 }
 
 .BuidingFloorPlan {
@@ -68,19 +67,6 @@
 }
 
 .weather_report_header {
-  margin-top: 8px;
-  align-items: center;
-  text-align: center;
-  margin-left: 20px;
-}
-
-.weather_report_header2 {
-  margin-top: 8px;
-  align-items: center;
-  text-align: center;
-}
-
-.SummaryEnergyReport_2 {
   margin-top: 8px;
   align-items: center;
   text-align: center;
@@ -118,14 +104,12 @@
   margin-top: 10px;
   width: auto;
   height: 70%;
-  margin-left: 20px;
 }
 
 .Indoor_weather {
   margin-top: 10px;
   width: auto;
   height: 30%;
-  margin-left: 20px;
 }
 
 .weather_icon {
@@ -146,17 +130,4 @@
 
 .report_card_header {
   color: white;
-}
-
-#footer_2 {
-  
-  color: wheat;
-  height: 61px;
-  text-align: center;
-  border: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
-  bottom: 0px;
-  position: absolute;
 }
