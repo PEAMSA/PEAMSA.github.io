@@ -168,7 +168,7 @@
   
   /* menu Scene Control */
   
-  .scbtn h5,.curbtn h5,.lightbtn h5 {
+  .curbtn h5,.lightbtn h5 {
     color: white;
     height: 35px;
     font-weight: normal;
@@ -176,11 +176,7 @@
     padding-top: 9px;
   }
   
-  
-  
-  
-  
-  .scbtn,.curbtn,.lightbtn {
+  .curbtn,.lightbtn {
     background-color: transparent;
     cursor: pointer;
     font-size: 16px;
@@ -196,12 +192,146 @@
     width: 90px;
     
   }
-  
-  .scbtn:focus,.curbtn:focus,.lightbtn:focus {
+
+  .curbtn:focus,.lightbtn:focus {
     background-color: #666;
     color: white;
     border: 1px solid blueviolet;
   }
+
+  /************ scene_new_1  Torty:)  ************/
+  .scbtn_1 h5 {
+    color: rgb(0, 0, 0);
+    height: 35px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 9px;
+  }
+  
+  .scbtn_1 {
+    background-color: #fca3b5;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    transition-duration: 0.3s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 90px;
+    
+  }
+
+  .scbtn_1 {
+    background-color: #fca3b5;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+  }
+  /************ scene_new_1  Torty:)  ************/
+
+  /************ scene_new_2  Torty:)  ************/
+    .scbtn_2 h5 {
+      color: rgb(0, 0, 0);
+      height: 35px;
+      font-weight: normal;
+      text-align: center;
+      padding-top: 9px;
+    }
+    
+    .scbtn_2 {
+      background-color:#be41d4;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      -webkit-transition-duration: 0.3s;
+      /* Safari */
+      transition-duration: 0.3s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      width: 90px;
+      
+    }
+
+    .scbtn_2 {
+      background-color: #be41d4;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(0, 0, 0);
+    }
+  /************ scene_new_2  Torty:)  ************/
+
+  /************ scene_new_3  Torty:)  ************/
+    .scbtn_3 h5 {
+      color: rgb(0, 0, 0);
+      height: 35px;
+      font-weight: normal;
+      text-align: center;
+      padding-top: 9px;
+    }
+    
+    .scbtn_3 {
+      background-color:#fcf3b5;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 10px;
+      -webkit-transition-duration: 0.3s;
+      /* Safari */
+      transition-duration: 0.3s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      width: 90px;
+      
+    }
+
+    .scbtn_3 {
+      background-color: #fcf3b5;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(0, 0, 0);
+    }
+  /************ scene_new_3  Torty:)  ************/
+
+   /************ scene_new_4  Torty:)  ************/
+   .scbtn_4 h5 {
+    color: rgb(0, 0, 0);
+    height: 35px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 9px;
+  }
+  
+  .scbtn_4 {
+    background-color: #a9d5fc;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    transition-duration: 0.3s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 90px;
+    
+  }
+
+  .scbtn_4 {
+    background-color:  #a9d5fc;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+  }
+/************ scene_new_4  Torty:)  ************/
+  
+
   
   
   .switch_one_left {
