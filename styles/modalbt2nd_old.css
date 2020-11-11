@@ -25,14 +25,14 @@
 }
 
 /* Modal Content */
-.modal-content-officeroom1 {
+.modal-content-officeroom1,.modal-content-officeroom2 {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 250px;
-  height: 270px;
+  width: 35%;
+  height: 180px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -40,24 +40,6 @@
   animation-duration: 0.4s;
   float: left;
 }
- 
-.modal-content-officeroom2 {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 250px;
-  height: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  float: left;
-}
-
-
 
 /* Modal Content */
 .modal-content-maincontrol {
@@ -66,8 +48,8 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 290px;
-  height: 250px;
+  width: 35%;
+  height: 170px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -82,8 +64,8 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 220px;
-  height: 200px;
+  width: 35%;
+  height: 140px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;

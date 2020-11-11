@@ -1,34 +1,13 @@
-.floor2_pic {
-    object-fit: contain;
-    z-index: 0;
-	border: 1px solid black;
-	margin-top: 50px;
-  }
-
-.HY_2 {
-	position: absolute;
-	top: 390px;
-	left: 230px; background-color: whitesmoke;
-}
-
-.ENG_2 {
-	position: absolute;
-	top: 211px;
-	left: 300px;
-	background-color: whitesmoke;
-}
-.SACR_2 {
-	position: absolute;
-	top: 326px;
-	left: 320px;
-	background-color: whitesmoke;
-}
-
-.MPR_2 {
-	position: absolute;
-	top: 450px;
-	left: 320px;
-	background-color: whitesmoke;
+#back{
+	background-image: url(./S__29351955.jpg) ;
+	/* transform: rotate(20deg); */
+	background-repeat: no-repeat;
+	/* background-size: 50%; */
+	height: 550px;
+	width: 700px;
+	position: relative;
+	background-size:80%;
+	
 }
 
 li{
