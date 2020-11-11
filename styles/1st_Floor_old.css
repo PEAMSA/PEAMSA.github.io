@@ -1,9 +1,14 @@
-.floor1_pic {
-    object-fit: contain;
-    z-index: 0;
-	border: 1px solid black;
-	margin-top: 50px;
-  }
+#back{
+	background-image: url(./S__29351956.jpg) ;
+	/* transform: rotate(20deg); */
+	background-repeat: no-repeat;
+	/* background-size: 50%; */
+	height: 550px;
+	width: 700px;
+	position: relative;
+	background-size:80%;
+	
+}
 .blog{
 	padding-top: 40px;
 }
@@ -15,26 +20,10 @@ li{
 	margin-top: 10px;
 }
 
-.eo {
-	position: absolute;
-	top: 210px;
-	left: 100px;
-	background-color: white;
-}
 
-.hy {
-	position: absolute;
-	top: 420px;
-	left: 120px;
-    background-color: white;
-}
 
-.am {
-	position: absolute;
-	top: 400px;
-	left: 330px;
-    background-color: white;
-}
+
+
 
 
 @charset "utf-8";
