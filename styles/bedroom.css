@@ -1,4 +1,15 @@
+/* torty*/
+.footer_bedroom
+{
+	padding: 9px;  
+	bottom: 0;	
+	
+	text-align: center; 
+	width: 100%; 
+	color: rgb(0, 0, 0);
 
+}
+/* torty end*/
 
 .container {
 	padding: 0px;
@@ -194,8 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 	line-height: 1.2;
-	color: #2b2e35;
-	font-weight: 600;
+	font-weight: 500;
 	margin-bottom: 0;
 }
 
@@ -503,7 +513,7 @@ section {
 	height: 100%;
 	line-height: 61px;
 	padding-left: 13px;
-	padding-right: 13px;
+	padding-right: 10px;
 	font-size: 16px;
 	font-weight: 500;
 	color: #2b2e35;

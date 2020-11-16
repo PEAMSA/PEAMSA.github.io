@@ -18,13 +18,11 @@ li {
 .SceneStyle {
     width: 90px;
     height: 35px;
-    margin-top: -5px;
+    margin-top: 10px;
     background: transparent;
     border-width: thin;
-    border: 1.5px;
     border-radius: 16px;
-    text-align: center;
-    margin-left: 0px;
+    text-align: center; 
     cursor: pointer;
     border: 1px solid gray;
     transition-duration: 0.4s;

@@ -43,6 +43,7 @@ body {
 	font-weight: normal;
 	background: #FFFFFF;
 	color: #2b2e35;
+	min-height: 100%;
 }
 
 div {
@@ -63,7 +64,7 @@ p {
 	font-size: 14px;
 	line-height: 2.1435;
 	font-weight: 500;
-	color: #a2b0bf;
+	color: #000000;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
@@ -126,7 +127,7 @@ h1 {
 }
 
 h2 {
-	font-size: 13px;
+	font-size: 36px;
 }
 
 h3 {
@@ -148,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 	line-height: 1.2;
-	color: #2b2e35;
+	
 }
 
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection {}
@@ -459,8 +460,8 @@ section {
 	display: block;
 	height: 100%;
 	line-height: 61px;
-	padding-left: 13px;
-	padding-right: 13px;
+	padding-left: 14px;
+	padding-right: 10px;
 	font-size: 16px;
 	font-weight: 500;
 	color: #2b2e35;
@@ -1361,7 +1362,7 @@ section {
 .footer_title {
 	font-size: 24px;
 	font-weight: 500;
-	color: #ffffff;
+	color: #fc0000;
 	line-height: 1.2;
 }
 
@@ -1577,3 +1578,17 @@ section {
 .footer_nav ul li a:hover {
 	color: rgba(215, 192, 17, 1);
 }
+
+#footer_2 {
+  
+	color: wheat;
+	height: 60px;
+	text-align: center;
+	border: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 100%;
+	background: linear-gradient(135deg, rgba(154, 36, 252, 1) 0%, rgba(168, 195, 255, 1) 100%);
+	margin-left: 0px;
+	bottom: 0px;
+	position: fixed;
+  }
