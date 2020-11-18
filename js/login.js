@@ -48,7 +48,7 @@ function Login() {
     })
     .fail(function(jqXHR, textStatus, errorThrown) {
       console.log("HTTP Request Failed");
-      alert("Usernamr or Password is wrong. Please try again!!!")
+      alert("Username or Password is wrong. Please try again!!!")
     })
     .always(function() {
       /* ... */
