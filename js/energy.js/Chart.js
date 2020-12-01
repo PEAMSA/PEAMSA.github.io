@@ -1,31 +1,25 @@
-window.onload = function () {
-        console.log("Energy Page!!!!!!!!!!!!")
-        // -------------------------- Get data from Heroku Backend------------------------------ //
-        jQuery.ajax({
-            url: "https://msrdatalog.herokuapp.com/energy/api/getenergy",
-            type: "GET",
-            // headers: {
-            //     "Authorization": "Token cefa4dbd91305b2eb26ed7961a44970f5d4cb83f",
-            //     "Content-Type": "application/json; charset=utf-8",
-            // },
-        })
-        .done(function(data, textStatus, jqXHR) {
-            console.log("HTTP Request Succeeded: " + jqXHR.status);
-            data_prepareation(data)
+    async function callFunction() {
+        var data_BEMS = await get_data_BEMS()
+        var data_PV = await get_data_PV()
+        data_prepareation(data_BEMS, data_PV)
+    }    
 
-        })
-        .fail(function(jqXHR, textStatus, errorThrown) {
-            console.log("HTTP Request Failed");
-        })
-        .always(function() {
-            /* ... */
-        });
+    callFunction()
+
+    async function get_data_BEMS() {
+        const rsp = await fetch( "https://msrdatalog.herokuapp.com/energy/api/getenergy" ),
+        data = await rsp.json();
+        return (data);
+    }
+
+    async function get_data_PV() {
+        const rsp = await fetch( "https://bemsbackend.azurewebsites.net/energy/api/getnewbemspv" ),
+        data = await rsp.json();
+        return (data);
+    }
 
         // -------------------------- Call function: data_prepareation ------------------------------ //
-
-        // Data prep:
-        function data_prepareation(data) {
-            console.log(data)
+        function data_prepareation(data_BEMS, data_PV) {
             console.log("Call function: data_prepareation()")
             var grid_data_set = []
             var solar_data_set = []
@@ -36,19 +30,19 @@ window.onload = function () {
             var precisionac_data_set = []
             var batt_data_set = []
             var soc_batt = []
-            for (var i = 0; i < data.length; i++) {
-                var grid_obj = {label: data[i]["pub_time"], y: data[i]["grid"]}
-                var solar_obj = {label: data[i]["pub_time"], y: data[i]["pv"]}
-                var load_obj = {label: data[i]["pub_time"], y: data[i]["tottalload"]}
-                var floor1_obj = {label: data[i]["pub_time"], y: data[i]["floor1load"]}
-                var floor2_obj = {label: data[i]["pub_time"], y: data[i]["floor2load"]}
-                var edb_obj = {label: data[i]["pub_time"], y: data[i]["edbload"]}
-                var precisionac_obj = {label: data[i]["pub_time"], y: data[i]["precisionac"]}
-                var batt_obj = {label: data[i]["pub_time"], y: data[i]["batt"]}
-                var socbatt_obj = {label: data[i]["pub_time"], y: data[i]["percentbatt"]}
+            for (var i = 0; i < data_BEMS.length; i++) {
+                var grid_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["grid"]}
+                // var solar_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["pv"]}
+                var load_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["tottalload"]}
+                var floor1_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["floor1load"]}
+                var floor2_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["floor2load"]}
+                var edb_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["edbload"]}
+                var precisionac_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["precisionac"]}
+                var batt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["batt"]}
+                var socbatt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["percentbatt"]}
 
                 grid_data_set.push(grid_obj)
-                solar_data_set.push(solar_obj)
+                // solar_data_set.push(solar_obj)
                 total_load_data_set.push(load_obj)
                 floor1_load_data_set.push(floor1_obj)
                 floor2_load_data_set.push(floor2_obj)
@@ -56,7 +50,12 @@ window.onload = function () {
                 precisionac_data_set.push(precisionac_obj)
                 batt_data_set.push(batt_obj)
                 soc_batt.push(socbatt_obj)
-                }
+            }
+
+            for (var i = 0; i < data_PV.length; i++) {
+                var solar_obj = {label: data_PV[i]["pub_time"], y: data_PV[i]["PV_total_power"]}
+                solar_data_set.push(solar_obj)
+            }
 
     var chart_1 = new CanvasJS.Chart("chartContainer1", {
         animationEnabled: true,
@@ -217,6 +216,3 @@ window.onload = function () {
 
     // -------------------------- End of function: data_prepareation ------------------------------ //
     }
-
-
-}
