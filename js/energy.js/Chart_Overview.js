@@ -44,7 +44,7 @@ function data_prepareation(data_MSA) {
         var f7_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i7"]}
         var f8_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i8"]}
         // var socbatt_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["percentbatt"]}
-
+ 
         feeder1.push(f1_obj)
         feeder2.push(f2_obj)
         feeder3.push(f3_obj)
