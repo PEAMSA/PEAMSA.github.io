@@ -30,7 +30,7 @@ function data_prepareation(data_MSA) {
     var feeder7 = []
     var feeder8 = []
     var moduleTemp = []
-    var abmemp = []
+    var abmtemp = []
     var irr = []
     var windSpeed = []
     // var soc_batt = []
@@ -43,6 +43,11 @@ function data_prepareation(data_MSA) {
         var f6_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i6"]}
         var f7_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i7"]}
         var f8_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i8"]}
+        var moduleTemp_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["MODULETEMP"]}
+        var abmtemp_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["MODULETEMP"]}
+        var irr_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["MODULETEMP"]}
+        var windSpeed_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["MODULETEMP"]}
+
         // var socbatt_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["percentbatt"]}
  
         feeder1.push(f1_obj)
@@ -53,6 +58,11 @@ function data_prepareation(data_MSA) {
         feeder6.push(f6_obj)
         feeder7.push(f7_obj)
         feeder8.push(f8_obj)
+        moduleTemp.push(moduleTemp_obj)
+        abmtemp.push(abmtemp_obj)
+        irr.push(irr_obj)
+        windSpeed.push(windSpeed_obj)
+
         // soc_batt.push(socbatt_obj)
     }
 
@@ -161,11 +171,25 @@ function data_prepareation(data_MSA) {
         // text: "MSA Control Building Energy Report"
     },
     axisY: {
-        title: "%SOC Battery",
+        title: "Solar Generation",
         minimum: 0,
         maximum: 100,
         interval: 20,
     },
+    axisY2:[{
+        title: "Module Temperator",
+        lineColor: "#7F6084",
+        titleFontColor: "#7F6084",
+        labelFontColor: "#7F6084"
+    },
+    {
+        title: "Solar Radiation",
+        logarithmic: true,
+        interval: 1,
+        lineColor: "#86B402",
+        titleFontColor: "#86B402",
+        labelFontColor: "#86B402"
+    }],
     toolTip: {
         shared: true
     },
@@ -177,12 +201,31 @@ function data_prepareation(data_MSA) {
     data: [
         {
             type: "spline",
-            name: "%SOC Battery",
+            name: "Solar Generation",
             showInLegend: true,
-            dataPoints: soc_batt,
+            dataPoints: feeder3,
             borderColor: "#3e95cd",
             fill: false
         },
+        {
+            type: "spline",
+            showInLegend: true,
+            axisYType: "secondary",
+            axisYIndex: 1, //Defaults to Zero
+            name: "ModuleTemp",
+            xValueFormatString: "####",
+            dataPoints: moduleTemp,
+        },
+        {
+            type: "spline",
+            showInLegend: true,
+            axisYType: "secondary",
+            axisYIndex: 2, //Defaults to Zero
+            name: "Radiation",
+            xValueFormatString: "####",
+            dataPoints: irr,
+        },
+
         ]
     });
     // -------------------------- END of CANVAS.js --------------------------
@@ -198,7 +241,7 @@ function data_prepareation(data_MSA) {
         else {
             e.dataSeries.visible = true;
         }
-        // chart_Test.render();
+        chart_Test.render();
         chart_1.render();
     }
 
