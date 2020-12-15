@@ -106,7 +106,7 @@ function con_goodbye() {
 
   // Scene Control Show Battery Start
 function con_showbattery() {
-    console.log("Activate Scene: Show Battery:");
+    console.log("Activate Scene: Show battery:");
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
