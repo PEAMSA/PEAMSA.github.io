@@ -35,7 +35,7 @@ function con_welcome() {
 // Scene Control Wecome Start
 
 function con_showbattery() {
-  console.log("Activate Scene: Show Battery:");
+  console.log("Activate Scene: Show battery:");
   console.log("POST method by jQuery");
   jQuery.ajax({
     url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
