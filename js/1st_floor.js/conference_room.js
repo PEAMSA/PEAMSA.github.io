@@ -99,7 +99,7 @@ function con_meeting_changeImage() {
 
 
 // conferenceroom Show Battery Start
-function con_showbatery() {
+function con_showbattery() {
     console.log("Hello");
     //
     console.log("POST method by jQuery");
@@ -130,7 +130,7 @@ function con_showbatery() {
         .done(function (data, textStatus, jqXHR) {
             console.log("HTTP Request Succeeded: " + jqXHR.status);
             console.log(data);
-            con_showbatery_changeImage()
+            con_showbattery_changeImage()
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
             console.log("HTTP Request Failed");
@@ -142,7 +142,7 @@ function con_showbatery() {
 
 }
 // Founction Change Image
-function con_showbatery_changeImage() {
+function con_showbattery_changeImage() {
     document.getElementById('con').src = 'https://www.htmlcsscolor.com/preview/gallery/008000.png'
 }
 // conferenceroom Show Battery End
