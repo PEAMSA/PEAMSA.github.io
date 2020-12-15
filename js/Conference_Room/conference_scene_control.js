@@ -34,7 +34,7 @@ function con_welcome() {
   }
 // Scene Control Wecome Start
 
-function con_showbatery() {
+function con_showbattery() {
   console.log("Activate Scene: Show Battery:");
   console.log("POST method by jQuery");
   jQuery.ajax({
