@@ -1,7 +1,7 @@
 async function callFunction() {
     var data_MSA = await get_data_MSA()
-    // var data_PV = await get_data_PV()
-    data_prepareation(data_MSA)
+    var data_PV = await get_data_PV()
+    data_prepareation(data_MSA, data_PV)
 }    
 
 callFunction()
@@ -19,7 +19,7 @@ async function get_data_PV() {
 }
 
 // -------------------------- Call function: data_prepareation ------------------------------ //
-function data_prepareation(data_MSA) {
+function data_prepareation(data_MSA, data_PV) {
     console.log("Call function: data_prepareation()")
     var feeder1 = []
     var feeder2 = []
@@ -33,7 +33,7 @@ function data_prepareation(data_MSA) {
     var abmtemp = []
     var irr = []
     var windSpeed = []
-    // var soc_batt = []
+    var MSA_solar = []
     for (var i = 0; i < data_MSA.length; i++) {
         var f1_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i1"]}
         var f2_obj = {label: data_MSA[i]["pub_time"], y: data_MSA[i]["i2"]}
@@ -66,6 +66,11 @@ function data_prepareation(data_MSA) {
         // soc_batt.push(socbatt_obj)
     }
 
+    for (var j = 0; j < data_PV.length; j++) {
+        var msa_solar_obj = {label: data_PV[j]["pub_time"], y: data_PV[j]["PV_total_power"]}
+        MSA_solar.push(msa_solar_obj)
+    }
+
     var chart_1 = new CanvasJS.Chart("chartContainer1", {
     animationEnabled: true,
     exportEnabled: true,
@@ -93,7 +98,7 @@ function data_prepareation(data_MSA) {
     data: [
         {
             type: "spline",
-            name: "MSA01",
+            name: "Feeder 4",
             showInLegend: true,
             dataPoints: feeder1,
             borderColor: "#3e95cd",
@@ -101,7 +106,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA02",
+            name: "BESS",
             showInLegend: true,
             dataPoints: feeder2,
             borderColor: "#8e5ea2",
@@ -109,7 +114,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA03",
+            name: "Mea Sa Liang Solar",
             showInLegend: true,
             dataPoints: feeder3,
             borderColor: "#3d444f",
@@ -117,7 +122,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA04",
+            name: "Incoming",
             showInLegend: true,
             dataPoints: feeder4,
             borderColor: "#bd12b9",
@@ -125,7 +130,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA05",
+            name: "Feeder 5",
             showInLegend: true,
             dataPoints: feeder5,
             borderColor: "#a151bd",
@@ -133,7 +138,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA06",
+            name: "Feeder 6",
             showInLegend: true,
             dataPoints: feeder6,
             borderColor: "#9416ef",
@@ -141,7 +146,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA07",
+            name: "DG",
             showInLegend: true,
             dataPoints: feeder7,
             borderColor: "#117259",
@@ -149,7 +154,7 @@ function data_prepareation(data_MSA) {
         },
         {
             type: "spline",
-            name: "MSA08",
+            name: "Feeder 10",
             showInLegend: true,
             dataPoints: feeder8,
             borderColor: "#56cab7",
@@ -170,25 +175,29 @@ function data_prepareation(data_MSA) {
     title: {
         // text: "MSA Control Building Energy Report"
     },
-    axisY: {
-        title: "Solar Generation",
-        minimum: 0,
-        maximum: 100,
+    axisY2: [{
+        title: "Solar Radiation [x1000 W/m2]",
+        // minimum: 0,
+        // maximum: 1000,
         interval: 20,
-    },
-    axisY2:[{
-        title: "Module Temperator",
+    }],
+    axisY:[{
+        title: "Mea Sa Liang Solar [x4 MW]",
         lineColor: "#7F6084",
         titleFontColor: "#7F6084",
-        labelFontColor: "#7F6084"
+        labelFontColor: "#7F6084",
+        // minimum: 0,
+        // maximum: 1000,
     },
     {
-        title: "Solar Radiation",
+        title: "BEMS Solar Radiation [x10 kW]",
         logarithmic: true,
-        interval: 1,
+        // interval: 1,
+        // minimum: 0,
+        // maximum: 10,
         lineColor: "#86B402",
         titleFontColor: "#86B402",
-        labelFontColor: "#86B402"
+        labelFontColor: "#86B402",
     }],
     toolTip: {
         shared: true
@@ -201,31 +210,35 @@ function data_prepareation(data_MSA) {
     data: [
         {
             type: "spline",
-            name: "Solar Generation",
             showInLegend: true,
-            dataPoints: feeder3,
-            borderColor: "#3e95cd",
-            fill: false
-        },
-        {
-            type: "spline",
-            showInLegend: true,
-            axisYType: "secondary",
+            axisYType: "primary",
             axisYIndex: 1, //Defaults to Zero
-            name: "ModuleTemp",
+            name: "Mea Sa Liang Solar",
             xValueFormatString: "####",
-            dataPoints: moduleTemp,
+            color: "#7F6084",
+            dataPoints: feeder3,
+            fill: false,
         },
         {
             type: "spline",
             showInLegend: true,
-            axisYType: "secondary",
+            axisYType: "primary",
             axisYIndex: 2, //Defaults to Zero
-            name: "Radiation",
+            name: "BEMS Solar",
             xValueFormatString: "####",
-            dataPoints: irr,
+            color: "#86B402",
+            dataPoints: MSA_solar,
+            fill: false,
         },
-
+        {
+            type: "spline",
+            name: "Solar Radiation",
+            showInLegend: true,
+            axisYType: "secondary",
+            dataPoints: irr,
+            color: 'orange',
+            fill: false,
+        },
         ]
     });
     // -------------------------- END of CANVAS.js --------------------------
