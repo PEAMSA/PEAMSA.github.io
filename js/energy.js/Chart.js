@@ -38,8 +38,8 @@
                 var floor2_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["floor2load"]}
                 var edb_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["edbload"]}
                 var precisionac_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["precisionac"]}
-                var batt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["batt"]}
-                var socbatt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["percentbatt"]}
+                // var batt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["batt"]}
+                // var socbatt_obj = {label: data_BEMS[i]["pub_time"], y: data_BEMS[i]["percentbatt"]}
 
                 grid_data_set.push(grid_obj)
                 // solar_data_set.push(solar_obj)
@@ -48,13 +48,18 @@
                 floor2_load_data_set.push(floor2_obj)
                 edb_load_data_set.push(edb_obj)
                 precisionac_data_set.push(precisionac_obj)
-                batt_data_set.push(batt_obj)
-                soc_batt.push(socbatt_obj)
+                // batt_data_set.push(batt_obj)
+                // soc_batt.push(socbatt_obj)
             }
 
             for (var i = 0; i < data_PV.length; i++) {
                 var solar_obj = {label: data_PV[i]["pub_time"], y: data_PV[i]["PV_total_power"]}
+                var batt_obj = {label: data_PV[i]["pub_time"], y: data_PV[i]["battery_power"]}
+                var socbatt_obj = {label: data_PV[i]["pub_time"], y: data_PV[i]["battery_percent"]}
+
                 solar_data_set.push(solar_obj)
+                batt_data_set.push(batt_obj)
+                soc_batt.push(socbatt_obj)
             }
 
     var chart_1 = new CanvasJS.Chart("chartContainer1", {
