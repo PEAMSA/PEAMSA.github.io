@@ -21,19 +21,25 @@ function Login() {
   // $('.modal-x').modal('show');
   // --------------------------- //
   jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/login",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/login",
+      // type: "POST",
+      // headers: {
+      //   "Content-Type": "application/x-www-form-urlencoded",
+      //   "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/login",
+      //   "Access-Control-Allow-Methods": "POST",
+      //   "Access-Control-Allow-Headers": "Content-Type, Authorization",  
+      // },
+      // contentType: "application/x-www-form-urlencoded",
+      url: "https://msr-api.herokuapp.com/api/login",
       type: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/login",
-        "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",  
+          "Content-Type": "application/x-www-form-urlencoded",
       },
       contentType: "application/x-www-form-urlencoded",
-      data: {
-        "username": document.getElementById("username").value.toString(),
-        "password": document.getElementById("password").value.toString()
-    },
+        data: {
+          "username": document.getElementById("username").value.toString(),
+          "password": document.getElementById("password").value.toString()
+      },
   })
     .done(function(data, textStatus, jqXHR) {
       console.log("HTTP Request Succeeded: " + jqXHR.status);
