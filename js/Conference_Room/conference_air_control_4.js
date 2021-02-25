@@ -122,14 +122,11 @@ function turn_on_con_ac_4(device_id) {
     console.log("turn_on_con_ac_4" + device_id);
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
+        url: "https://msr-api.herokuapp.com/api/daikin/status",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -155,14 +152,11 @@ function turn_off_con_ac_4(device_id) {
     console.log("turn_off_con_ac_4" + device_id);
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
+        url: "https://msr-api.herokuapp.com/api/daikin/status",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/status",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -210,14 +204,11 @@ function summit_air4(device_id) {
                           )};
     console.log(device_id + " adjust Con_1 AC Temp: " + score_AC4 + "degreeC")
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_temp_data,
@@ -248,14 +239,11 @@ function CoolModeControl_4(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -296,14 +284,11 @@ function DryModeControl_4(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -344,14 +329,11 @@ function FenModeControl_4(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -384,14 +366,11 @@ function swingturn_off_con_ac_4(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -421,14 +400,11 @@ function swingturn_on_con_ac_4(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -464,14 +440,11 @@ function remote4_speedone(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -510,14 +483,11 @@ function remote4_speedtwo(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -556,14 +526,11 @@ function remote4_speedthree(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -602,14 +569,11 @@ function remote4_speedfour(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -648,14 +612,11 @@ function remote4_speedfive(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://msr-api.herokuapp.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/daikin/command",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,

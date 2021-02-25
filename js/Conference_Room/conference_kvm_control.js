@@ -9,14 +9,11 @@ function kvm_input1(device_id) {
     //
     console.log("POST projectorsource_home method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
+        url: "https://msr-api.herokuapp.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: kvm1_post_data,
@@ -45,14 +42,11 @@ function kvm_input2(device_id) {
     //
     console.log("POST kvm_input2 method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
+        url: "https://msr-api.herokuapp.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: kvm2_post_data,
@@ -81,14 +75,11 @@ function kvm_input3(device_id) {
     //
     console.log("POST kvm_input3 method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
+        url: "https://msr-api.herokuapp.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: kvm3_post_data,
@@ -118,14 +109,11 @@ function kvm_input4(device_id) {
     //
     console.log("POST kvm_input4 method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
+        url: "https://msr-api.herokuapp.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/kvm",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: kvm4_post_data,
