@@ -5,14 +5,12 @@ function con_welcome() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -40,14 +38,12 @@ function con_meeting() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -75,14 +71,12 @@ function con_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -110,14 +104,12 @@ function con_showbattery() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -145,14 +137,12 @@ function eo_welcome() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -178,14 +168,12 @@ function eo_automatic() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
+      // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -211,14 +199,11 @@ function eo_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -246,14 +231,11 @@ function hy_welcome() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -279,14 +261,11 @@ function hy_automatic() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -312,14 +291,11 @@ function hy_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
+      url: "https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
