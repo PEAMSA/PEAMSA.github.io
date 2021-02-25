@@ -8,14 +8,11 @@ function screen_up(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
+        url: "https://msr-api.herokuapp.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: sceen_post_data,
@@ -44,14 +41,11 @@ function screen_pause(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
+        url: "https://msr-api.herokuapp.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: sceen_post_data,
@@ -79,14 +73,11 @@ function screen_down(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
+        url: "https://msr-api.herokuapp.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/curtain",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: sceen_post_data,

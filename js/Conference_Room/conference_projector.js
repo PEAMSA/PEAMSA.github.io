@@ -11,14 +11,11 @@ function projectorsource_home(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -50,14 +47,11 @@ function projectorsource_source(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -89,14 +83,11 @@ function projectorsource_setting(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -128,14 +119,11 @@ function projectorsource_back(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -167,14 +155,11 @@ function projectorsource_left(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -206,14 +191,11 @@ function projectorsource_up(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -245,14 +227,11 @@ function projectorsource_enter(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -284,14 +263,11 @@ function projectorsource_down(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -323,14 +299,11 @@ function projectorsource_right(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
@@ -362,14 +335,11 @@ function control_projector(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
+        url: "https://msr-api.herokuapp.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/projector",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/json",
         data: projector_post,
