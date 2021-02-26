@@ -34,14 +34,11 @@ function smartplug1(devieID_smart_plug_1) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -101,14 +98,11 @@ function smartplug2(devieID_smart_plug_2) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -168,14 +162,11 @@ function smartplug3(devieID_smart_plug_3) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -235,14 +226,11 @@ function smartplug4(devieID_smart_plug_4) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -302,14 +290,11 @@ function smartplug5(devieID_smart_plug_5) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -370,14 +355,11 @@ function smartplug6(devieID_smart_plug_6) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
+        url: "https://msr-api.herokuapp.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-            "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/plug",
-            "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {

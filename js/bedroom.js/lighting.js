@@ -23,14 +23,11 @@ function turn_off_light(device_id) {
     };
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/lighting",
+      url: "https://msr-api.herokuapp.com/api/lighting",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/lighting",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/json",
       data: lighting_post_data,
@@ -57,14 +54,11 @@ function turn_on_light(device_id) {
     };
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/lighting",
+      url: "https://msr-api.herokuapp.com/api/lighting",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
           "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
-          "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/lighting",
-          "Access-Control-Allow-Methods": "POST",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },
       contentType: "application/json",
       data: lighting_post_data,
