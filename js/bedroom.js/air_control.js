@@ -68,7 +68,7 @@ function turn_on_ac(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -100,7 +100,7 @@ function turn_off_ac(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -153,7 +153,7 @@ function summit_air(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_temp_data,
@@ -187,7 +187,7 @@ function CoolModeControl(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -229,7 +229,7 @@ function DryModeControl(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -271,7 +271,7 @@ function FenModeControl(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -307,7 +307,7 @@ function swingturn_off_ac(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -341,7 +341,7 @@ function swingturn_oื_ac(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: {
@@ -381,7 +381,7 @@ function speedone(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -423,7 +423,7 @@ function speedtwo(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -465,7 +465,7 @@ function speedthree(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -507,7 +507,7 @@ function speedfour(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,
@@ -549,7 +549,7 @@ function speedfive(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/x-www-form-urlencoded",
         data: set_mode_data,

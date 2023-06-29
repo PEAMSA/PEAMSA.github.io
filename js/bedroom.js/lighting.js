@@ -27,7 +27,7 @@ function turn_off_light(device_id) {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/json",
       data: lighting_post_data,
@@ -58,7 +58,7 @@ function turn_on_light(device_id) {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/json",
       data: lighting_post_data,

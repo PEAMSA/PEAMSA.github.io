@@ -59,7 +59,7 @@ function lightingrow1(devieID_lighting_row_1) {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/json",
       data: lighting1_post_data,
