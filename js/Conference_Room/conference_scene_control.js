@@ -4,7 +4,7 @@ function con_welcome() {
     console.log("Activate Scene: Welcome:");
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -35,7 +35,7 @@ function con_showbattery() {
   console.log("Activate Scene: Show battery:");
   console.log("POST method by jQuery");
   jQuery.ajax({
-    url: "https://msr-api.herokuapp.com/api/scene",
+    url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -68,7 +68,7 @@ function con_meeting() {
     console.log("Activate Scene: Meeting:");
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -99,7 +99,7 @@ function con_goodbye() {
     console.log("Activate Scene: Good Bye:");
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",

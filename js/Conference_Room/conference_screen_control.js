@@ -8,7 +8,7 @@ function screen_up(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/curtain",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
@@ -41,7 +41,7 @@ function screen_pause(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/curtain",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
@@ -73,7 +73,7 @@ function screen_down(device_id) {
     };
     console.log(sceen_post_data)
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/curtain",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
         type: "POST",
         headers: {
             "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",

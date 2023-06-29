@@ -6,7 +6,7 @@ function con_welcome() {
     console.log("POST method by jQuery");
     jQuery.ajax({
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -39,7 +39,7 @@ function con_meeting() {
     console.log("POST method by jQuery");
     jQuery.ajax({
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -72,7 +72,7 @@ function con_goodbye() {
     console.log("POST method by jQuery");
     jQuery.ajax({
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -105,7 +105,7 @@ function con_showbattery() {
     console.log("POST method by jQuery");
     jQuery.ajax({
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -138,7 +138,7 @@ function eo_welcome() {
     console.log("POST method by jQuery");
     jQuery.ajax({
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -168,7 +168,7 @@ function eo_automatic() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       // url: "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
       type: "POST",
       headers: {
@@ -199,7 +199,7 @@ function eo_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -231,7 +231,7 @@ function hy_welcome() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -261,7 +261,7 @@ function hy_automatic() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -291,7 +291,7 @@ function hy_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",

@@ -64,7 +64,7 @@ function turn_on_ac(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/status",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/status",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -96,7 +96,7 @@ function turn_off_ac(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/status",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/status",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -149,7 +149,7 @@ function summit_air(device_id) {
     console.log(device_id + " adjust Bedroom AC Temp: " + score + "degreeC")
     console.log("Please wait...we are adjusting your AC temp.")
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -183,7 +183,7 @@ function CoolModeControl(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -225,7 +225,7 @@ function DryModeControl(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -267,7 +267,7 @@ function FenModeControl(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -303,7 +303,7 @@ function swingturn_off_ac(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -337,7 +337,7 @@ function swingturn_oื_ac(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -377,7 +377,7 @@ function speedone(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -419,7 +419,7 @@ function speedtwo(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -461,7 +461,7 @@ function speedthree(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -503,7 +503,7 @@ function speedfour(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -545,7 +545,7 @@ function speedfive(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/daikin/command",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/daikin/command",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",

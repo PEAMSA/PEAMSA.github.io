@@ -34,7 +34,7 @@ function smartplug1(devieID_smart_plug_1) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -98,7 +98,7 @@ function smartplug2(devieID_smart_plug_2) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -162,7 +162,7 @@ function smartplug3(devieID_smart_plug_3) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -226,7 +226,7 @@ function smartplug4(devieID_smart_plug_4) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -290,7 +290,7 @@ function smartplug5(devieID_smart_plug_5) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -355,7 +355,7 @@ function smartplug6(devieID_smart_plug_6) {
     }
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/plug",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/plug",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",

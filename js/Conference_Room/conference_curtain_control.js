@@ -8,7 +8,7 @@ function conference_curtain_open(device_id) {
   console.log("conference_curtain_open" + device_id);
   console.log("POST method by jQuery");
   jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/curtain",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -39,7 +39,7 @@ function conference_curtain_close(device_id) {
   console.log("conference_curtain_close" + device_id);
   console.log("POST method by jQuery");
   jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/curtain",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -70,7 +70,7 @@ function conference_curtain_pause(device_id) {
   console.log("conference_curtain_pause" + device_id);
   console.log("POST method by jQuery");
   jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/curtain",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/curtain",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",

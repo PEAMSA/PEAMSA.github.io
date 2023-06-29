@@ -11,7 +11,7 @@ function projectorsource_home(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -47,7 +47,7 @@ function projectorsource_source(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -83,7 +83,7 @@ function projectorsource_setting(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -119,7 +119,7 @@ function projectorsource_back(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -155,7 +155,7 @@ function projectorsource_left(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -191,7 +191,7 @@ function projectorsource_up(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -227,7 +227,7 @@ function projectorsource_enter(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -263,7 +263,7 @@ function projectorsource_down(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -299,7 +299,7 @@ function projectorsource_right(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -335,7 +335,7 @@ function control_projector(device_id) {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/projector",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/projector",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
