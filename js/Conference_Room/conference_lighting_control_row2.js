@@ -68,7 +68,7 @@ function lightingrow2(devieID_lighting_row_2) {
     };
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/lighting",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/lighting",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",

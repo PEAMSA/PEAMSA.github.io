@@ -9,7 +9,7 @@ function kvm_input1(device_id) {
     //
     console.log("POST projectorsource_home method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/kvm",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -42,7 +42,7 @@ function kvm_input2(device_id) {
     //
     console.log("POST kvm_input2 method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/kvm",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -75,7 +75,7 @@ function kvm_input3(device_id) {
     //
     console.log("POST kvm_input3 method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/kvm",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -109,7 +109,7 @@ function kvm_input4(device_id) {
     //
     console.log("POST kvm_input4 method by jQuery");
     jQuery.ajax({
-        url: "https://msr-api.herokuapp.com/api/kvm",
+        url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/kvm",
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",

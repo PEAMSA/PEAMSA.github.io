@@ -30,7 +30,7 @@ function Login() {
       //   "Access-Control-Allow-Headers": "Content-Type, Authorization",  
       // },
       // contentType: "application/x-www-form-urlencoded",
-      url: "https://msr-api.herokuapp.com/api/login",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/login",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",

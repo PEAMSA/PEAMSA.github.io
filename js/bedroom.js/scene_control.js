@@ -25,7 +25,7 @@ ref_bedroom.on("value", function(snapshot) {
 function scene_welcome() {
   console.log("POST method by jQuery");
   jQuery.ajax({
-    url: "https://msr-api.herokuapp.com/api/scene",
+    url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -58,7 +58,7 @@ function scene_goodnight() {
   //
   console.log("POST method by jQuery");
   jQuery.ajax({
-    url: "https://msr-api.herokuapp.com/api/scene",
+    url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -91,7 +91,7 @@ function scene_goodbye() {
   //
   console.log("POST method by jQuery");
   jQuery.ajax({
-    url: "https://msr-api.herokuapp.com/api/scene",
+    url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",

@@ -4,7 +4,7 @@ function or1_welcome() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -35,7 +35,7 @@ function or1_goodbye() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -65,7 +65,7 @@ function or1_curtain_open() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -97,7 +97,7 @@ function or1_curtain_close() {
     //
     console.log("POST method by jQuery");
     jQuery.ajax({
-      url: "https://msr-api.herokuapp.com/api/scene",
+      url: "https://gg2pdcu4pt.ap-southeast-1.awsapprunner.com/api/scene",
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
