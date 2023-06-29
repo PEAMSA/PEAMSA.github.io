@@ -6,7 +6,7 @@ function scene_welcome() {
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+        "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
         "Access-Control-Allow-Methods": "POST",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
@@ -42,7 +42,7 @@ function scene_goodnight() {
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+        "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
         "Access-Control-Allow-Methods": "POST",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
@@ -78,7 +78,7 @@ function scene_goodbye() {
     type: "POST",
     headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+        "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         "Access-Control-Allow-Origin": "https://cors-anywhere.herokuapp.com/https://msr-api.herokuapp.com/api/scene",
         "Access-Control-Allow-Methods": "POST",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",

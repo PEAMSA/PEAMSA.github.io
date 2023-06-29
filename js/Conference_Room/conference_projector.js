@@ -15,7 +15,7 @@ function projectorsource_home(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -51,7 +51,7 @@ function projectorsource_source(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -87,7 +87,7 @@ function projectorsource_setting(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -123,7 +123,7 @@ function projectorsource_back(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -159,7 +159,7 @@ function projectorsource_left(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -195,7 +195,7 @@ function projectorsource_up(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -231,7 +231,7 @@ function projectorsource_enter(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -267,7 +267,7 @@ function projectorsource_down(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -303,7 +303,7 @@ function projectorsource_right(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,
@@ -339,7 +339,7 @@ function control_projector(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: projector_post,

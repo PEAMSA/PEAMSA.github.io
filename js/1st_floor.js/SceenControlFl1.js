@@ -10,7 +10,7 @@ function con_welcome() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -43,7 +43,7 @@ function con_meeting() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -76,7 +76,7 @@ function con_goodbye() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -109,7 +109,7 @@ function con_showbattery() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -142,7 +142,7 @@ function eo_welcome() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -173,7 +173,7 @@ function eo_automatic() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -203,7 +203,7 @@ function eo_goodbye() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -235,7 +235,7 @@ function hy_welcome() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -265,7 +265,7 @@ function hy_automatic() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {
@@ -295,7 +295,7 @@ function hy_goodbye() {
       type: "POST",
       headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+          "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
       },
       contentType: "application/x-www-form-urlencoded",
       data: {

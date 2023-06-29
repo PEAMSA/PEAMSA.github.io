@@ -13,7 +13,7 @@ function kvm_input1(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: kvm1_post_data,
@@ -46,7 +46,7 @@ function kvm_input2(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: kvm2_post_data,
@@ -79,7 +79,7 @@ function kvm_input3(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: kvm3_post_data,
@@ -113,7 +113,7 @@ function kvm_input4(device_id) {
         type: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
-            "Authorization": "Token 2f1c9297dd604396c347e52746baf9703ceb93fd",
+            "Authorization": "Token 572050ba01cab3220b82e1242de7786b364f6f36",
         },
         contentType: "application/json",
         data: kvm4_post_data,
